@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
+import 'package:from_css_color/from_css_color.dart';
 
 void main() => runApp(MyApp());
 
@@ -7,94 +9,96 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
 
     Widget imageSection = Container(
+      margin: EdgeInsets.all(8.0),
       child: Image.asset('images/Skull.png'),
     );
 
-    Widget titleSection = Container(
-      padding: EdgeInsets.only(top: 16),
+    Widget welcomeText = Container(
       child: Text(
-        'Skull',
+        'Welcome to HeadAnatomy',
         textAlign: TextAlign.center,
-        style: TextStyle(
-          fontWeight: FontWeight.bold,
-          fontSize: 18,
+        style: TextStyle(   
+          fontStyle: FontStyle.italic,
+          fontSize: 25.0,
+          color: fromCssColor('#ffffff'),
         ),
+      ),
+    );
+
+
+    Widget textButton = Container(
+      width: 201.0,
+      height: 40.0,
+      decoration: new BoxDecoration(
+            color: Theme.of(context).primaryColor,
+            borderRadius: new BorderRadius.circular(20.0),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black,
+                spreadRadius: 2,
+                blurRadius: 10,
+                offset: Offset(0, 3), // changes position of shadow
+              )
+            ],
+          ),
+      child: TextButton(
+        style: TextButton.styleFrom(
+          backgroundColor: fromCssColor('#c4c4c4'),
+          shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(20),        
+            ),
+           ),
+          onPressed: () {},
+              child: Text(
+                "Next",
+                style: TextStyle(
+                  fontSize: 24.0,
+                  color: fromCssColor('#000000'),
+                ),
+              ),
       ),
     ); 
 
-    Widget descriptionSection = Container(
-      padding: EdgeInsets.all(16),
+    
+    Widget emptySpace = Container(
+      child: Column(
+        children: <Widget>[
+          SizedBox(height: 30),
+        ],
+      ),
     );
-
-    Widget rateSection = Row(
-      children: <Widget>[
-        Icon(Icons.star, color: Colors.yellow),
-        Icon(Icons.star, color: Colors.yellow),
-        Icon(Icons.star, color: Colors.yellow),
-        Icon(Icons.star, color: Colors.yellow),
-        Icon(Icons.star),
-      ],
-    );
-
-    Widget reviewSection = Row(
-      mainAxisAlignment: MainAxisAlignment.spaceAround,
-      children: <Widget>[
-        rateSection,
-        Text('170 Reviews'),
-      ],
-    );
-
-    Widget menuSection = Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: <Widget>[
-        _buildMenuSection(
-          Icons.bookmark,
-          "Prep", 
-          "25 min"
-          ),
-          _buildMenuSection(
-          Icons.timer,
-          "Cook", 
-          "1 hour"
-          ),
-          _buildMenuSection(
-          Icons.fastfood,
-          "Feeds", 
-          "4-6"
-          ),
-      ],
-    ); 
 
     return MaterialApp(
       title: 'Material Apps',
       home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Color.fromARGB(144, 178, 89, 219),
-          title: Text(
-            'Welcome to'
-            'HeadAnatomy',
-            style: TextStyle(color: Color(0xFF000000)),
+        body: Container(
+          color: fromCssColor('#4A8592'),
+          child: Column(
+            children: <Widget>[
+              emptySpace,
+              emptySpace2,
+              welcomeText,
+              emptySpace2,
+              emptySpace2,
+              imageSection,
+              emptySpace2,
+              textButton,
+            ],
           ),
-          actions: <Widget>[
-            Icon(Icons.search, color: Colors.black,)
-          ],
-        ),
-        body: ListView(
-          children: [
-            imageSection,
-            titleSection,
-            descriptionSection,
-            Container(
-              padding: EdgeInsets.only(bottom: 24),
-              child: reviewSection,
-            ),
-            menuSection,
-          ],
-        ),
+        )
       ),
+      debugShowCheckedModeBanner: false,
     );
   }
-}
+
+
+Widget emptySpace2 = Container(
+  child: Column(
+    children: <Widget>[
+      SizedBox(height: 40),
+    ],
+  ),
+);
 
 Widget _buildTextSection(
   String text, 
@@ -102,6 +106,7 @@ Widget _buildTextSection(
   double paddingTop,
 ) {
   return Container(
+    color: fromCssColor('#4A8592'),
     padding: EdgeInsets.only(top: paddingTop),
     child: Text(
       text,
@@ -111,19 +116,4 @@ Widget _buildTextSection(
     ),
   );
 }
-
-Widget _buildMenuSection(
-  IconData iconData,
-  String title,
-  String timestamp,
-) {
-
-  return Column(
-    mainAxisAlignment: MainAxisAlignment.center,
-    children: [
-      Icon(iconData),
-      _buildTextSection(title, 16, 8),
-      _buildTextSection(timestamp, 12, 12),
-    ],
-  );
 }
