@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:headanatomi/main.dart';
 import 'package:from_css_color/from_css_color.dart';
-import 'package:headanatomi/topic/subtopic.dart';
+import 'package:headanatomi/topic/topic.dart';
 
 class MyApp extends StatelessWidget {
   @override
