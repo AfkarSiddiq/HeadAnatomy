@@ -11,7 +11,17 @@ class subject extends StatefulWidget {
 }
 
 Widget gambar = Container(
-  child: Image.asset('images/Skull.png'),
+  child: Image.asset('images/the cronial fossae.jpg'),
+);
+Widget dis = Container(
+  child: Text(
+    'Dasar rongga tengkorak dibagi menjadi tiga lekukan yang berbeda. Mereka dikenal sebagai fossa kranial anterior, fossa kranial tengah dan fossa kranial posterior . Setiap fossa menampung bagian otak yang berbeda.\n\nFossa kranial anterior adalah yang paling dangkal dan superior dari tiga fossa kranial. Itu terletak superior di atas  rongga hidung dan orbital . Fossa menampung bagian anteroinferior dari lobus frontal otak.\n\nPada artikel ini, kita akan melihat batas, isi dan korelasi klinis dari fossa kranial anterior.',
+    textAlign: TextAlign.center,
+    style: TextStyle(
+      fontSize: 25.0,
+      color: fromCssColor('#ffffff'),
+    ),
+  ),
 );
 
 class _subjectState extends State<subject> {
@@ -27,6 +37,7 @@ class _subjectState extends State<subject> {
           child: ListView(
             children: <Widget>[
               gambar,
+              dis,
             ],
           ),
         ),
