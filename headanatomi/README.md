@@ -1,4 +1,4 @@
-# headanatomi
+# headanatomy
 
 A new Flutter project.
 
