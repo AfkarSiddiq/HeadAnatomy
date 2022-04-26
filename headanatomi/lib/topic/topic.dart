@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:from_css_color/from_css_color.dart';
 import 'package:headanatomi/topic/home_view.dart';
 import 'package:headanatomi/topic/subject.dart';
+import 'package:headanatomi/topic/subject2.dart';
 
 class topic extends StatefulWidget {
   const topic({Key? key}) : super(key: key);
@@ -51,7 +52,9 @@ class _topicState extends State<topic> {
                       onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => subject()),
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  The_Anterior_Cranial_Fossa()),
                         );
                       },
                       child: Text(
@@ -65,9 +68,10 @@ class _topicState extends State<topic> {
                     ),
                   ),
                   Container(
-                      width: 353.0,
-                      height: 100.0,
-                      color: fromCssColor('#C4C4C4'),
+                    width: 353.0,
+                    height: 100.0,
+                    decoration: new BoxDecoration(
+                      color: Theme.of(context).primaryColor,
                       //Make a background to the container
                       // decoration: BoxDecoration(
                       //   image: DecorationImage(
@@ -75,15 +79,31 @@ class _topicState extends State<topic> {
                       //     fit: BoxFit.fill,
                       //   ),
                       // ),
-                      margin: EdgeInsets.all(25.0),
-                      child: Text(
-                        'Topic 2',
-                        style: TextStyle(
-                          fontSize: 25.0,
-                          color: fromCssColor('#ffffff'),
+                      borderRadius: new BorderRadius.circular(20.0),
+                    ),
+                    child: TextButton(
+                      style: TextButton.styleFrom(
+                        backgroundColor: fromCssColor('#ffffff'),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20),
                         ),
+                      ),
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => mini2()),
+                        );
+                      },
+                      child: Text(
+                        "Topic 2",
                         textAlign: TextAlign.center,
-                      )),
+                        style: TextStyle(
+                          fontSize: 24.0,
+                          color: fromCssColor('#000000'),
+                        ),
+                      ),
+                    ),
+                  ),
                   Container(
                       width: 353.0,
                       height: 100.0,
