@@ -4,71 +4,64 @@ import 'package:from_css_color/from_css_color.dart';
 class mini2 extends StatelessWidget {
   Widget gambar = Container(
     child: Image.asset(
-      'images/the cronial fossae.jpg',
+      'images/Borders-of-the-Mastoid-Fossa-MacEwens-Triangle.png',
     ),
   );
   Widget gambar2 = Container(
     child: Image.asset(
-      'images/Bony-Landmarks-of-the-Anteroir-Cranial-Fossa.jpg',
+      'images/Contents-of-Mastoid-Fossa-Air-Cells.png',
     ),
   );
+
   Widget dis = Container(
     padding: const EdgeInsets.all(10.0),
     child: RichText(
       text: TextSpan(
           style: TextStyle(fontSize: 20, color: Colors.black),
           children: <TextSpan>[
-            TextSpan(text: 'Dasar '),
             TextSpan(
-                text: 'rongga tengkorak',
+                text: 'Fossa mastoid',
                 style: TextStyle(fontWeight: FontWeight.bold)),
             TextSpan(
                 text:
-                    ' dibagi menjadi tiga lekukan yang berbeda. Mereka dikenal sebagai fossa kranial anterior, fossa kranial tengah dan fossa kranial posterior . Setiap fossa menampung bagian otak yang berbeda.\n\nFossa kranial anterior adalah yang paling dangkal dan superior dari tiga fossa kranial. Itu terletak superior di atas  '),
+                    ' (juga dikenal sebagai segitiga MacEwen atau segitiga suprameatal) adalah lekukan berbentuk segitiga di permukaan luar tulang temporal.\n\nIni berfungsi sebagai tengara anatomi penting dalam '),
             TextSpan(
-                text: 'rongga hidung',
+                text: 'bedah otologi.',
                 style: TextStyle(fontWeight: FontWeight.bold)),
-            TextSpan(text: ' dan '),
+            TextSpan(text: '\n\nDalam artikel ini, kita akan melihat '),
             TextSpan(
-                text: 'orbital', style: TextStyle(fontWeight: FontWeight.bold)),
-            TextSpan(text: '. Fossa menampung bagian anteroinferior dari '),
-            TextSpan(
-                text: 'lobus frontal',
+                text: 'anatomi segitiga MacEwen',
                 style: TextStyle(fontWeight: FontWeight.bold)),
-            TextSpan(
-                text:
-                    ' otak.\n\nPada artikel ini, kita akan melihat batas, isi dan korelasi klinis dari fossa kranial anterior.\n\n'),
+            TextSpan(text: ' – batas, isi, dan relevansi klinisnya.\n\n'),
             TextSpan(
               text: 'perbatasan',
               style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
             ),
             TextSpan(
-                text:
-                    '\n\nFossa kranial anterior terdiri dari tiga tulang: tulang frontal , tulang ethmoid , dan tulang sphenoid. \n\nIni dibatasi sebagai berikut:\n\n'),
-            TextSpan(
-                text: '  •Anterior dan lateral',
+                text: '\n\nFossa mastoid',
                 style: TextStyle(fontWeight: FontWeight.bold)),
             TextSpan(
                 text:
-                    ' dibatasi oleh permukaan bagian dalam tulang frontal.\n\n'),
+                    ' adalah area berbentuk segitiga dengan batas superior, anterior, dan posterior:\n\n'),
             TextSpan(
-                text: '  •Posterior dan medial',
+                text: '  •Superior – Puncak supramastoid',
                 style: TextStyle(fontWeight: FontWeight.bold)),
             TextSpan(
                 text:
-                    ' dibatasi oleh limbus tulang sphenoid . Limbus adalah tonjolan tulang yang membentuk batas anterior sulkus prekiasmatik (alur yang membentang antara kanalis optikus kanan dan kiri).\n\n'),
+                    ' Perpanjangan batas atas akar posterior dari proses zygomatic.\n\n'),
             TextSpan(
-                text: '  •Posterior dan lateral',
+                text:
+                    '  •Anterior – Tulang belakang supramatal (tulang belakang Henle)',
                 style: TextStyle(fontWeight: FontWeight.bold)),
             TextSpan(
                 text:
-                    ' dibatasi oleh sayap yang lebih rendah dari tulang sphenoid (ini adalah dua proyeksi segitiga tulang yang muncul dari tubuh sphenoid pusat).\n\n'),
+                    ' Penonjolan tulang pada aspek posterosuperior dari pembukaan meatus akustikus eksterna, tepat di bawah radix processus zygomaticus.\n\n'),
             TextSpan(
-                text: '  •Lantai',
+                text: '  •Posterior – Garis vertikal hipotetis',
                 style: TextStyle(fontWeight: FontWeight.bold)),
             TextSpan(
                 text:
-                    ' terdiri dari tulang frontal, tulang ethmoid dan aspek anterior tubuh dan sayap yang lebih rendah dari tulang sphenoid.\n\n'),
+                    '  Bersinggungan dengan titik tengah dinding posterior kanalis auditorius eksternus.\n\n'),
           ]),
       textAlign: TextAlign.justify,
     ),
@@ -81,12 +74,12 @@ class mini2 extends StatelessWidget {
           style: TextStyle(fontSize: 20, color: Colors.black),
           children: <TextSpan>[
             TextSpan(
-              text: '\nIsi',
+              text: '\n\nIsi',
               style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
             ),
             TextSpan(
                 text:
-                    '\n\nAda beberapa penanda tulang yang ada di fossa kranial anterior.\n\nTulang frontal ditandai di garis tengah oleh punggungan tubuh, yang dikenal sebagai puncak frontal . Ini memproyeksikan ke atas, dan bertindak sebagai tempat perlekatan falx cerebri (lembaran duramater yang membagi dua belahan otak).\n\nDi garis tengah tulang ethmoid ,  crista galli (latin untuk jengger ayam) terletak. Ini adalah penonjolan tulang ke atas, yang bertindak sebagai titik perlekatan lain untuk falx serebri.\n\nDi kedua sisi crista galli adalah pelat cribriform  yang menopang bulbus olfaktorius dan memiliki banyak foramen yang mentransmisikan pembuluh darah dan saraf.\n\nAspek anterior tulang sphenoid terletak di dalam fossa kranial anterior. Dari tubuh pusat, sayap yang lebih rendah muncul. Ujung bulat sayap yang lebih rendah dikenal sebagai proses clinoid anterior. Mereka berfungsi sebagai tempat perlekatan tentorium cerebelli (lembaran duramater yang memisahkan otak besar dari otak kecil). Sayap yang lebih rendah dari tulang sphenoid juga memisahkan fossa kranial anterior dan tengah e.\n\n'),
+                    '\n\nFossa mastoid adalah penanda tulang pada permukaan luar tulang temporal .\n\nItu menutupi antrum mastoid - sel udara mastoid terbesar.\n\nFossa mastoid tidak mengandung struktur penting lainnya. Inilah mengapa sangat penting dalam bedah otologi – ini menandai \'area aman\' untuk memulai pendekatan pengeboran tradisional selama mastoidektomi kortikal.\n'),
           ]),
       textAlign: TextAlign.justify,
     ),
@@ -96,7 +89,7 @@ class mini2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("The Anterior Cranial Fossa"),
+        title: Text("Fossa Mastoid (Segitiga MacEwen)"),
         backgroundColor: fromCssColor("#00bcd4"),
       ),
       body: Container(
