@@ -53,7 +53,7 @@ class _topicState extends State<topic> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => Fossa_mastoid()),
+                              builder: (context) => Fossa_Pterigopalatina()),
                         );
                       },
                       child: Text(
