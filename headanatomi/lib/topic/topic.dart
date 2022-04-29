@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:from_css_color/from_css_color.dart';
+import 'package:headanatomi/topic/AreaKepala/AreaKepala.dart';
+import 'package:headanatomi/topic/Otot-Otot%20Kepala/OtotOtotKepala.dart';
+import 'package:headanatomi/topic/TulangKepala/TulangKepala.dart';
 import 'package:headanatomi/topic/home_view.dart';
 import 'package:headanatomi/topic/subject.dart';
 import 'package:headanatomi/topic/subject2.dart';
@@ -10,6 +13,14 @@ class topic extends StatefulWidget {
   @override
   State<topic> createState() => _topicState();
 }
+
+Widget emptySpace = Container(
+  child: Column(
+        children: <Widget>[
+          SizedBox(height: 30),
+        ],
+      ),
+);
 
 class _topicState extends State<topic> {
   @override
@@ -53,11 +64,11 @@ class _topicState extends State<topic> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => Fossa_Pterigopalatina()),
+                              builder: (context) => AreaKepala()),
                         );
                       },
                       child: Text(
-                        "Topic 1",
+                        "Area Kepala",
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 24.0,
@@ -66,6 +77,7 @@ class _topicState extends State<topic> {
                       ),
                     ),
                   ),
+                  emptySpace,
                   Container(
                     width: 353.0,
                     height: 100.0,
@@ -90,11 +102,11 @@ class _topicState extends State<topic> {
                       onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => mini2()),
+                          MaterialPageRoute(builder: (context) => TulangKepala()),
                         );
                       },
                       child: Text(
-                        "Topic 2",
+                        "Tulang Kepala",
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 24.0,
@@ -103,10 +115,12 @@ class _topicState extends State<topic> {
                       ),
                     ),
                   ),
+                  emptySpace,
                   Container(
-                      width: 353.0,
-                      height: 100.0,
-                      color: fromCssColor('#C4C4C4'),
+                    width: 353.0,
+                    height: 100.0,
+                    decoration: new BoxDecoration(
+                      color: Theme.of(context).primaryColor,
                       //Make a background to the container
                       // decoration: BoxDecoration(
                       //   image: DecorationImage(
@@ -114,19 +128,37 @@ class _topicState extends State<topic> {
                       //     fit: BoxFit.fill,
                       //   ),
                       // ),
-                      margin: EdgeInsets.all(25.0),
-                      child: Text(
-                        'Topic 3',
-                        style: TextStyle(
-                          fontSize: 25.0,
-                          color: fromCssColor('#ffffff'),
+                      borderRadius: new BorderRadius.circular(20.0),
+                    ),
+                    child: TextButton(
+                      style: TextButton.styleFrom(
+                        backgroundColor: fromCssColor('#ffffff'),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20),
                         ),
+                      ),
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => OtotOtotKepala()),
+                          );           
+                      },
+                      child: Text(
+                        "Otot-Otot Kepala",
                         textAlign: TextAlign.center,
-                      )),
+                        style: TextStyle(
+                          fontSize: 24.0,
+                          color: fromCssColor('#000000'),
+                        ),
+                      ),
+                    ),
+                    ),
+                    emptySpace,
                   Container(
-                      width: 353.0,
-                      height: 100.0,
-                      color: fromCssColor('#C4C4C4'),
+                    width: 353.0,
+                    height: 100.0,
+                    decoration: new BoxDecoration(
+                      color: Theme.of(context).primaryColor,
                       //Make a background to the container
                       // decoration: BoxDecoration(
                       //   image: DecorationImage(
@@ -134,19 +166,32 @@ class _topicState extends State<topic> {
                       //     fit: BoxFit.fill,
                       //   ),
                       // ),
-                      margin: EdgeInsets.all(25.0),
-                      child: Text(
-                        'Topic 4',
-                        style: TextStyle(
-                          fontSize: 25.0,
-                          color: fromCssColor('#ffffff'),
+                      borderRadius: new BorderRadius.circular(20.0),
+                    ),
+                    child: TextButton(
+                      style: TextButton.styleFrom(
+                        backgroundColor: fromCssColor('#ffffff'),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20),
                         ),
+                      ),
+                      onPressed: () {                      },
+                      child: Text(
+                        "Saraf Kepala",
                         textAlign: TextAlign.center,
-                      )),
+                        style: TextStyle(
+                          fontSize: 24.0,
+                          color: fromCssColor('#000000'),
+                        ),
+                      ),
+                    ),
+                    ),
+                    emptySpace,
                   Container(
-                      width: 353.0,
-                      height: 100.0,
-                      color: fromCssColor('#C4C4C4'),
+                    width: 353.0,
+                    height: 100.0,
+                    decoration: new BoxDecoration(
+                      color: Theme.of(context).primaryColor,
                       //Make a background to the container
                       // decoration: BoxDecoration(
                       //   image: DecorationImage(
@@ -154,19 +199,32 @@ class _topicState extends State<topic> {
                       //     fit: BoxFit.fill,
                       //   ),
                       // ),
-                      margin: EdgeInsets.all(25.0),
-                      child: Text(
-                        'Topic 5',
-                        style: TextStyle(
-                          fontSize: 25.0,
-                          color: fromCssColor('#ffffff'),
+                      borderRadius: new BorderRadius.circular(20.0),
+                    ),
+                    child: TextButton(
+                      style: TextButton.styleFrom(
+                        backgroundColor: fromCssColor('#ffffff'),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20),
                         ),
+                      ),
+                      onPressed: () {                      },
+                      child: Text(
+                        "Organ Kepala",
                         textAlign: TextAlign.center,
-                      )),
+                        style: TextStyle(
+                          fontSize: 24.0,
+                          color: fromCssColor('#000000'),
+                        ),
+                      ),
+                    ),
+                    ),
+                    emptySpace,
                   Container(
-                      width: 353.0,
-                      height: 100.0,
-                      color: fromCssColor('#C4C4C4'),
+                    width: 353.0,
+                    height: 100.0,
+                    decoration: new BoxDecoration(
+                      color: Theme.of(context).primaryColor,
                       //Make a background to the container
                       // decoration: BoxDecoration(
                       //   image: DecorationImage(
@@ -174,15 +232,93 @@ class _topicState extends State<topic> {
                       //     fit: BoxFit.fill,
                       //   ),
                       // ),
-                      margin: EdgeInsets.all(25.0),
-                      child: Text(
-                        'Topic 6',
-                        style: TextStyle(
-                          fontSize: 25.0,
-                          color: fromCssColor('#ffffff'),
+                      borderRadius: new BorderRadius.circular(20.0),
+                    ),
+                    child: TextButton(
+                      style: TextButton.styleFrom(
+                        backgroundColor: fromCssColor('#ffffff'),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20),
                         ),
+                      ),
+                      onPressed: () {                      },
+                      child: Text(
+                        "Sendi Kepala",
                         textAlign: TextAlign.center,
-                      )),
+                        style: TextStyle(
+                          fontSize: 24.0,
+                          color: fromCssColor('#000000'),
+                        ),
+                      ),
+                    ),
+                    ),
+                    emptySpace,
+                    Container(
+                    width: 353.0,
+                    height: 100.0,
+                    decoration: new BoxDecoration(
+                      color: Theme.of(context).primaryColor,
+                      //Make a background to the container
+                      // decoration: BoxDecoration(
+                      //   image: DecorationImage(
+                      //     image: AssetImage("images/Skull.png"),
+                      //     fit: BoxFit.fill,
+                      //   ),
+                      // ),
+                      borderRadius: new BorderRadius.circular(20.0),
+                    ),
+                    child: TextButton(
+                      style: TextButton.styleFrom(
+                        backgroundColor: fromCssColor('#ffffff'),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                      ),
+                      onPressed: () {                      },
+                      child: Text(
+                        "Saraf Kranial",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 24.0,
+                          color: fromCssColor('#000000'),
+                        ),
+                      ),
+                    ),
+                    ),
+                    emptySpace,
+                    Container(
+                    width: 353.0,
+                    height: 100.0,
+                    decoration: new BoxDecoration(
+                      color: Theme.of(context).primaryColor,
+                      //Make a background to the container
+                      // decoration: BoxDecoration(
+                      //   image: DecorationImage(
+                      //     image: AssetImage("images/Skull.png"),
+                      //     fit: BoxFit.fill,
+                      //   ),
+                      // ),
+                      borderRadius: new BorderRadius.circular(20.0),
+                    ),
+                    child: TextButton(
+                      style: TextButton.styleFrom(
+                        backgroundColor: fromCssColor('#ffffff'),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                      ),
+                      onPressed: () {                      },
+                      child: Text(
+                        "Lainnya",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 24.0,
+                          color: fromCssColor('#000000'),
+                        ),
+                      ),
+                    ),
+                    ),
+                    emptySpace,
                 ],
               ),
               Container(
