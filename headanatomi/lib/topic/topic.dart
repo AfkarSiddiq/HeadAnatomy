@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:from_css_color/from_css_color.dart';
 import 'package:headanatomi/topic/AreaKepala/AreaKepala.dart';
+import 'package:headanatomi/topic/Organ%20Kepala/OrganKepala.dart';
 import 'package:headanatomi/topic/Otot-Otot%20Kepala/OtotOtotKepala.dart';
+import 'package:headanatomi/topic/Sendi%20Kepala/SendiKepala.dart';
 import 'package:headanatomi/topic/TulangKepala/TulangKepala.dart';
 import 'package:headanatomi/topic/home_view.dart';
 import 'package:headanatomi/topic/subject.dart';
 import 'package:headanatomi/topic/subject2.dart';
+
+import 'Saraf Kepala/SarafKepala.dart';
 
 class topic extends StatefulWidget {
   const topic({Key? key}) : super(key: key);
@@ -175,7 +179,11 @@ class _topicState extends State<topic> {
                           borderRadius: BorderRadius.circular(20),
                         ),
                       ),
-                      onPressed: () {                      },
+                      onPressed: () { 
+                        Navigator.push(context, 
+                        MaterialPageRoute(builder: (context) => SarafKepala()),
+                        );
+                      },
                       child: Text(
                         "Saraf Kepala",
                         textAlign: TextAlign.center,
@@ -208,7 +216,11 @@ class _topicState extends State<topic> {
                           borderRadius: BorderRadius.circular(20),
                         ),
                       ),
-                      onPressed: () {                      },
+                      onPressed: () {                     
+                        Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => OrganKepala()),
+                        );
+                      },
                       child: Text(
                         "Organ Kepala",
                         textAlign: TextAlign.center,
@@ -241,7 +253,12 @@ class _topicState extends State<topic> {
                           borderRadius: BorderRadius.circular(20),
                         ),
                       ),
-                      onPressed: () {                      },
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => SendiKepala()),
+                        );
+                      },                          
                       child: Text(
                         "Sendi Kepala",
                         textAlign: TextAlign.center,
