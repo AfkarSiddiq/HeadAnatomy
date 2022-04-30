@@ -1357,3 +1357,839 @@ class Tulang_Sphenoid extends StatelessWidget {
     );
   }
 }
+
+class Tulang_Tengkorak extends StatelessWidget {
+  Widget gambar = Container(
+    child: Image.asset(
+      'images/Bones-of-the-Cranium-The-Calvarium-and-Cranial-Base.jpg',
+    ),
+  );
+  Widget gambar2 = Container(
+    child: Image.asset(
+      'images/Bones-of-the-Facial-Skeleton.jpg',
+    ),
+  );
+  Widget gambar3 = Container(
+    child: Image.asset(
+      'images/Major-Fontanelles-and-Sutures-of-the-Skull.jpg',
+    ),
+  );
+
+  Widget dis = Container(
+    padding: const EdgeInsets.all(10.0),
+    child: RichText(
+      text: TextSpan(
+          style: TextStyle(fontSize: 20, color: Colors.black),
+          children: <TextSpan>[
+            TextSpan(
+                text: 'Tengkorak',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    ' adalah struktur tulang yang menopang wajah dan membentuk rongga pelindung untuk otak. Ini terdiri dari banyak tulang, yang dibentuk oleh osifikasi intramembran, dan bergabung dengan jahitan (sendi fibrosa).\n\nTulang tengkorak dapat dianggap sebagai dua kelompok: '),
+            TextSpan(
+                text: 'tulang tengkorak',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    ' (yang terdiri dari atap tengkorak dan dasar tengkorak) dan tulang wajah .\n\nPada artikel ini, kita akan melihat anatomi tulang tengkorak – orientasi, artikulasi, dan relevansi klinisnya.\n\n'),
+            TextSpan(
+                text: 'Tengkorak',
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    '\n\nTengkorak (juga dikenal sebagai neurokranium) dibentuk oleh aspek superior tengkorak. Ini membungkus dan melindungi otak, meninges, dan pembuluh darah otak.\n\nSecara anatomis, tempurung kepala dapat dibagi lagi menjadi  atap  dan alas:\n\n'),
+            TextSpan(
+                text: '  •Atap kranial',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    ' – terdiri dari tulang frontal, oksipital dan dua parietal. Hal ini juga dikenal sebagai calvarium.\n\n'),
+            TextSpan(
+                text: '  •Basis kranial',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    ' – terdiri dari enam tulang: frontal, sphenoid, ethmoid, oksipital, parietal dan temporal. Tulang-tulang ini berartikulasi dengan vertebra serviks 1 (atlas), tulang wajah, dan mandibula (rahang).\n\n'),
+          ]),
+      textAlign: TextAlign.justify,
+    ),
+  );
+
+  Widget dis2 = Container(
+    padding: const EdgeInsets.all(10.0),
+    child: RichText(
+      text: TextSpan(
+          style: TextStyle(fontSize: 20, color: Colors.black),
+          children: <TextSpan>[
+            TextSpan(
+                text: '\nWajah',
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    '\n\nKerangka wajah (juga dikenal sebagai viscerocranium) mendukung jaringan lunak wajah.\n\nIni terdiri dari 14 tulang, yang menyatu untuk menampung orbit mata, rongga hidung dan mulut, dan sinus. Tulang frontal, biasanya tulang calvaria, kadang-kadang dimasukkan sebagai bagian dari kerangka wajah.\n\nTulang wajah adalah:\n\n'),
+            TextSpan(
+                text: '  •Zygomatic (2)',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    ' – membentuk tulang pipi wajah dan berartikulasi dengan tulang frontal, sphenoid, temporal dan maxilla.\n\n'),
+            TextSpan(
+                text: '  •Lacrimal (2)',
+                style: TextStyle(fontStyle: FontStyle.italic)),
+            TextSpan(
+                text:
+                    ' – tulang terkecil dari wajah. Mereka membentuk bagian dari dinding medial orbit.\n\n'),
+            TextSpan(
+                text: '  •Hidung (2)',
+                style: TextStyle(fontStyle: FontStyle.italic)),
+            TextSpan(
+                text:
+                    ' – dua tulang ramping yang terletak di pangkal hidung.\n\n'),
+            TextSpan(
+                text: '  •Conchae hidung inferior (2)',
+                style: TextStyle(fontStyle: FontStyle.italic)),
+            TextSpan(
+                text:
+                    ' – terletak di dalam rongga hidung, tulang-tulang ini meningkatkan luas permukaan rongga hidung, sehingga meningkatkan jumlah udara inspirasi yang dapat bersentuhan dengan dinding rongga.\n\n'),
+            TextSpan(
+                text: '  •Palatine (2)',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    ' – terletak di bagian belakang rongga mulut dan merupakan bagian dari palatum durum.\n\n'),
+            TextSpan(
+                text: '  •Maxilla (2)',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    ' – terdiri dari bagian rahang atas dan langit-langit keras.\n\n'),
+            TextSpan(
+                text: '  •Vomer',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(text: ' – membentuk aspek posterior septum hidung.\n\n'),
+            TextSpan(
+                text: '  •Mandibula (rahang)',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    ' – berartikulasi dengan dasar tengkorak pada sendi temporomandibular (TMJ).\n\n'),
+          ]),
+      textAlign: TextAlign.justify,
+    ),
+  );
+  Widget dis3 = Container(
+    padding: const EdgeInsets.all(10.0),
+    child: RichText(
+      text: TextSpan(
+          style: TextStyle(fontSize: 20, color: Colors.black),
+          children: <TextSpan>[
+            TextSpan(
+                text: '\nJahitan Tengkorak',
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
+            TextSpan(
+                text: '\n\nJahitan',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    ' adalah jenis sendi berserat yang unik pada tengkorak. Mereka tidak bergerak dan menyatu sepenuhnya sekitar usia 20 tahun.\n\nSendi ini penting dalam konteks trauma, karena mewakili titik kelemahan potensial pada tengkorak. Jahitan utama pada tengkorak orang dewasa adalah:\n\n'),
+            TextSpan(
+                text: '  •Jahitan koronal',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    ' – menyatukan tulang frontal dengan dua tulang parietal.\n\n'),
+            TextSpan(
+                text: '  •Jahitan sagital',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    ' – menyatukan kedua tulang parietal satu sama lain.\n\n'),
+            TextSpan(
+                text: '  •Sutura lambdoid',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    ' – menyatukan tulang oksipital ke dua tulang parietal.\n\nPada neonatus, sambungan jahitan yang tidak menyatu secara sempurna menimbulkan celah membran di antara tulang, yang dikenal sebagai fontanel. Dua fontanel utama adalah:\n\n'),
+            TextSpan(
+                text: '  •Fontanel frontal',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    ' – terletak di persimpangan sutura koronal dan sagital.\n\n'),
+            TextSpan(
+                text: '  •Fontanela oksipital',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    ' – terletak di persimpangan sutura sagital dan lambdoid.\n\n'),
+          ]),
+      textAlign: TextAlign.justify,
+    ),
+  );
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Tulang Tengkorak"),
+        backgroundColor: fromCssColor("#00bcd4"),
+      ),
+      body: Container(
+        child: ListView(
+          children: <Widget>[
+            dis,
+            gambar,
+            dis2,
+            gambar2,
+            dis3,
+            gambar3,
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class Tulang_Temporal extends StatelessWidget {
+  Widget gambar = Container(
+    child: Image.asset(
+      'images/Lateral-view-of-the-Skull-Showing-the-Anatomical-Position-of-the-Temporal-Bone.jpg',
+    ),
+  );
+  Widget gambar2 = Container(
+    child: Image.asset(
+      'images/Diagram-of-the-Constiuent-Parts-of-the-Temporal-Bone.jpg',
+    ),
+  );
+  Widget gambar3 = Container(
+    child: Image.asset(
+      'images/Coronal-Section-of-the-Ear-Showing-the-Mastoid-Air-Cells.jpg',
+    ),
+  );
+
+  Widget dis = Container(
+    padding: const EdgeInsets.all(10.0),
+    child: RichText(
+      text: TextSpan(
+          style: TextStyle(fontSize: 20, color: Colors.black),
+          children: <TextSpan>[
+            TextSpan(
+                text: 'Tulang temporal',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    ' berkontribusi pada dinding lateral bawah tengkorak. Ini berisi bagian tengah dan dalam telinga, dan dilintasi oleh sebagian besar saraf kranial. Bagian bawah tulang berartikulasi dengan mandibula , membentuk  sendi temporomandibular rahang.\n\nPada artikel ini, kita akan melihat bagian yang berbeda dari tulang temporal, artikulasinya, dan korelasi klinisnya.\n\n'),
+          ]),
+      textAlign: TextAlign.justify,
+    ),
+  );
+
+  Widget dis2 = Container(
+    padding: const EdgeInsets.all(10.0),
+    child: RichText(
+      text: TextSpan(
+          style: TextStyle(fontSize: 20, color: Colors.black),
+          children: <TextSpan>[
+            TextSpan(
+                text: '\nStruktur Anatomi',
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    '\n\nTulang temporal itu sendiri terdiri dari lima bagian penyusun. Bagian skuamosa, timpani, dan petromastoid membentuk sebagian besar tulang, dengan prosesus zigomatikus dan styloideus menonjol keluar.\n\n'),
+          ]),
+      textAlign: TextAlign.justify,
+    ),
+  );
+  Widget dis3 = Container(
+    padding: const EdgeInsets.all(10.0),
+    child: RichText(
+      text: TextSpan(
+          style: TextStyle(fontSize: 20, color: Colors.black),
+          children: <TextSpan>[
+            TextSpan(
+                text:
+                    'Sekarang kita akan memeriksa bagian-bagian penyusun tulang temporal secara lebih rinci.\n\n'),
+            TextSpan(
+                text: 'skuamosa',
+                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    '\n\nJuga dikenal sebagai squama temporalis, ini adalah bagian terbesar dari tulang temporal. Itu datar dan seperti piring, terletak di superior. Permukaan luar yang menghadap ke tulang skuamosa berbentuk cembung , membentuk bagian dari fossa temporal .\n\nBagian bawah tulang skuamosa adalah tempat asal otot temporalis\n\nTulang berartikulasi dengan tulang sphenoid anterior, dan tulang parietal lateral.\n\n'),
+            TextSpan(
+                text: 'Proses Zigomatika',
+                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    '\n\nProses zygomatic muncul dari bagian bawah squama temporalis. Ini memproyeksikan anterior, berartikulasi dengan proses temporal tulang zygomatic. Kedua struktur ini membentuk lengkungan zygomatic (teraba sebagai \'tulang pipi\').\n\nSalah satu perlekatan prosesus zygomaticus ke tulang temporal membentuk tuberkulum artikular – batas anterior fossa mandibula, bagian dari sendi temporomandibular\n\nOtot masseter menempelkan beberapa serat ke permukaan lateral prosesus zygomaticus.\n\n'),
+            TextSpan(
+                text: 'timpani',
+                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    '\n\nBagian timpani dari tulang temporal terletak di inferior dari skuamosa, dan di anterior dari bagian petromastoid.\n\nIni mengelilingi lubang pendengaran eksternal , yang mengarah ke meatus pendengaran  eksternal telinga luar .\n\n'),
+            TextSpan(
+                text: 'Proses Styloid',
+                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    '\n\nProses styloid terletak tepat di bawah pembukaan meatus auditorius. Ini bertindak sebagai titik lampiran untuk otot dan ligamen, seperti ligamen stylomandibular dari TMJ.\n\n'),
+            TextSpan(
+                text: 'Petromastoid',
+                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    '\n\nBagian tulang temporal ini terletak di posterior . Ini dapat dibagi menjadi bagian mastoid dan petrosa. Pada tampilan lateral tulang temporal, seperti gambar 1.1 di atas, hanya bagian mastoid yang terlihat.\n\nAda dua item catatan pada mastoid. Yang pertama adalah prosesus mastoideus , proyeksi inferior tulang, teraba tepat di belakang telinga. Ini adalah tempat perlekatan bagi banyak otot, seperti sternokleidomastoid .\n\nYang juga penting secara klinis adalah sel udara mastoid . Ini adalah area berlubang di dalam tulang temporal. Mereka bertindak sebagai  reservoir  udara, menyamakan tekanan di dalam telinga tengah  dalam kasus disfungsi tabung pendengaran . Sel-sel udara mastoid juga dapat terinfeksi, yang dikenal sebagai mastoiditis .\n\nBagian petrosa berbentuk piramidal, dan terletak di dasar tulang temporal. Ini berisi telinga bagian dalam.\n\n'),
+          ]),
+      textAlign: TextAlign.justify,
+    ),
+  );
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Tulang Temporal"),
+        backgroundColor: fromCssColor("#00bcd4"),
+      ),
+      body: Container(
+        child: ListView(
+          children: <Widget>[
+            dis,
+            gambar,
+            dis2,
+            gambar2,
+            dis3,
+            gambar3,
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class Kerangka_Hidung extends StatelessWidget {
+  Widget gambar = Container(
+    child: Image.asset(
+      'images/Lateral-View-of-the-External-Nose-Anatomy-of-the-Nasal-Skeleton.jpg',
+    ),
+  );
+  Widget gambar2 = Container(
+    child: Image.asset(
+      'images/Anatomy-of-the-Nasal-Septum-Bones-and-Cartilage.jpg',
+    ),
+  );
+
+  Widget dis = Container(
+    padding: const EdgeInsets.all(10.0),
+    child: RichText(
+      text: TextSpan(
+          style: TextStyle(fontSize: 20, color: Colors.black),
+          children: <TextSpan>[
+            TextSpan(
+                text: 'Kerangka hidung',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    ' adalah kombinasi tulang dan tulang rawan yang membentuk apa yang dapat kita lihat sebagai hidung luar dan septum hidung bagian dalam – yang membagi dua rongga hidung di kepala.\n\nDi sini kita akan membahas anatomi kerangka hidung dan tulang komponennya.\n\n'),
+            TextSpan(
+                text: 'Struktur Anatomi',
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    '\n\nKerangka hidung dibentuk oleh tiga jenis jaringan; tulang, tulang rawan, dan jaringan fibro-lemak. Saat melihat perancah hidung, akan berguna untuk membagi struktur menjadi dua bagian; kerangka hidung eksternal dan septum hidung internal .\n\n'),
+            TextSpan(
+                text: 'Kerangka Hidung Eksternal\n\n',
+                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
+          ]),
+      textAlign: TextAlign.justify,
+    ),
+  );
+
+  Widget dis2 = Container(
+    padding: const EdgeInsets.all(10.0),
+    child: RichText(
+      text: TextSpan(
+          style: TextStyle(fontSize: 20, color: Colors.black),
+          children: <TextSpan>[
+            TextSpan(
+                text:
+                    '\n\nKerangka eksternal memperluas rongga hidung ke bagian depan wajah (lihat Gambar 1). Ini sebagian dibentuk oleh tulang hidung dan rahang atas , yang terletak di superior. Bagian bawah hidung terdiri dari tulang rawan hialin; lateral, alar mayor, alar minor, dan septum tulang rawan . Kartilago alar lateral dan mayor adalah yang terbesar, dan berkontribusi paling besar terhadap bentuk hidung di sini. Kartilago alar minor bervariasi jumlahnya, biasanya ada 3 atau 4 di setiap sisi.\n\n'),
+            TextSpan(
+                text: 'Septum Hidung Dalam',
+                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
+            TextSpan(
+                text: '\n\nSeptum hidung',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    ' bagian dalam memisahkan rongga hidung menjadi dua lubang hidung. Tulang-tulang yang berkontribusi pada septum hidung dapat dibagi menjadi:\n\n'),
+            TextSpan(
+                text: '  •Tulang berpasangan',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    ': Tulang hidung, tulang rahang atas dan tulang palatina.\n\n'),
+            TextSpan(
+                text: '  •Tulang tidak berpasangan',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    ': Tulang ethmoid dan tulang vomer.\n\nSelain tulang hidung, septum dan kartilago alar mayor juga merupakan bagian dari septum hidung.\n\nEtmoid berkontribusi pada bagian tengah septum hidung. Ini adalah salah satu tulang paling kompleks dalam tubuh manusia, dan strukturnya berada di luar cakupan artikel ini, namun informasi lebih lanjut dapat ditemukan di sini . Bagian anterior dan posterior masing-masing dibentuk oleh tulang rawan septum dan tulang vomer .\n\nDasar rongga hidung dibentuk oleh langit -langit keras, memisahkannya dari rongga mulut . Langit -langit keras terdiri dari tulang palatine posterior, dan prosesus palatine rahang atas anterior. Pelat cribriform tulang ethmoid membentuk atap rongga hidung.\n\nOleh TeachMeSeries Ltd (2022)\n\n'),
+          ]),
+      textAlign: TextAlign.justify,
+    ),
+  );
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Kerangka Hidung"),
+        backgroundColor: fromCssColor("#00bcd4"),
+      ),
+      body: Container(
+        child: ListView(
+          children: <Widget>[
+            dis,
+            gambar,
+            dis2,
+            gambar2,
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class Foramen_Kranial extends StatelessWidget {
+  Widget gambar = Container(
+    child: Image.asset(
+      'images/CN-base-of-skull.jpg',
+    ),
+  );
+  Widget gambar2 = Container(
+    child: Image.asset(
+      'images/Bony-Landmarks-of-the-Sphenoid-Wings-and-Pterygoid-Process.jpg',
+    ),
+  );
+  Widget gambar3 = Container(
+    child: Image.asset(
+      'images/Bony-Landmarks-and-Foramina-of-the-Posterior-Cranial-Fossa..jpg',
+    ),
+  );
+
+  Widget dis = Container(
+    padding: const EdgeInsets.all(10.0),
+    child: RichText(
+      text: TextSpan(
+          style: TextStyle(fontSize: 20, color: Colors.black),
+          children: <TextSpan>[
+            TextSpan(
+                text: 'Foramen', style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    ' ( pl. foramina) adalah lubang yang memungkinkan lewatnya struktur dari satu daerah ke daerah lain.\n\nDi dasar tengkorak, ada banyak foramen yang mentransmisikan saraf kranial, pembuluh darah, dan struktur lain - ini secara kolektif disebut sebagai  foramina kranial .\n\nPada artikel ini, kita akan melihat beberapa foramen kranial utama, dan struktur yang melewatinya.\n\n'),
+            TextSpan(
+                text: 'Foramen Saraf Kranial',
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    '\n\nForamen tengkorak paling sering dipertimbangkan dalam konteks saraf kranial . Pada bagian ini, kita akan membahas foramina yang mentransmisikan saraf kranial.\n\n'),
+          ]),
+      textAlign: TextAlign.justify,
+    ),
+  );
+
+  Widget dis2 = Container(
+    padding: const EdgeInsets.all(10.0),
+    child: RichText(
+      text: TextSpan(
+          style: TextStyle(fontSize: 20, color: Colors.black),
+          children: <TextSpan>[
+            TextSpan(
+                text: 'Foramen kribriformis',
+                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    '\n\nForamina cribriform mengacu pada banyak perforasi di  pelat cribriform tulang ethmoid . Mereka menghubungkan fossa kranial anterior  dengan rongga hidung .\n\nForamen ini memungkinkan lewatnya akson nervus olfaktorius dari epitel olfaktorius hidung ke dalam fossa kranial anterior di mana mereka berhubungan dengan bulbus olfaktorius .\n\n'),
+            TextSpan(
+                text: 'Kanal Optik dan Foramen',
+                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    '\n\nKanal optik memungkinkan lewatnya saraf optik (CN II) dan arteri oftalmikus ke dalam orbit tulang.\n\nDibatasi secara medial oleh corpus sphenoid, dan di lateral oleh  sayap minor dari tulang sphenoid .\n\n'),
+            TextSpan(
+                text: 'Fisura Orbital Superior',
+                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    '\n\nFisura orbital superior adalah celah yang terbuka ke anterior ke orbit, dan memungkinkan komunikasi antara sinus kavernosa dan puncak orbit.\n\nDi bagian atas dibatasi oleh sayap yang lebih rendah dan di bagian bawah oleh sayap yang lebih besar dari tulang sphenoid .\n\nIni mentransmisikan beberapa struktur yang tercantum di bawah ini (dari superior ke inferior):\n\n  •Saraf lakrimal (cabang saraf mata, divisi pertama dari saraf trigeminal)\n\n  •Saraf frontal (cabang saraf mata, divisi pertama dari saraf trigeminal)\n\n  •Vena oftalmikus superior\n\n  •Saraf troklearis (CN IV)\n\n  •Divisi superior saraf okulomotor (CN III)\n\n  •Saraf nasociliary (cabang saraf oftalmik, divisi pertama dari saraf trigeminal)\n\n  •Divisi inferior saraf oculomotor (CN III)\n\n  •Saraf Abducens (CN VI)\n\n  •Cabang dari vena oftalmikus inferior\n\n'),
+          ]),
+      textAlign: TextAlign.justify,
+    ),
+  );
+
+  Widget dis3 = Container(
+    padding: const EdgeInsets.all(10.0),
+    child: RichText(
+      text: TextSpan(
+          style: TextStyle(fontSize: 20, color: Colors.black),
+          children: <TextSpan>[
+            TextSpan(
+                text: 'Foramen Rotundum',
+                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    '\n\nForamen rotundum terletak di dasar sayap yang lebih besar dari sphenoid, lebih rendah dari fisura orbital superior.\n\nIni menyediakan hubungan antara fossa kranial tengah dan fossa pterygopalatine . Saraf maksila  (cabang saraf trigeminal, CN V) melewati foramen ini.\n\n'),
+            TextSpan(
+                text: 'Foramen Ovale',
+                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    '\n\nForamen ovale adalah lubang lain yang terletak di dasar sayap yang lebih besar dari sphenoid.\n\nTerletak posterolateral dari foramen rotundum di dalam fossa cranii media. Ini melakukan saraf mandibula  (cabang saraf trigeminal, CN V) dan arteri meningeal aksesori.\n\n'),
+            TextSpan(
+                text: 'Meatus Akustik Internal',
+                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    '\n\nMeatus akustik internal adalah bagian tulang yang terletak di dalam bagian petrosa tulang temporal.\n\nKanal menghubungkan fossa kranial posterior dan telinga bagian dalam, mengangkut struktur neurovaskular ke aparatus pendengaran dan vestibular. Nervus fasialis dan vestibulokoklearis melewati meatus akustikus interna, di samping ganglion vestibular dan arteri labirin.\n\n'),
+            TextSpan(
+                text: 'Foramen Jugularis',
+                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    '\n\nForamen jugularis dibentuk di anterior oleh pars petrosa os temporalis dan di posterior oleh os occipitalis.\n\nIni dapat dianggap sebagai tiga kompartemen terpisah dengan isinya masing-masing:\n\n'),
+            TextSpan(
+                text: '  •Anterior',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    ' – berisi sinus petrosus inferior (sinus vena dural).\n\n'),
+            TextSpan(
+                text: '  •Tengah',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    ' – mentransmisikan saraf glossopharyngeal, saraf vagus dan bagian kranial dari saraf aksesori.\n\n'),
+            TextSpan(
+                text: '  •Posterior',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    ' – berisi sinus sigmoid dan mentransmisikan cabang meningeal dari oksipital dan arteri faring asendens.\n\n'),
+          ]),
+      textAlign: TextAlign.justify,
+    ),
+  );
+
+  Widget dis4 = Container(
+    padding: const EdgeInsets.all(10.0),
+    child: RichText(
+      text: TextSpan(
+          style: TextStyle(fontSize: 20, color: Colors.black),
+          children: <TextSpan>[
+            TextSpan(
+                text: 'Kanal Hipoglosus – CN XII',
+                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    '\n\nKanalis hypoglossal terletak di tulang oksipital , di mana saraf hypoglossal (CN XII) lewat untuk keluar dari fossa kranial posterior.\n\n'),
+            TextSpan(
+                text: 'Foramen lainnya',
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
+            TextSpan(
+                text: '\n\nForamen Magnum',
+                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    '\n\nForamen magnum adalah yang terbesar dari foramen kranial.\n\nItu terletak di tulang oksipital di dalam fossa kranial posterior, dan memungkinkan lewatnya medula dan meninges, arteri vertebralis, arteri spinalis anterior dan posterior, dan vena dural.\n\nDivisi spinal dari saraf aksesori naik melalui foramen magnum untuk bergabung dengan divisi kranial. Setelah digabungkan, saraf yang lengkap keluar melalui foramen jugularis seperti dijelaskan di atas.\n\n'),
+            TextSpan(
+                text: 'Foramen Spinosum',
+                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    '\n\nForamen spinosum terletak di dalam fossa cranii media, di sebelah lateral foramen ovale.\n\nIni memungkinkan lewatnya arteri meningea media, vena meningea media dan cabang meningeal CN V3 .\n\n'),
+          ]),
+      textAlign: TextAlign.justify,
+    ),
+  );
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Foramen Kranial"),
+        backgroundColor: fromCssColor("#00bcd4"),
+      ),
+      body: Container(
+        child: ListView(
+          children: <Widget>[
+            dis,
+            gambar,
+            dis2,
+            gambar2,
+            dis3,
+            gambar3,
+            dis4,
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class Sendi_Temporomandibular extends StatelessWidget {
+  Widget gambar = Container(
+    child: Image.asset(
+      'images/boney-surfaces-of-the-temporomandibular-joint.jpg',
+    ),
+  );
+  Widget gambar2 = Container(
+    child: Image.asset(
+      'images/diagram-of-the-extracapsular-ligaments-of-the-temporomandibular-joint.jpg',
+    ),
+  );
+
+  Widget dis = Container(
+    padding: const EdgeInsets.all(10.0),
+    child: RichText(
+      text: TextSpan(
+          style: TextStyle(fontSize: 20, color: Colors.black),
+          children: <TextSpan>[
+            TextSpan(text: 'Sendi '),
+            TextSpan(
+                text: 'temporomandibular',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    ' (TMJ) dibentuk oleh artikulasi mandibula dan tulang temporal tengkorak. Terletak di anterior tragus telinga, pada aspek lateral wajah.\n\nPada artikel ini, kita akan melihat anatomi sendi temporomandibular – permukaan artikulasi, ligamen, dan korelasi klinisnya.\n\n'),
+            TextSpan(
+                text: 'Mengartikulasikan Permukaan',
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    '\n\nSendi temporomandibular terdiri dari artikulasi antara tiga permukaan; fossa mandibula dan tuberkulum artikular (dari bagian skuamosa tulang temporal ), dan kepala mandibula.\n\nSendi ini memiliki mekanisme yang unik; permukaan artikular tulang tidak pernah bersentuhan satu sama lain – mereka dipisahkan oleh cakram artikular . Kehadiran disk seperti itu membagi sendi menjadi dua rongga sendi sinovial, masing-masing dilapisi oleh membran sinovial. Permukaan artikular tulang ditutupi oleh fibrokartilago , bukan kartilago hialin.\n\n'),
+          ]),
+      textAlign: TextAlign.justify,
+    ),
+  );
+
+  Widget dis2 = Container(
+    padding: const EdgeInsets.all(10.0),
+    child: RichText(
+      text: TextSpan(
+          style: TextStyle(fontSize: 20, color: Colors.black),
+          children: <TextSpan>[
+            TextSpan(
+                text: 'Ligamen',
+                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    '\n\nAda tiga ligamen ekstrakapsular . Mereka bertindak untuk menstabilkan sendi temporomandibular.\n\n'),
+            TextSpan(
+                text: '  •Ligamentum lateral –',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    '\n\n berjalan dari awal tubulus artikular ke leher mandibula. Ini adalah penebalan kapsul sendi, dan bertindak untuk mencegah dislokasi posterior sendi.\n\n'),
+            TextSpan(
+                text: '  •Ligamentum sphenomandibular –',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    '\n\n berasal dari tulang belakang sphenoid, dan melekat pada mandibula.\n\n'),
+            TextSpan(
+                text: '  •Ligamentum stylomandibular –',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    '\n\n penebalan fasia kelenjar parotis. Seiring dengan otot-otot wajah, itu menopang berat rahang.\n\n'),
+          ]),
+      textAlign: TextAlign.justify,
+    ),
+  );
+
+  Widget dis3 = Container(
+    padding: const EdgeInsets.all(10.0),
+    child: RichText(
+      text: TextSpan(
+          style: TextStyle(fontSize: 20, color: Colors.black),
+          children: <TextSpan>[
+            TextSpan(
+                text: 'Gerakan',
+                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    '\n\nGerakan pada sendi ini dihasilkan oleh otot-otot pengunyahan, dan otot-otot hyoid. Kedua divisi dari sendi temporomandibular memiliki fungsi yang berbeda.\n\n'),
+            TextSpan(
+                text: 'Penonjolan dan Retraksi',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    '\n\nBagian atas sendi memungkinkan penonjolan dan retraksi mandibula – gerakan rahang ke anterior dan posterior.\n\nOtot pterigoid lateral bertanggung jawab untuk penonjolan (dibantu oleh pterigoid medial), dan serat posterior temporalis melakukan retraksi. Sebuah gerakan lateral (yaitu untuk mengunyah dan menggiling) dicapai dengan menjulurkan dan menarik mandibula secara bergantian di setiap sisi.\n\n'),
+            TextSpan(
+                text: 'Ketinggian dan Depresi',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    '\n\nBagian bawah sendi memungkinkan elevasi dan depresi mandibula; membuka dan menutup mulut. Depresi sebagian besar disebabkan oleh gravitasi. Namun, jika ada resistensi, otot digastrik, geniohyoid, dan mylohyoid membantu. Elevasi adalah gerakan yang sangat kuat , yang disebabkan oleh kontraksi otot temporalis, masseter, dan pterygoid medial.\n\n'),
+          ]),
+      textAlign: TextAlign.justify,
+    ),
+  );
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Sendi Temporomandibular"),
+        backgroundColor: fromCssColor("#00bcd4"),
+      ),
+      body: Container(
+        child: ListView(
+          children: <Widget>[
+            dis,
+            gambar,
+            dis2,
+            gambar2,
+            dis3,
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class Ringkasan_Saraf_Kranial extends StatelessWidget {
+  Widget gambar = Container(
+    child: Image.asset(
+      'images/Brain-stem.png',
+    ),
+  );
+  Widget gambar2 = Container(
+    child: Image.asset(
+      'images/CN-base-of-skull.jpg',
+    ),
+  );
+
+  Widget dis = Container(
+    padding: const EdgeInsets.all(10.0),
+    child: RichText(
+      text: TextSpan(
+          style: TextStyle(fontSize: 20, color: Colors.black),
+          children: <TextSpan>[
+            TextSpan(
+                text: 'Saraf kranial',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    ' adalah seperangkat  12 saraf berpasangan yang muncul langsung dari otak. Dua saraf pertama ( penciuman  dan  optik ) muncul dari otak besar, sedangkan sepuluh sisanya muncul dari batang otak.\n\nNama-nama saraf kranial berhubungan dengan fungsinya dan mereka juga diidentifikasi secara numerik dalam angka romawi (I-XII).\n\nPada artikel ini, kami akan merangkum anatomi saraf kranial.\n\n'),
+            TextSpan(
+                text: 'Asal Saraf Kranial',
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    '\n\nAda dua belas saraf kranial secara total. Saraf penciuman (CN I) dan saraf optik (CN II) berasal dari otak besar.\n\nSaraf kranial III – XII muncul dari '),
+            TextSpan(
+                text: ' batang otak',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    ' (Gambar 1). Mereka dapat muncul dari bagian tertentu dari batang otak (otak tengah, pons atau medula), atau dari persimpangan antara dua bagian:\n\n'),
+            TextSpan(
+                text: '  •Otak tengah –',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    ' saraf troklear (IV) berasal dari sisi posterior otak tengah. Ini memiliki panjang intrakranial terpanjang dari semua saraf kranial.\n\n'),
+            TextSpan(
+                text: '  •Persimpangan otak tengah-pontin  –',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(text: '\n\n okulomotor (III).\n\n'),
+            TextSpan(
+                text: '  •Pons –',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(text: ' trigeminal (V).\n\n'),
+            TextSpan(
+                text: '  •Medulla oblongata –',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    ' posterior zaitun: glossopharyngeal, vagus, aksesori (IX-XI). Anterior zaitun: hypoglossal (XII).\n\nSaraf kranial diberi nomor berdasarkan lokasinya di batang otak (superior ke inferior, kemudian medial ke lateral) dan urutan keluarnya dari tengkorak (anterior ke posterior) (Gambar 1 & 2).\n\n'),
+          ]),
+      textAlign: TextAlign.justify,
+    ),
+  );
+
+  Widget dis2 = Container(
+    padding: const EdgeInsets.all(10.0),
+    child: RichText(
+      text: TextSpan(
+          style: TextStyle(fontSize: 20, color: Colors.black),
+          children: <TextSpan>[
+            TextSpan(
+                text:
+                    '\n\nTip: Saraf kranial dengan nomor 2 di dalamnya (misalnya 2-optik dan 12-hipoglossal) keluar melalui kanal dengan nama yang sama. Mereka adalah satu-satunya saraf kranial yang melewati kanal.\n\n',
+                style: TextStyle(fontStyle: FontStyle.italic)),
+            TextSpan(
+                text: 'Modalitas',
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    '\n\nSecara sederhana, setiap saraf kranial dapat digambarkan sebagai sensorik, motorik atau keduanya. Mereka dapat secara lebih spesifik mengirimkan tujuh jenis informasi; tiga unik untuk saraf kranial (SSS, SVS dan SVM). Lihat tabel 1 untuk ringkasan saraf kranial, modalitas dan fungsinya.\n\n'),
+            TextSpan(
+                text: 'Modalitas sensorik (aferen):',
+                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
+            TextSpan(
+              text:
+                  '\n\n  •Sensori somatik umum (GSS) – sensasi umum dari kulit.\n\n',
+            ),
+            TextSpan(
+              text:
+                  '  •Sensorik visceral umum (GVS) – sensasi umum dari jeroan.\n\n',
+            ),
+            TextSpan(
+              text:
+                  '  •Sensori somatik khusus (SSS) – indera yang berasal dari ektoderm (misalnya penglihatan, suara, keseimbangan).\n\n',
+            ),
+            TextSpan(
+              text:
+                  '  •Sensoris visceral khusus (SVS) – indera yang berasal dari endoderm (misalnya rasa, bau).\n\n',
+            ),
+            TextSpan(
+                text: 'Modalitas motorik (eferen):',
+                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
+            TextSpan(
+              text: '\n\n  •Motor somatik umum (GSM) – otot rangka.\n\n',
+            ),
+            TextSpan(
+              text:
+                  '  •Motor visceral umum (GVM) – otot polos usus dan motorik otonom.\n\n',
+            ),
+            TextSpan(
+              text:
+                  '  •Motor visceral khusus (SVM) – otot yang berasal dari lengkungan faring.\n\n',
+            ),
+          ]),
+      textAlign: TextAlign.justify,
+    ),
+  );
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Ringkasan Saraf Kranial"),
+        backgroundColor: fromCssColor("#00bcd4"),
+      ),
+      body: Container(
+        child: ListView(
+          children: <Widget>[
+            dis,
+            gambar,
+            gambar2,
+            dis2,
+          ],
+        ),
+      ),
+    );
+  }
+}
