@@ -121,7 +121,7 @@ class Fossa_Kranial_Tengah extends StatelessWidget {
   );
   Widget gambar2 = Container(
     child: Image.asset(
-      'images/BBlood-Supply-to-the-Superficial-Structures-of-the-Face-Scalp.jpg',
+      'images/Blood-Supply-to-the-Superficial-Structures-of-the-Face-Scalp.jpg',
     ),
   );
   Widget gambar3 = Container(
@@ -3036,6 +3036,365 @@ class Saraf_Vestibulocochlear_CN_VIII extends StatelessWidget {
             dis,
             gambar,
             dis2,
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class Saraf_Glossofaringeal_CN_IX extends StatelessWidget {
+  Widget gambar = Container(
+    child: Image.asset(
+      'images/Extracranial-Course-of-the-Glossopharyngeal-Nerve.jpg',
+    ),
+  );
+
+  Widget dis = Container(
+    padding: const EdgeInsets.all(10.0),
+    child: RichText(
+      text: TextSpan(
+          style: TextStyle(fontSize: 20, color: Colors.black),
+          children: <TextSpan>[
+            TextSpan(
+                text: 'Saraf glossopharyngeal, CN IX,',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    ' adalah saraf kranial pasangan kesembilan. Pada artikel ini, kita akan melihat perjalanan anatomi saraf, dan fungsi motorik, sensorik dan parasimpatis dari cabang terminalnya.\n\nSecara embriologis, saraf glossopharyngeal dikaitkan dengan turunan dari arkus faring ketiga.\n\n'),
+            TextSpan(
+                text: 'Sensorik :',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    ' Mempersarafi orofaring, badan karotis dan sinus, 1/3 posterior lidah, rongga telinga tengah dan tuba Eustachius.\n\n'),
+            TextSpan(
+                text: 'Sensorik khusus :',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text: ' Memberikan sensasi rasa pada 1/3 posterior lidah.\n\n'),
+            TextSpan(
+                text: 'Parasimpatis :',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    ' Memberikan persarafan parasimpatis ke kelenjar parotis.\n\n'),
+            TextSpan(
+                text: 'Motorik :',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(text: ' Mempersarafi otot stylopharyngeus faring.\n\n'),
+          ]),
+      textAlign: TextAlign.justify,
+    ),
+  );
+
+  Widget dis2 = Container(
+    padding: const EdgeInsets.all(10.0),
+    child: RichText(
+      text: TextSpan(
+          style: TextStyle(fontSize: 20, color: Colors.black),
+          children: <TextSpan>[
+            TextSpan(
+                text: '\nKursus Anatomi',
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    '\n\nSaraf glossopharyngeal berasal dari  medula  oblongata otak. Ia muncul dari aspek anterior medula, bergerak ke lateral di fossa kranial posterior. Saraf meninggalkan tengkorak melalui foramen jugularis . Pada titik ini, saraf timpani muncul. Ini memiliki komposisi sensorik dan parasimpatis campuran.\n\nSegera di luar foramen jugularis terletak dua ganglia (kumpulan badan sel saraf). Mereka dikenal sebagai ganglia superior dan inferior (atau petrous)  – mereka mengandung badan sel dari serat sensorik di saraf glossopharyngeal.\n\nSekarang ekstrakranial, saraf glossopharyngeal turun ke leher, anterolateral ke arteri karotis interna. Pada margin inferior stylopharyngeus , beberapa cabang muncul untuk memberikan persarafan motorik ke otot. Ini juga menimbulkan saraf sinus karotis , yang memberikan sensasi pada sinus karotis dan tubuh.\n\nSaraf memasuki faring dengan melewati antara konstriktor faring superior dan tengah. Di dalam faring, ia berakhir dengan membagi menjadi beberapa cabang - lingual, tonsil dan faring.\n\n'),
+          ]),
+      textAlign: TextAlign.justify,
+    ),
+  );
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Saraf Glossofaringeal (CN IX)"),
+        backgroundColor: fromCssColor("#00bcd4"),
+      ),
+      body: Container(
+        child: ListView(
+          children: <Widget>[
+            dis,
+            gambar,
+            dis2,
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class Saraf_Vagus_CN_X extends StatelessWidget {
+  Widget gambar = Container(
+    child: Image.asset(
+      'images/Overview-of-the-Major-Branches-and-Anatomical-Course-of-the-Vagus-Nerve.jpg',
+    ),
+  );
+  Widget gambar2 = Container(
+    child: Image.asset(
+      'images/Origin-of-the-Recurrent-Laryngeal-Nerves.jpg',
+    ),
+  );
+
+  Widget dis = Container(
+    padding: const EdgeInsets.all(10.0),
+    child: RichText(
+      text: TextSpan(
+          style: TextStyle(fontSize: 20, color: Colors.black),
+          children: <TextSpan>[
+            TextSpan(
+                text: 'Saraf vagus',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    ' adalah saraf kranial ke-10 (CN X).\n\nIni adalah saraf yang beragam secara fungsional, menawarkan banyak modalitas persarafan yang berbeda. Hal ini terkait dengan turunan dari lengkungan faring keempat dan keenam .\n\nPada artikel ini, kita akan melihat anatomi nervus vagus – perjalanan anatomisnya, fungsi dan korelasi klinisnya.\n\n'),
+          ]),
+      textAlign: TextAlign.justify,
+    ),
+  );
+
+  Widget dis2 = Container(
+    padding: const EdgeInsets.all(10.0),
+    child: RichText(
+      text: TextSpan(
+          style: TextStyle(fontSize: 20, color: Colors.black),
+          children: <TextSpan>[
+            TextSpan(
+                text: 'Kursus Anatomi',
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    '\n\nSaraf vagus memiliki perjalanan terpanjang dari semua saraf kranial, membentang dari kepala ke perut. Namanya berasal dari bahasa Latin \'keanehan\'  – yang berarti mengembara. Kadang-kadang disebut sebagai saraf pengembara.\n\n'),
+            TextSpan(
+                text: 'Di kepala',
+                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    '\n\nSaraf vagus berasal dari medula batang otak. Ia keluar dari kranium melalui foramen jugularis,  dengan nervus glosofaringeal dan aksesorius (masing-masing CN IX dan XI).\n\nDi dalam tengkorak, cabang aurikularis muncul. Ini memasok sensasi ke bagian posterior saluran pendengaran eksternal dan telinga luar.\n\n'),
+            TextSpan(
+                text: 'Di leher',
+                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    '\n\nDi leher, saraf vagus masuk ke dalam selubung karotis, berjalan ke inferior dengan vena jugularis interna dan arteri karotis komunis. Di pangkal leher, saraf kanan dan kiri memiliki jalur yang berbeda:\n\n'),
+            TextSpan(
+                text: '  •Nervus vagus kanan melewati',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    ' anterior ke arteri subklavia dan posterior ke sendi sternoklavikularis, memasuki toraks.\n\n'),
+            TextSpan(
+                text: '  •Nervus vagus kiri',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    ' berjalan secara inferior di antara arteri karotis komunis kiri dan arteri subklavia kiri, di belakang sendi sternoklavikularis, memasuki toraks.\n\nBeberapa cabang muncul di leher:\n\n'),
+            TextSpan(
+                text: '  •Cabang faring –',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    ' Menyediakan persarafan motorik ke sebagian besar otot faring dan langit-langit lunak.\n\n'),
+            TextSpan(
+                text: '  •Saraf laring superior –',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    ' Bercabang menjadi cabang internal dan eksternal. Nervus laringeus eksterna mempersarafi otot krikotiroid laring. Laring interna menyediakan persarafan sensorik ke laringofaring dan bagian superior laring.\n\n'),
+            TextSpan(
+                text: '  •Saraf laring rekuren',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    ' (hanya sisi kanan) – Mengait di bawah arteri subklavia kanan, kemudian naik menuju ke laring. Ini mempersarafi sebagian besar otot intrinsik laring.\n\n'),
+          ]),
+      textAlign: TextAlign.justify,
+    ),
+  );
+  Widget dis3 = Container(
+    padding: const EdgeInsets.all(10.0),
+    child: RichText(
+      text: TextSpan(
+          style: TextStyle(fontSize: 20, color: Colors.black),
+          children: <TextSpan>[
+            TextSpan(
+                text: '\nDi dada',
+                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    '\n\nDi toraks, nervus vagus kanan membentuk truncus vagus posterior , dan nervus vagus kiri membentuk truncus vagus anterior . Cabang-cabang dari batang vagal berkontribusi pada pembentukan pleksus esofagus, yang mempersarafi otot polos kerongkongan.\n\nDua cabang lain muncul di toraks:\n\n'),
+            TextSpan(
+                text: '  •Saraf laringeus rekuren kiri –',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    ' saraf ini  tersangkut di bawah lengkungan aorta, naik untuk mempersarafi sebagian besar otot intrinsik laring.\n\n'),
+            TextSpan(
+                text: '  •Cabang jantung –',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    ' ini mempersarafi mengatur denyut jantung dan memberikan sensasi visceral ke organ.\n\nBatang vagal memasuki perut melalui hiatus esofagus, sebuah lubang di diafragma.\n\n'),
+            TextSpan(
+                text: 'Di perut',
+                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    '\n\nDi perut, batang vagal berakhir dengan membagi menjadi cabang-cabang yang memasok kerongkongan, lambung dan usus kecil dan besar (sampai fleksura limpa).\n\n'),
+          ]),
+      textAlign: TextAlign.justify,
+    ),
+  );
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Saraf Vagus (CN X)"),
+        backgroundColor: fromCssColor("#00bcd4"),
+      ),
+      body: Container(
+        child: ListView(
+          children: <Widget>[
+            dis,
+            dis2,
+            gambar,
+            dis3,
+            gambar2,
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class Saraf_Aksesori_CN_XI extends StatelessWidget {
+  Widget gambar = Container(
+    child: Image.asset(
+      'images/Extracranial-Course-of-the-Accessory-Nerve.jpg',
+    ),
+  );
+
+  Widget dis = Container(
+    padding: const EdgeInsets.all(10.0),
+    child: RichText(
+      text: TextSpan(
+          style: TextStyle(fontSize: 20, color: Colors.black),
+          children: <TextSpan>[
+            TextSpan(
+                text: 'Saraf aksesori',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    ' adalah saraf kranial pasangan kesebelas. Ini memiliki fungsi motorik somatik murni, menginervasi otot sternokleidomastoid dan trapezius.\n\nPada artikel ini, perjalanan anatomi, fungsi motorik, dan relevansi klinis saraf akan diperiksa.\n\n'),
+            TextSpan(
+                text: 'Kursus Anatomi',
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    '\n\nSecara tradisional, saraf aksesori dibagi menjadi bagian tulang belakang dan tengkorak.\n\n'),
+            TextSpan(
+                text: 'Komponen Tulang Belakang',
+                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    '\n\nBagian tulang belakang muncul dari neuron sumsum tulang belakang bagian atas, khususnya akar saraf tulang belakang C1-C5/C6. Serabut-serabut ini bergabung untuk membentuk bagian tulang belakang dari saraf aksesori, yang kemudian berjalan secara superior untuk memasuki rongga tengkorak melalui foramen magnum.\n\nSaraf melintasi fossa kranial posterior untuk mencapai foramen jugularis.  Secara singkat memenuhi bagian kranial dari saraf aksesori, sebelum keluar dari tengkorak (bersama dengan saraf glossopharyngeal dan vagus).\n\nDi luar tengkorak, bagian tulang belakang turun di sepanjang arteri karotis interna  untuk mencapai otot sternokleidomastoid, yang dipersarafinya. Kemudian bergerak melintasi segitiga posterior leher untuk memasok serat motorik ke trapezius.\n\nCatatan: Jalur ekstrakranial saraf aksesori relatif superfisial (berjalan di antara lapisan investasi dan fasia prevertebral ), dan dengan demikian membuatnya rentan terhadap kerusakan.\n\n'),
+          ]),
+      textAlign: TextAlign.justify,
+    ),
+  );
+
+  Widget dis2 = Container(
+    padding: const EdgeInsets.all(10.0),
+    child: RichText(
+      text: TextSpan(
+          style: TextStyle(fontSize: 20, color: Colors.black),
+          children: <TextSpan>[
+            TextSpan(
+                text: '\nKomponen Tulang Belakang',
+                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    '\n\nBagian tulang belakang muncul dari neuron sumsum tulang belakang bagian atas, khususnya akar saraf tulang belakang C1-C5/C6. Serabut-serabut ini bergabung untuk membentuk bagian tulang belakang dari saraf aksesori, yang kemudian berjalan secara superior untuk memasuki rongga tengkorak melalui foramen magnum.\n\nSaraf melintasi fossa kranial posterior untuk mencapai foramen jugularis.  Secara singkat memenuhi bagian kranial dari saraf aksesori, sebelum keluar dari tengkorak (bersama dengan saraf glossopharyngeal dan vagus).\n\nDi luar tengkorak, bagian tulang belakang turun di sepanjang arteri karotis interna  untuk mencapai otot sternokleidomastoid, yang dipersarafinya. Kemudian bergerak melintasi segitiga posterior leher untuk memasok serat motorik ke trapezius.\n\nCatatan: Jalur ekstrakranial saraf aksesori relatif superfisial (berjalan di antara lapisan investasi dan fasia prevertebral ), dan dengan demikian membuatnya rentan terhadap kerusakan.\n\n'),
+          ]),
+      textAlign: TextAlign.justify,
+    ),
+  );
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Saraf Aksesori (CN XI)"),
+        backgroundColor: fromCssColor("#00bcd4"),
+      ),
+      body: Container(
+        child: ListView(
+          children: <Widget>[
+            dis,
+            gambar,
+            dis2,
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class Saraf_Hipoglosus_CN_XII extends StatelessWidget {
+  Widget gambar = Container(
+    child: Image.asset(
+      'images/Extracranial-Anatomical-Course-of-the-Hypoglossal-Nerve.jpg',
+    ),
+  );
+
+  Widget dis = Container(
+    padding: const EdgeInsets.all(10.0),
+    child: RichText(
+      text: TextSpan(
+          style: TextStyle(fontSize: 20, color: Colors.black),
+          children: <TextSpan>[
+            TextSpan(
+                text: 'Saraf hipoglosus',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    ' adalah saraf kranial pasangan kedua belas.\n\nNamanya berasal dari bahasa Yunani kuno, \'hipo\' yang berarti di bawah, dan \'glossal\' yang berarti lidah. Saraf memiliki fungsi motorik somatik murni , mempersarafi semua otot ekstrinsik dan intrinsik lidah (kecuali palatoglossus, dipersarafi oleh saraf vagus).\n\nPada artikel ini, kita akan melihat anatomi saraf hipoglosus – perjalanan anatomisnya, fungsi motorik, dan korelasi klinisnya.\n\n'),
+            TextSpan(
+                text: 'Kursus Anatomi',
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    '\n\nSaraf hipoglosus muncul dari nukleus hipoglosus di '),
+            TextSpan(
+                text: 'medula oblongata',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    ' batang otak. Kemudian melewati lateral fossa kranial posterior, di dalam ruang subarachnoid. Saraf keluar dari kranium melalui kanalis hipoglosus.\n\nSekarang ekstrakranial, saraf menerima cabang '),
+            TextSpan(
+                text: 'pleksus serviks',
+                style: TextStyle(fontWeight: FontWeight.bold)),
+            TextSpan(
+                text:
+                    ' yang menghantarkan serat dari akar saraf tulang belakang C1/C2. Serabut ini tidak bergabung dengan saraf hypoglossal – mereka hanya berjalan di dalam selubungnya.\n\nKemudian melewati inferior ke sudut mandibula , melintasi arteri karotis internal dan eksternal, dan bergerak ke arah anterior untuk memasuki lidah.\n\n'),
+          ]),
+      textAlign: TextAlign.justify,
+    ),
+  );
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Saraf Hipoglosus (CN XII)"),
+        backgroundColor: fromCssColor("#00bcd4"),
+      ),
+      body: Container(
+        child: ListView(
+          children: <Widget>[
+            dis,
+            gambar,
           ],
         ),
       ),

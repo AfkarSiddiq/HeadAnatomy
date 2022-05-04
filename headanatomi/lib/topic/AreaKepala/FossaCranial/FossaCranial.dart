@@ -18,7 +18,7 @@ class _FossaCranialState extends State<FossaCranial> {
     return Container(
         child: Scaffold(
             appBar: AppBar(
-              title: Text("Fossa Cranial"),
+              title: Text("Fossa Kranial"),
               backgroundColor: fromCssColor("#00bcd4"),
             ),
             body: Container(
@@ -51,7 +51,7 @@ class _FossaCranialState extends State<FossaCranial> {
                                 );
                               },
                               child: Text(
-                                "Fossa Cranial Anterior",
+                                "Fossa Kranial Anterior",
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
                                   fontSize: 24.0,
@@ -73,9 +73,16 @@ class _FossaCranialState extends State<FossaCranial> {
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(20),
                                   )),
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) =>
+                                          Fossa_Kranial_Tengah()),
+                                );
+                              },
                               child: Text(
-                                "Fossa Cranial Tengah",
+                                "Fossa Kranial Tengah",
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
                                   fontSize: 24.0,
@@ -97,9 +104,16 @@ class _FossaCranialState extends State<FossaCranial> {
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(20),
                                   )),
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) =>
+                                          Fossa_Kranial_Posterior()),
+                                );
+                              },
                               child: Text(
-                                "Fossa Cranial Posterior",
+                                "Fossa Kranial Posterior",
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
                                   fontSize: 24.0,
