@@ -1,5 +1,3 @@
-import 'package:flutter/material.dart';
-import 'package:from_css_color/from_css_color.dart';
 
 class Otot_otot_Ekspresi_Wajah extends StatelessWidget {
   Widget gambar = Container(
@@ -2504,6 +2502,7 @@ Widget dis4 = Container(
       ),
     );
   }
+<<<<<<< HEAD
 }
 class Telinga_bagian_dalam_StatelessWidget{
   Widget gambar = Container(
@@ -4679,3 +4678,5 @@ class langit_langit_StatelessWidget{
     );
   }
 }
+=======
+>>>>>>> 2008107010088
