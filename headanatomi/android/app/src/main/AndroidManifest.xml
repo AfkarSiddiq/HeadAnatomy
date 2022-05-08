@@ -1,9 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.pembuatanprogram.headanatomi">
    <application
-        android:label="headanatomi"
+        android:label="Head Anatomy"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/iconapp">
         <activity
             android:name=".MainActivity"
             android:exported="true"
