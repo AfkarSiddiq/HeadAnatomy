@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:from_css_color/from_css_color.dart';
 import 'package:headanatomi/topic/Organ Kepala/OrganKepala.dart';
+import 'package:headanatomi/topic/subject2.dart';
 
 import '../../topic.dart';
 
@@ -42,7 +43,11 @@ class _TelingaState extends State<Telinga> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context,
+                      MaterialPageRoute(builder: ((context) => Telinga_luar()))
+                      );
+                    },
                     child: Text(
                       "Telinga Luar",
                       textAlign: TextAlign.center,
@@ -68,7 +73,11 @@ class _TelingaState extends State<Telinga> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context,
+                      MaterialPageRoute(builder: ((context) => Telinga_tengah()))
+                      );
+                    },
                     
                     child: Text(
                       "Telinga Tengah",
@@ -95,7 +104,11 @@ class _TelingaState extends State<Telinga> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context,
+                      MaterialPageRoute(builder: ((context) => Telinga_bagian_dalam()))
+                      );
+                    },
                     child: Text(
                       "Telinga Bagian Dalam",
                       textAlign: TextAlign.center,

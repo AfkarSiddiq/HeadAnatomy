@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:headanatomi/topic/home_view.dart';
+import 'package:headanatomi/topic/subject.dart';
 import 'package:headanatomi/topic/topic.dart';
 import 'package:from_css_color/from_css_color.dart';
 
@@ -41,7 +42,11 @@ class _SarafKranialState extends State<SarafKranial> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context, 
+                      MaterialPageRoute(builder: (context) => Ringkasan_Saraf_Kranial())
+                      );
+                    },
                     child: Text(
                       "Ringkasan Saraf Kranial",
                       textAlign: TextAlign.center,
@@ -67,7 +72,11 @@ class _SarafKranialState extends State<SarafKranial> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context, 
+                      MaterialPageRoute(builder: (context) => Saraf_Penciuman_CN_I_dan_Jalur_Penciuman())
+                      );
+                    },
                     child: Text(
                       "Saraf Penciuman (CN I) dan Jalur Penciuman",
                       textAlign: TextAlign.center,
@@ -93,7 +102,11 @@ class _SarafKranialState extends State<SarafKranial> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context, 
+                      MaterialPageRoute(builder: (context) => Saraf_Optik_CN_II_dan_Jalur_Visual())
+                      );
+                    },
                     child: Text(
                       "Saraf Optik (CN II) dan Jalur Visual",
                       textAlign: TextAlign.center,
@@ -119,7 +132,11 @@ class _SarafKranialState extends State<SarafKranial> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context, 
+                      MaterialPageRoute(builder: (context) => Saraf_Okulomotor_CN_III())
+                      );
+                    },
                     child: Text(
                       "Saraf Okulomotor (CN III)",
                       textAlign: TextAlign.center,
@@ -145,7 +162,11 @@ class _SarafKranialState extends State<SarafKranial> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context, 
+                      MaterialPageRoute(builder: (context) => Saraf_Troklearis_CN_IV())
+                      );
+                    },
                     child: Text(
                       "Saraf Trochlear (CN IV)",
                       textAlign: TextAlign.center,
@@ -171,7 +192,11 @@ class _SarafKranialState extends State<SarafKranial> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context, 
+                      MaterialPageRoute(builder: (context) => Saraf_Trigeminal_CN_V())
+                      );
+                    },
                     child: Text(
                       "Saraf Trigeminal (CN V)",
                       textAlign: TextAlign.center,
@@ -197,7 +222,11 @@ class _SarafKranialState extends State<SarafKranial> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context, 
+                      MaterialPageRoute(builder: (context) => Saraf_Abdusen_CN_VI())
+                      );
+                    },
                     child: Text(
                       "Saraf Abdusen (CN VI)",
                       textAlign: TextAlign.center,
@@ -223,7 +252,11 @@ class _SarafKranialState extends State<SarafKranial> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context, 
+                      MaterialPageRoute(builder: (context) => Saraf_Wajah_CN_VII())
+                      );
+                    },
                     child: Text(
                       "Saraf Wajah (CN VII)",
                       textAlign: TextAlign.center,
@@ -249,7 +282,11 @@ class _SarafKranialState extends State<SarafKranial> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context, 
+                      MaterialPageRoute(builder: (context) => Saraf_Vestibulocochlear_CN_VIII())
+                      );
+                    },
                     child: Text(
                       "Saraf Vestibulocochlear (CN VIII)",
                       textAlign: TextAlign.center,
@@ -275,7 +312,11 @@ class _SarafKranialState extends State<SarafKranial> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context, 
+                      MaterialPageRoute(builder: (context) => Saraf_Glossofaringeal_CN_IX())
+                      );
+                    },
                     child: Text(
                       "Saraf Glossofaringeal (CN IX)",
                       textAlign: TextAlign.center,
@@ -301,7 +342,11 @@ class _SarafKranialState extends State<SarafKranial> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context, 
+                      MaterialPageRoute(builder: (context) =>Saraf_Vagus_CN_X())
+                      );
+                    },
                     child: Text(
                       "Saraf Vagus (CN X)",
                       textAlign: TextAlign.center,
@@ -327,7 +372,11 @@ class _SarafKranialState extends State<SarafKranial> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context, 
+                      MaterialPageRoute(builder: (context) => Saraf_Aksesori_CN_XI())
+                      );
+                    },
                     child: Text(
                       "Saraf Aksesori (CN XI)",
                       textAlign: TextAlign.center,
@@ -353,7 +402,11 @@ class _SarafKranialState extends State<SarafKranial> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context, 
+                      MaterialPageRoute(builder: (context) => Saraf_Hipoglosus_CN_XII())
+                      );
+                    },
                     child: Text(
                       "Saraf Hipoglosus (CN XII)",
                       textAlign: TextAlign.center,

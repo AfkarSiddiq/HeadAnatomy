@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:from_css_color/from_css_color.dart';
 import 'package:headanatomi/topic/Organ Kepala/OrganKepala.dart';
+import 'package:headanatomi/topic/subject2.dart';
 
 import '../../topic.dart';
 
@@ -42,7 +43,11 @@ class _MataState extends State<Mata> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context,
+                      MaterialPageRoute(builder: ((context) => Orbin_Tulang()))
+                      );
+                    },
                     child: Text(
                       "Orbin Tulang",
                       textAlign: TextAlign.center,
@@ -68,7 +73,11 @@ class _MataState extends State<Mata> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context,
+                      MaterialPageRoute(builder: ((context) => Otot_otot_Ekstraokular()))
+                      );
+                    },
                     child: Text(
                       "Otot-otot Ekstraokular",
                       textAlign: TextAlign.center,
@@ -94,7 +103,11 @@ class _MataState extends State<Mata> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context,
+                      MaterialPageRoute(builder: ((context) => Bola_Mata()))
+                      );
+                    },
                     child: Text(
                       "Bola Mata",
                       textAlign: TextAlign.center,
@@ -120,7 +133,11 @@ class _MataState extends State<Mata> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context,
+                      MaterialPageRoute(builder: ((context) => Kelenjar_Lakrimal()))
+                      );
+                    },
                     child: Text(
                       "Kelenjar Lakrimal",
                       textAlign: TextAlign.center,

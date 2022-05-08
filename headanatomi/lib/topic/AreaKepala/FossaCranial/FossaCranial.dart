@@ -46,8 +46,7 @@ class _FossaCranialState extends State<FossaCranial> {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) =>
-                                          Fossa_Kranial_Anterior()),
+                                      builder: (context) =>Fossa_Kranial_Anterior()),
                                 );
                               },
                               child: Text(
@@ -77,8 +76,7 @@ class _FossaCranialState extends State<FossaCranial> {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) =>
-                                          Fossa_Kranial_Tengah()),
+                                      builder: (context) =>Fossa_Kranial_Tengah()),
                                 );
                               },
                               child: Text(
