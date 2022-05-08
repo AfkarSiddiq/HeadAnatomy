@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:headanatomi/topic/subject2.dart';
 import 'package:headanatomi/topic/topic.dart';
 import 'package:from_css_color/from_css_color.dart';
 
@@ -40,7 +41,11 @@ class _lainnyaState extends State<lainnya> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context, 
+                      MaterialPageRoute(builder: (context) => Gigi_Anak_dan_Dewasa())
+                      );
+                    },
                     child: Text(
                       "Gigi Anak dan Dewasa",
                       textAlign: TextAlign.center,
@@ -66,7 +71,11 @@ class _lainnyaState extends State<lainnya> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context, 
+                      MaterialPageRoute(builder: (context) => langit_langit())
+                      );
+                    },
                     child: Text(
                       "Langit-langit",
                       textAlign: TextAlign.center,
