@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+import 'package:from_css_color/from_css_color.dart';
 
 class Otot_otot_Ekspresi_Wajah extends StatelessWidget {
   Widget gambar = Container(
@@ -1275,7 +1277,7 @@ Widget dis5= Container(
     );
   }
 }
-class Persarafan_Simpatik_ke_Kepala_dan_Leher_extends_StatelessWidget {
+class Persarafan_Simpatik_ke_Kepala_dan_Leher extends StatelessWidget {
   Widget gambar2 = Container(
     child: Image.asset(
       'images/ganglia servikal superior,tengah dan inferior.jpg',
@@ -1478,7 +1480,7 @@ Widget dis4 = Container(
     );
   }
 }
-class Divisi_Oftalmik_Saraf_Trigeminal_StatelessWidget{
+class Divisi_Oftalmik_Saraf_Trigeminal extends StatelessWidget{
   Widget gambar = Container(
     child: Image.asset(
       'images/asal usul saraf trigeminal.jpg',
@@ -1686,7 +1688,7 @@ Widget dis4 = Container(
     );
   }
 }
-class Divisi_Maksila_dari_Nervus_Trigeminal_StatelessWidget{
+class Divisi_Maksila_dari_Nervus_Trigeminal extends StatelessWidget{
   Widget gambar = Container(
     child: Image.asset(
       'images/asal usul saraf trigeminal.jpg',
@@ -1847,7 +1849,7 @@ Widget dis4 = Container(
     );
   }
 }
-class Divisi_Mandibula_Nervus_Trigeminal_StatelessWidget{
+class Divisi_Mandibula_Nervus_Trigeminal extends StatelessWidget{
   Widget gambar = Container(
     child: Image.asset(
       'images/ikhtisar distribusi saraf trigeminal dan cabanf terminal nya.jpg',
@@ -2061,10 +2063,10 @@ Widget dis4 = Container(
     );
    }
 }
-class Telinga_luar_StatelessWidget{
+class Telinga_luar extends StatelessWidget{
   Widget gambar = Container(
     child: Image.asset(
-      'images/ikhtisar distribusi saraf trigeminal dan cabanf  terminal nya.jpg',
+      'images/ikhtisar distribusi saraf trigeminal dan cabanf terminal nya.jpg',
     ),
   );
    Widget gambar4 = Container(
@@ -2273,7 +2275,7 @@ Widget dis4 = Container(
     );
   }
 }
-class Telinga_tengah_StatelessWidget{
+class Telinga_tengah extends StatelessWidget{
   Widget gambar = Container(
     child: Image.asset(
       'images/gambaran umu telinga.jpg'),
@@ -2479,6 +2481,7 @@ Widget dis4 = Container(
       textAlign: TextAlign.justify,
     ),
   );
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -2502,9 +2505,9 @@ Widget dis4 = Container(
       ),
     );
   }
-<<<<<<< HEAD
 }
-class Telinga_bagian_dalam_StatelessWidget{
+
+class Telinga_bagian_dalam extends StatelessWidget{
   Widget gambar = Container(
     child: Image.asset(
       'images/ikhtisar telinga.jpg'),
@@ -2519,7 +2522,7 @@ class Telinga_bagian_dalam_StatelessWidget{
   );
     Widget gambar5 = Container(
     child: Image.asset(
-      'images/Komponen labirin membran.jpg'),
+      'images/Komponen labirin membran..jpg'),
     );
     Widget dis = Container(
     padding: const EdgeInsets.all(10.0),
@@ -2772,7 +2775,7 @@ Widget dis4 = Container(
     );
   }
 }
-class Orbit_Tulang_StatelessWidget{
+class Orbin_Tulang extends StatelessWidget{
   
    Widget gambar2 = Container(
     child: Image.asset(
@@ -2942,7 +2945,7 @@ Widget dis4 = Container(
   }
 }
 
-class Otot_otot_Ekstraokular_StatelessWidget{
+class Otot_otot_Ekstraokular extends StatelessWidget{
   
    Widget gambar2 = Container(
     child: Image.asset(
@@ -3088,7 +3091,7 @@ Widget dis4 = Container(
   }
 }
 
-class Bola_Mata_StatelessWidget{
+class Bola_Mata extends StatelessWidget{
   
    Widget gambar2 = Container(
     child: Image.asset(
@@ -3270,7 +3273,7 @@ Widget dis4 = Container(
     );
   }
 }
-class Kelopak_mata_StatelessWidget{
+class Kelopak_mata extends StatelessWidget{
   
    Widget gambar= Container(
     child: Image.asset(
@@ -3383,7 +3386,7 @@ class Kelopak_mata_StatelessWidget{
   }
 }
 
-class Kelenjar_Lakrimal_StatelessWidget{
+class Kelenjar_Lakrimal extends StatelessWidget{
   
    Widget gambar2= Container(
     child: Image.asset(
@@ -3477,7 +3480,7 @@ class Kelenjar_Lakrimal_StatelessWidget{
     );
   }
 }
-class hidung_luar_StatelessWidget{
+class hidung_luar extends StatelessWidget{
   
    Widget gambar2= Container(
     child: Image.asset(
@@ -3599,7 +3602,7 @@ class hidung_luar_StatelessWidget{
     );
   }
 }
-class Sinus_Paranasal_StatelessWidget{
+class Sinus_Paranasal extends StatelessWidget{
   
    Widget gambar= Container(
     child: Image.asset(
@@ -3731,7 +3734,7 @@ Widget dis5 = Container(
   }
 }
 
-class Rongga_hidung_StatelessWidget{
+class Rongga_hidung extends StatelessWidget{
   
    Widget gambar2= Container(
     child: Image.asset(
@@ -3873,7 +3876,7 @@ Widget dis5 = Container(
     );
   }
 }
-class Kelenjar_Parotis_StatelessWidget{
+class Kelenjar_Parotis extends StatelessWidget{
   
    Widget gambar2= Container(
     child: Image.asset(
@@ -3987,7 +3990,7 @@ class Kelenjar_Parotis_StatelessWidget{
     );
   }
 }
-class Kelenjar_Sublingual_StatelessWidget{
+class Kelenjar_Sublingual extends StatelessWidget{
   
    Widget gambar2= Container(
     child: Image.asset(
@@ -4119,7 +4122,7 @@ class Kelenjar_Sublingual_StatelessWidget{
     );
   }
 }
-class kelenjar_submandilar_StatelessWidget{
+class kelenjar_submandilar extends StatelessWidget{
   
    Widget gambar2= Container(
     child: Image.asset(
@@ -4264,7 +4267,7 @@ class kelenjar_submandilar_StatelessWidget{
     );
   }
 }
-class rongga_mulut_StatelessWidget{
+class rongga_mulut extends StatelessWidget{
   
    Widget gambar2= Container(
     child: Image.asset(
@@ -4383,7 +4386,7 @@ class rongga_mulut_StatelessWidget{
     );
   }
 }
-class Gigi_Anak_dan_Dewasa_StatelessWidget{
+class Gigi_Anak_dan_Dewasa extends StatelessWidget{
   
    Widget gambar2= Container(
     child: Image.asset(
@@ -4541,7 +4544,7 @@ class Gigi_Anak_dan_Dewasa_StatelessWidget{
     );
   }
 }
-class langit_langit_StatelessWidget{
+class langit_langit extends StatelessWidget{
   
    Widget gambar2= Container(
     child: Image.asset(
@@ -4678,5 +4681,3 @@ class langit_langit_StatelessWidget{
     );
   }
 }
-=======
->>>>>>> 2008107010088

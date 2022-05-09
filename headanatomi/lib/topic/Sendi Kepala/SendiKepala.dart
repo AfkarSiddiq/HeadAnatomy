@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:headanatomi/topic/subject.dart';
 import 'package:headanatomi/topic/topic.dart';
 import 'package:from_css_color/from_css_color.dart';
 
@@ -41,7 +42,11 @@ class _SendiKepalaState extends State<SendiKepala> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context, 
+                      MaterialPageRoute(builder: ((context) => Sendi_Temporomandibular()))
+                      );
+                    },
                     
                     child: Text(
                       "Sendi Temporomandibular",

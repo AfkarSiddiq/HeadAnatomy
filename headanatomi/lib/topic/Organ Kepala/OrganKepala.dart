@@ -169,7 +169,11 @@ class _OrganKepalaState extends State<OrganKepala> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context, 
+                      MaterialPageRoute(builder: ((context) => rongga_mulut()))
+                      );
+                    },
                     child: Text(
                       "Rongga Mulut", 
                       textAlign: TextAlign.center,

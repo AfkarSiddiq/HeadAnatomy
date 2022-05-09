@@ -45,7 +45,11 @@ class _OtotOtotKepalaState extends State<OtotOtotKepala> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context,
+                      MaterialPageRoute(builder: ((context) => Otot_otot_Ekspresi_Wajah()))
+                      );
+                    },
                     child: Text(
                       "Otot-otot Ekspresi Wajah",
                       textAlign: TextAlign.center,
@@ -71,7 +75,11 @@ class _OtotOtotKepalaState extends State<OtotOtotKepala> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context,
+                      MaterialPageRoute(builder: ((context) => Otot_Pengunyahan()))
+                      );
+                    },
                     child: Text(
                       "Otot Pengunyahan",
                       textAlign: TextAlign.center,
@@ -97,7 +105,11 @@ class _OtotOtotKepalaState extends State<OtotOtotKepala> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context,
+                      MaterialPageRoute(builder: ((context) => Lidah()))
+                      );
+                    },
                     child: Text(
                       "Lidah",
                       textAlign: TextAlign.center,

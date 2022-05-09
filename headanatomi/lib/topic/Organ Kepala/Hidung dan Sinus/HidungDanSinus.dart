@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:from_css_color/from_css_color.dart';
 import 'package:headanatomi/topic/Organ Kepala/OrganKepala.dart';
+import 'package:headanatomi/topic/subject2.dart';
 
 import '../../topic.dart';
 
@@ -19,18 +20,6 @@ class _HidungDanSinusState extends State<HidungDanSinus> {
         appBar: AppBar(
           title: Text('Hidung dan Sinus'),
           backgroundColor: fromCssColor('#00bcd4'),
-          //*to make home button*//
-          // actions: [
-          //   IconButton(
-          //     icon: Icon(Icons.home),
-          //     onPressed: () {
-          //       Navigator.push(
-          //         context,
-          //         MaterialPageRoute(builder: (context) => topic()),
-          //       );
-          //     },
-          //   ),
-          // ],
         ),
         body: Container(
           color: fromCssColor('#4A8592'),
@@ -54,7 +43,11 @@ class _HidungDanSinusState extends State<HidungDanSinus> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context, 
+                      MaterialPageRoute(builder: ((context) => hidung_luar()))
+                      );
+                    },
                     child: Text(
                       "Hidung Luar",
                       textAlign: TextAlign.center,
@@ -80,7 +73,11 @@ class _HidungDanSinusState extends State<HidungDanSinus> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context, 
+                      MaterialPageRoute(builder: ((context) => Sinus_Paranasal()))
+                      );
+                    },
                     
                     child: Text(
                       "Sinus Paranasal",
@@ -107,7 +104,11 @@ class _HidungDanSinusState extends State<HidungDanSinus> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context, 
+                      MaterialPageRoute(builder: ((context) => Rongga_hidung()))
+                      );
+                    },
                     child: Text(
                       "Rongga Hidung",
                       textAlign: TextAlign.center,
