@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:from_css_color/from_css_color.dart';
 import 'package:headanatomi/topic/Organ Kepala/OrganKepala.dart';
-
+import 'package:headanatomi/topic/home_view.dart';
 import '../../topic.dart';
 
 class Telinga extends StatefulWidget {
@@ -19,6 +19,65 @@ class _TelingaState extends State<Telinga> {
         appBar: AppBar(
           title: Text('Telinga'),
           backgroundColor: fromCssColor('#00bcd4'),
+        ),
+        drawer: Drawer(
+          child: Column(
+            children: [
+              Container(
+                padding: EdgeInsets.all(20),
+                width: double.infinity,
+                height: 120,
+                color: Colors.lightBlue,
+                alignment: Alignment.bottomLeft,
+                child: Text(
+                  "Head Anatomy",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return MyApp();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.home),
+                title: Text(
+                  "Home",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {},
+                leading: Icon(Icons.phone),
+                title: Text(
+                  "Contact Us",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+               ListTile(
+                onTap: () {},
+                leading: Icon(Icons.settings),
+                title: Text(
+                  "Setting",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
         body: Container(
           color: fromCssColor('#4A8592'),
