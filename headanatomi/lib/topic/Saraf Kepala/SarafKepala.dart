@@ -104,7 +104,11 @@ class _SarafKepalaState extends State<SarafKepala> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context,
+                      MaterialPageRoute(builder: ((context) => Persarafan_Parasimpatis_ke_Kepala_dan_Leher()))
+                      );
+                    },
                     child: Text(
                       "Persarafan Parasimpatis ke Kepala dan Leher",
                       textAlign: TextAlign.center,
@@ -130,7 +134,11 @@ class _SarafKepalaState extends State<SarafKepala> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context,
+                      MaterialPageRoute(builder: ((context) => Persarafan_Simpatik_ke_Kepala_dan_Leher()))
+                      );
+                    },
                     child: Text(
                       "Persarafan Simpatik ke Kepala dan Leher",
                       textAlign: TextAlign.center,
@@ -156,7 +164,11 @@ class _SarafKepalaState extends State<SarafKepala> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context,
+                      MaterialPageRoute(builder: ((context) => Divisi_Oftalmik_Saraf_Trigeminal()))
+                      );
+                    },
                     child: Text(
                       "Divisi Oftalmik Saraf Trigeminal (CNV1)",
                       textAlign: TextAlign.center,
@@ -182,7 +194,11 @@ class _SarafKepalaState extends State<SarafKepala> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context,
+                      MaterialPageRoute(builder: ((context) => Divisi_Maksila_dari_Nervus_Trigeminal()))
+                      );
+                    },
                     child: Text(
                       "Divisi Maksila dari Nervus Trigeminal (CNV2)",
                       textAlign: TextAlign.center,
@@ -208,7 +224,11 @@ class _SarafKepalaState extends State<SarafKepala> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context,
+                      MaterialPageRoute(builder: ((context) => Divisi_Mandibula_Nervus_Trigeminal()))
+                      );
+                    },
                     child: Text(
                       "Divisi Mandibula Nervus Trigeminal (CNV3)", 
                       textAlign: TextAlign.center,

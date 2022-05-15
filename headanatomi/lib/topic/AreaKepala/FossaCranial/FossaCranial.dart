@@ -6,7 +6,7 @@ import 'package:headanatomi/topic/subject2.dart';
 import '../../topic.dart';
 
 class FossaCranial extends StatefulWidget {
-  const FossaCranial({ Key? key }) : super(key: key);
+  const FossaCranial({Key? key}) : super(key: key);
 
   @override
   State<FossaCranial> createState() => _FossaCranialState();
@@ -171,5 +171,6 @@ class _FossaCranialState extends State<FossaCranial> {
           ],
       )
     )));
+
   }
 }

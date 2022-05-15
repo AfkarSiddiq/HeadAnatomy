@@ -7,7 +7,9 @@ import 'package:headanatomi/topic/subject2.dart';
 import 'package:headanatomi/topic/topic.dart';
 
 class AreaKepala extends StatefulWidget {
+
   const AreaKepala({ Key? key }) : super(key: key);
+
   @override
   State<AreaKepala> createState() => _AreaKepalaState();
 }
@@ -15,6 +17,7 @@ class AreaKepala extends StatefulWidget {
 class _AreaKepalaState extends State<AreaKepala> {
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
         appBar: AppBar(
           title: Text("Area Kepala"),
@@ -227,6 +230,6 @@ class _AreaKepalaState extends State<AreaKepala> {
             )
           ],
       )
-    ));
+    
   }
 }
