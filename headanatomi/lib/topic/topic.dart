@@ -356,7 +356,7 @@ class _topicState extends State<topic> {
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20),
                         ),
-                      );
+                      ),
                       onPressed: () { 
                         Navigator.push(context,
                         MaterialPageRoute(builder: (context) => SarafKranial(),)
@@ -453,29 +453,8 @@ class _topicState extends State<topic> {
             ],
           ),
         ),
-        drawer: _buildDrawer(),
       ),
     );
   }
 
-}Widget _buildDrawer() {
-      return SizedBox(
-        //membuat menu drawer
-        child: Drawer(
-          //membuat list, 
-          //list digunakan untuk melakukan scrolling jika datanya terlalu panjang
-          child: ListView(
-            padding: EdgeInsets.zero,
-            //di dalam listview ini terdapat beberapa widget drawable
-            children: [
-               
-              //membuat list menu
-              ListTile( leading: Icon(Icons.home), title: Text("Beranda"), onTap: (){},),
-              Divider(),
-              ListTile( leading: Icon(Icons.info), title: Text("Tentang"), onTap: (){},), 
-            ],
-          ),
-        ),
-      );
-    }
-
+}

@@ -230,6 +230,6 @@ class _AreaKepalaState extends State<AreaKepala> {
             )
           ],
       )
-    
+      ));
   }
 }
