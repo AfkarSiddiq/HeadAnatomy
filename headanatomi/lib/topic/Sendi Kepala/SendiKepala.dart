@@ -19,6 +19,7 @@ class _SendiKepalaState extends State<SendiKepala> {
           title: Text('Sendi Kepala'),
           backgroundColor: fromCssColor('#00bcd4'),
         ),
+        
         body: Container(
           color: fromCssColor('#4A8592'),
           child: ListView(
