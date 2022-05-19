@@ -1857,7 +1857,7 @@ class Divisi_Mandibula_Nervus_Trigeminal extends StatelessWidget{
   );
    Widget gambar4 = Container(
     child: Image.asset(
-      'images/Persarafan kulit ke kepala dan leher..jpg'
+      'images/Persarafan kulit ke kepala dan leher.jpg'
     ),
   );
   Widget dis = Container(
@@ -2775,11 +2775,11 @@ Widget dis4 = Container(
     );
   }
 }
-class Orbin_Tulang extends StatelessWidget{
+class Orbit_Tulang extends StatelessWidget{
   
    Widget gambar2 = Container(
     child: Image.asset(
-      'images/Pandangan anterior dan lateral dari orbit tulang.jpg'),
+      'images/Pandangan anterior dan lateral dari orbit tulang.png'),
   );
    Widget gambar3 = Container(
     child: Image.asset(
@@ -3099,15 +3099,15 @@ class Bola_Mata extends StatelessWidget{
   );
    Widget gambar3 = Container(
     child: Image.asset(
-      'images/ Lapisan vaskular mata.jpg'),
+      'images/Lapisan vaskular mata.jpg'),
   );
   Widget gambar4 = Container(
     child: Image.asset(
-      'images/bagian optik retina .jpg'),
+      'images/bagian optik retina.jpg'),
   );
   Widget gambar5 = Container(
     child: Image.asset(
-      'images/ Bilik mata depan dan belakang .jpg'),
+      'images/Bilik mata depan dan belakang.jpg'),
   );
  
     Widget dis = Container(
@@ -3277,11 +3277,11 @@ class Kelopak_mata extends StatelessWidget{
   
    Widget gambar= Container(
     child: Image.asset(
-      'images/ Kelopak mata atas dan bawah.png'),
+      'images/Kelopak mata atas dan bawah.png'),
   );
    Widget gambar3 = Container(
     child: Image.asset(
-      'images/ Lapisan vaskular mata.jpg'),
+      'images/Lapisan vaskular mata.jpg'),
   );
  
     Widget dis = Container(
@@ -3390,11 +3390,11 @@ class Kelenjar_Lakrimal extends StatelessWidget{
   
    Widget gambar2= Container(
     child: Image.asset(
-      'images/ Posisi anatomi kelenjar lakrimal.png'),
+      'images/Posisi anatomi kelenjar lakrimal.png'),
   );
    Widget gambar3 = Container(
     child: Image.asset(
-      'images/ Aparatus lakrimal mata.jpg'),
+      'images/Aparatus lakrimal mata.jpg'),
   );
  
     Widget dis = Container(
@@ -3484,11 +3484,11 @@ class hidung_luar extends StatelessWidget{
   
    Widget gambar2= Container(
     child: Image.asset(
-      'images/  Tampilan permukaan hidung.jpg'),
+      'images/Tampilan permukaan hidung.jpg'),
   );
    Widget gambar3 = Container(
     child: Image.asset(
-      'images/ Tampilan lateral dari kerangka hidung eksternal.jpg'),
+      'images/Tampilan lateral dari kerangka hidung eksternal.jpg'),
   );
  
     Widget dis = Container(
@@ -3606,11 +3606,11 @@ class Sinus_Paranasal extends StatelessWidget{
   
    Widget gambar= Container(
     child: Image.asset(
-      'images/ Lokasi sinus paranasal.png'),
+      'images/Lokasi sinus paranasal.png'),
   );
    Widget gambar5 = Container(
     child: Image.asset(
-      'images/ Conchae telah dihilangkan, menunjukkan berbagai bukaan di dinding lateral rongga hidung.jpg'),
+      'images/Conchae telah dihilangkan, menunjukkan berbagai bukaan di dinding lateral rongga hidung.jpg'),
   );
  
     Widget dis = Container(
@@ -3738,11 +3738,11 @@ class Rongga_hidung extends StatelessWidget{
   
    Widget gambar2= Container(
     child: Image.asset(
-      'images/ Bagian sagital rongga hidung. Conchae hadir di dinding lateral.jpg'),
+      'images/Bagian sagital rongga hidung. Conchae hadir di dinding lateral.jpg'),
   );
    Widget gambar3 = Container(
     child: Image.asset(
-      'images/  Bagian koronal dari rongga hidung anterior.jpg'),
+      'images/Bagian koronal dari rongga hidung anterior.jpg'),
   );
    Widget gambar4 = Container(
     child: Image.asset(
@@ -3880,11 +3880,11 @@ class Kelenjar_Parotis extends StatelessWidget{
   
    Widget gambar2= Container(
     child: Image.asset(
-      'images/ Posisi kelenjar parotid dan batas regio parotis.jpg'),
+      'images/Posisi kelenjar parotid dan batas regio parotis.jpg'),
   );
    Widget gambar4 = Container(
     child: Image.asset(
-      'images/ Jalur serabut parasimpatis ke kelenjar parotis.jpg'),
+      'images/Jalur serabut parasimpatis ke kelenjar parotis.jpg'),
   );
  
     Widget dis = Container(
@@ -3994,11 +3994,11 @@ class Kelenjar_Sublingual extends StatelessWidget{
   
    Widget gambar2= Container(
     child: Image.asset(
-      'images/ Kelenjar sublingual, dilihat dari sisi kanan.jpg'),
+      'images/Kelenjar sublingual, dilihat dari sisi kanan.jpg'),
   );
    Widget gambar4 = Container(
     child: Image.asset(
-      'images/ Persarafan ke kelenjar sublingual, melalui ganglion submandibular.jpg'),
+      'images/Persarafan ke kelenjar sublingual, melalui ganglion submandibular.jpg'),
   );
  
     Widget dis = Container(
@@ -4126,11 +4126,11 @@ class kelenjar_submandilar extends StatelessWidget{
   
    Widget gambar2= Container(
     child: Image.asset(
-      'images/ Segitiga submandibular pada leher.jpg'),
+      'images/Segitiga submandibular pada leher.jpg'),
   );
    Widget gambar5 = Container(
     child: Image.asset(
-      'images/ Persarafan parasimpatis ke kelenjar submandibular.jpg'),
+      'images/Persarafan parasimpatis ke kelenjar submandibular.jpg'),
   );
  
     Widget dis = Container(
@@ -4271,11 +4271,11 @@ class rongga_mulut extends StatelessWidget{
   
    Widget gambar2= Container(
     child: Image.asset(
-      'images/ Dua divisi rongga mulut adalah ruang depan dan rongga mulut yang tepat.jpg'),
+      'images/Dua divisi rongga mulut adalah ruang depan dan rongga mulut yang tepat.jpg'),
   );
    Widget gambar3 = Container(
     child: Image.asset(
-      'images/ Struktur dasar rongga mulut.jpg'),
+      'images/Struktur dasar rongga mulut.jpg'),
   );
    Widget gambar4 = Container(
     child: Image.asset(
@@ -4390,11 +4390,11 @@ class Gigi_Anak_dan_Dewasa extends StatelessWidget{
   
    Widget gambar2= Container(
     child: Image.asset(
-      'images/ Gigi sulung dan permanen.png'),
+      'images/Gigi sulung dan permanen.png'),
   );
    Widget gambar3 = Container(
     child: Image.asset(
-      'images/ Struktur gigi.png'),
+      'images/Struktur gigi.png'),
   );
    Widget gambar4 = Container(
     child: Image.asset(
@@ -4402,7 +4402,7 @@ class Gigi_Anak_dan_Dewasa extends StatelessWidget{
   );
   Widget gambar5 = Container(
     child: Image.asset(
-      'images/Pandangan labial dan lingual dari molar pertama rahang atas..jpg'),
+      'images/Pandangan labial dan lingual dari molar pertama rahang atas.jpg'),
   );
  
     Widget dis = Container(
@@ -4548,11 +4548,11 @@ class langit_langit extends StatelessWidget{
   
    Widget gambar2= Container(
     child: Image.asset(
-      'images/ Langit-langit memisahkan rongga hidung dari rongga mulut.png'),
+      'images/Langit-langit memisahkan rongga hidung dari rongga mulut.png'),
   );
    Widget gambar3 = Container(
     child: Image.asset(
-      'images/ Langit-langit keras dibentuk oleh kontribusi dari tulang rahang atas dan palatina.png'),
+      'images/Langit-langit keras dibentuk oleh kontribusi dari tulang rahang atas dan palatina.png'),
   );
    Widget gambar4 = Container(
     child: Image.asset(
