@@ -11,6 +11,7 @@ import 'package:headanatomi/topic/home_view.dart';
 import 'package:headanatomi/topic/subject.dart';
 import 'package:headanatomi/topic/subject2.dart';
 import 'Saraf Kepala/SarafKepala.dart';
+import 'package:headanatomi/contactUs/contactUs.dart';
 
 class topic extends StatefulWidget {
   const topic({Key? key}) : super(key: key);
@@ -73,7 +74,13 @@ class _topicState extends State<topic> {
                 ),
               ),
               ListTile(
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return contactus();
+                    }),
+                  );
+                },
                 leading: Icon(Icons.phone),
                 title: Text(
                   "Contact Us",
@@ -164,9 +171,8 @@ class _topicState extends State<topic> {
                       ),
                       onPressed: () {
                         Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => TulangKepala()),
+                          context, MaterialPageRoute(
+                              builder: (context) =>TulangKepala())
                         );
                       },
                       child: Text(

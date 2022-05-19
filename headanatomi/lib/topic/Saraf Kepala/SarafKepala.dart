@@ -7,6 +7,8 @@ import 'package:headanatomi/topic/subject.dart';
 import 'package:headanatomi/topic/subject2.dart';
 import 'package:headanatomi/topic/topic.dart';
 
+import '../../contactUs/contactUs.dart';
+
 class SarafKepala extends StatefulWidget {
   const SarafKepala({ Key? key }) : super(key: key);
 
@@ -60,7 +62,13 @@ class _SarafKepalaState extends State<SarafKepala> {
                 ),
               ),
               ListTile(
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return contactus();
+                    }),
+                  );
+                },
                 leading: Icon(Icons.phone),
                 title: Text(
                   "Contact Us",

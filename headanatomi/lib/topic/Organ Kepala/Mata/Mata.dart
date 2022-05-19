@@ -58,7 +58,13 @@ class _MataState extends State<Mata> {
                 ),
               ),
               ListTile(
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return contactus();
+                    }),
+                  );
+                },
                 leading: Icon(Icons.phone),
                 title: Text(
                   "Contact Us",
@@ -104,11 +110,11 @@ class _MataState extends State<Mata> {
                     ), 
                     onPressed: () {
                       Navigator.push(context,
-                      MaterialPageRoute(builder: ((context) => Orbin_Tulang()))
+                      MaterialPageRoute(builder: ((context) => Orbit_Tulang()))
                       );
                     },
                     child: Text(
-                      "Orbin Tulang",
+                      "Orbit Tulang",
                       textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 24.0,
