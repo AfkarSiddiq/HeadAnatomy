@@ -109,7 +109,11 @@ class _FossaCranialState extends State<FossaCranial> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context,
+                      MaterialPageRoute(
+                        builder: ((context) => Fossa_Kranial_Anterior()))
+                        );},
                     child: Text(
                       "Fossa Cranial Anterior",
                       textAlign: TextAlign.center,
@@ -135,7 +139,11 @@ class _FossaCranialState extends State<FossaCranial> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context,
+                      MaterialPageRoute(
+                        builder: ((context) => Fossa_Kranial_Tengah()))
+                        );},
                     child: Text(
                       "Fossa Cranial Tengah",
                       textAlign: TextAlign.center,
@@ -161,7 +169,11 @@ class _FossaCranialState extends State<FossaCranial> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context,
+                      MaterialPageRoute(
+                        builder: ((context) => Fossa_Kranial_Posterior()))
+                        );},
                     child: Text(
                       "Fossa Cranial Posterior",
                       textAlign: TextAlign.center,
