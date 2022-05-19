@@ -6,6 +6,8 @@ import 'package:headanatomi/topic/subject.dart';
 import 'package:headanatomi/topic/subject2.dart';
 import 'package:headanatomi/topic/topic.dart';
 
+import '../../contactUs/contactUs.dart';
+
 class AreaKepala extends StatefulWidget {
 
   const AreaKepala({ Key? key }) : super(key: key);
@@ -60,7 +62,13 @@ class _AreaKepalaState extends State<AreaKepala> {
                 ),
               ),
               ListTile(
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return contactus();
+                    }),
+                  );
+                },
                 leading: Icon(Icons.phone),
                 title: Text(
                   "Contact Us",
