@@ -76,7 +76,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         body: Container(
           color: fromCssColor('#4A8592'),
-          child: Column(
+          child: ListView(
             children: <Widget>[
               emptySpace,
               emptySpace2,
