@@ -136,7 +136,10 @@ class _AreaKepalaState extends State<AreaKepala> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Fossa_mastoid(),));
+                    },
                     child: Text(
                       "Fossa Mastoid",
                       textAlign: TextAlign.center,
@@ -162,7 +165,12 @@ class _AreaKepalaState extends State<AreaKepala> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context,
+                      MaterialPageRoute(
+                        builder: ((context) => kulit_kepala()))
+                        );
+                    },
                     child: Text(
                       "Kulit Kepala",
                       textAlign: TextAlign.center,
@@ -188,7 +196,12 @@ class _AreaKepalaState extends State<AreaKepala> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context,
+                      MaterialPageRoute(
+                        builder: ((context) => Fossa_Infratemporal()))
+                        );
+                    },
                     child: Text(
                       "Fossa Infratemporal",
                       textAlign: TextAlign.center,
@@ -214,7 +227,11 @@ class _AreaKepalaState extends State<AreaKepala> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context,
+                      MaterialPageRoute(
+                        builder: ((context) => Fossa_Pterigopalatina()))
+                        );},
                     child: Text(
                       "Fossa Pterigopalatina",
                       textAlign: TextAlign.center,
