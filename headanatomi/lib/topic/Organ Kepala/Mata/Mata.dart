@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:from_css_color/from_css_color.dart';
-import 'package:headanatomi/contactUs/contactUs.dart';
 import 'package:headanatomi/topic/Organ Kepala/OrganKepala.dart';
 import 'package:headanatomi/topic/home_view.dart';
 import 'package:headanatomi/topic/subject2.dart';
@@ -18,84 +17,13 @@ class _MataState extends State<Mata> {
   @override
   Widget build(BuildContext context) {
     return Container(
-<<<<<<< Updated upstream
-      child: Scaffold(
-        appBar: AppBar(
-          title: Text('Mata'),
-          backgroundColor: fromCssColor('#00bcd4'),
-        ),
-        endDrawer: Drawer(
-          child: Column(
-            children: [
-              Container(
-                padding: EdgeInsets.all(20),
-                width: double.infinity,
-                height: 120,
-                color: Colors.lightBlue,
-                alignment: Alignment.bottomLeft,
-                child: Text(
-                  "Head Anatomy",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 24,
-                  ),
-                ),
-              ),
-              SizedBox(
-                height: 10,
-              ),
-              ListTile(
-                onTap: () {
-                  Navigator.of(context).pushReplacement(
-                    MaterialPageRoute(builder: (context) {
-                      return topic();
-                    }),
-                  );
-                },
-                leading: Icon(Icons.home),
-                title: Text(
-                  "Home",
-                  style: TextStyle(
-                    fontSize: 24,
-                  ),
-                ),
-              ),
-              ListTile(
-                onTap: () {
-                  Navigator.of(context).pushReplacement(
-                    MaterialPageRoute(builder: (context) {
-                      return contactus();
-                    }),
-                  );
-                },
-                leading: Icon(Icons.phone),
-                title: Text(
-                  "Contact Us",
-                  style: TextStyle(
-                    fontSize: 24,
-                  ),
-                ),
-              ),
-            ],
-          ),
-
-        ),
-        body: Container(
-          color: fromCssColor('#4A8592'),
-          child: ListView(
-            padding: EdgeInsets.all(32),
-            children: <Widget>[
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-=======
         child: Scaffold(
             appBar: AppBar(
               title: Text('Mata'),
               backgroundColor: fromCssColor('#00bcd4'),
             ),
-            drawer: Drawer(
+            endDrawer: Drawer(
               child: Column(
->>>>>>> Stashed changes
                 children: [
                   Container(
                     padding: EdgeInsets.all(20),
@@ -118,7 +46,7 @@ class _MataState extends State<Mata> {
                     onTap: () {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(builder: (context) {
-                          return MyApp();
+                          return topic();
                         }),
                       );
                     },
@@ -141,16 +69,6 @@ class _MataState extends State<Mata> {
                     leading: Icon(Icons.phone),
                     title: Text(
                       "Contact Us",
-                      style: TextStyle(
-                        fontSize: 24,
-                      ),
-                    ),
-                  ),
-                  ListTile(
-                    onTap: () {},
-                    leading: Icon(Icons.settings),
-                    title: Text(
-                      "Setting",
                       style: TextStyle(
                         fontSize: 24,
                       ),

@@ -18,102 +18,12 @@ class _TulangKepalaState extends State<TulangKepala> {
   @override
   Widget build(BuildContext context) {
     return Container(
-<<<<<<< Updated upstream
-      child: Scaffold(
-        appBar: AppBar(
-          title: Text("Tulang Kepala"),
-          backgroundColor: fromCssColor("#00bcd4"),        
-        ),
-      endDrawer: Drawer(
-          child: Column(
-            children: [
-              Container(
-                padding: EdgeInsets.all(20),
-                width: double.infinity,
-                height: 120,
-                color: Colors.lightBlue,
-                alignment: Alignment.bottomLeft,
-                child: Text(
-                  "Head Anatomy",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 24,
-                  ),
-                ),
-              ),
-              SizedBox(
-                height: 10,
-              ),
-              ListTile(
-                onTap: () {
-                  Navigator.of(context).pushReplacement(
-                    MaterialPageRoute(builder: (context) {
-                      return topic();
-                    }),
-                  );
-                },
-                leading: Icon(Icons.home),
-                title: Text(
-                  "Home",
-                  style: TextStyle(
-                    fontSize: 24,
-                  ),
-                ),
-              ),
-              ListTile(
-                onTap: () {
-                  Navigator.of(context).pushReplacement(
-                    MaterialPageRoute(builder: (context) {
-                      return contactus();
-                    }),
-                  );
-                },
-                leading: Icon(Icons.phone),
-                title: Text(
-                  "Contact Us",
-                  style: TextStyle(
-                    fontSize: 24,
-                  ),
-                ),
-              ),
-            ],
-          ),
-
-        ),
-      body: Container(
-        color: fromCssColor('#4A8592'),
-        child: ListView(
-          padding: EdgeInsets.all(32),
-          children: <Widget>[
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Container(
-                  width: 353,
-                  height: 100,
-                  decoration: new BoxDecoration(
-                    color: Theme.of(context).primaryColor,
-                    borderRadius: new BorderRadius.circular(20.0),
-                  ),
-                  child: TextButton(
-                    style: TextButton.styleFrom(
-                      backgroundColor: fromCssColor('#ffffff'),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20),
-                      )
-                    ), 
-                    onPressed: () {
-                                Navigator.push(context,
-                                MaterialPageRoute(builder: ((context) => Tulang_Etmoid()))
-                                );
-                              },
-=======
         child: Scaffold(
             appBar: AppBar(
               title: Text("Tulang Kepala"),
               backgroundColor: fromCssColor("#00bcd4"),
             ),
-            drawer: Drawer(
+            endDrawer: Drawer(
               child: Column(
                 children: [
                   Container(
@@ -122,7 +32,6 @@ class _TulangKepalaState extends State<TulangKepala> {
                     height: 120,
                     color: Colors.lightBlue,
                     alignment: Alignment.bottomLeft,
->>>>>>> Stashed changes
                     child: Text(
                       "Head Anatomy",
                       style: TextStyle(
@@ -138,7 +47,7 @@ class _TulangKepalaState extends State<TulangKepala> {
                     onTap: () {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(builder: (context) {
-                          return MyApp();
+                          return topic();
                         }),
                       );
                     },
@@ -161,16 +70,6 @@ class _TulangKepalaState extends State<TulangKepala> {
                     leading: Icon(Icons.phone),
                     title: Text(
                       "Contact Us",
-                      style: TextStyle(
-                        fontSize: 24,
-                      ),
-                    ),
-                  ),
-                  ListTile(
-                    onTap: () {},
-                    leading: Icon(Icons.settings),
-                    title: Text(
-                      "Setting",
                       style: TextStyle(
                         fontSize: 24,
                       ),
