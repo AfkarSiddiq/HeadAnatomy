@@ -19,17 +19,16 @@ class _FossaCranialState extends State<FossaCranial> {
     return Container(
       child: Scaffold(
         appBar: AppBar(
-          title: Text("Fossa Cranial"),
-          backgroundColor: fromCssColor("#00bcd4"),        
-        ),
-      endDrawer: Drawer(
+            title: Text("Fossa Cranial"),
+            backgroundColor: Color.fromARGB(255, 12, 202, 142)),
+        endDrawer: Drawer(
           child: Column(
             children: [
               Container(
                 padding: EdgeInsets.all(20),
                 width: double.infinity,
                 height: 120,
-                color: Colors.lightBlue,
+                color: Color.fromARGB(255, 12, 202, 142),
                 alignment: Alignment.bottomLeft,
                 child: Text(
                   "Head Anatomy",
@@ -76,111 +75,152 @@ class _FossaCranialState extends State<FossaCranial> {
               ),
             ],
           ),
-
         ),
-      body: Container(
-        color: fromCssColor('#4A8592'),
-        child: ListView(
-          padding: EdgeInsets.all(32),
-          children: <Widget>[
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Container(
-                  width: 353,
-                  height: 100,
-                  decoration: new BoxDecoration(
-                    color: Theme.of(context).primaryColor,
-                    borderRadius: new BorderRadius.circular(20.0),
+        body: Container(
+          color: Color.fromARGB(255, 10, 152, 107),
+          padding: const EdgeInsets.all(10.0),
+          child: GridView(
+            children: [
+              Container(
+                decoration: new BoxDecoration(
+                  color: Theme.of(context).primaryColor,
+                  //Make a background to the container
+                  // decoration: BoxDecoration(
+                  //   image: DecorationImage(
+                  //     image: AssetImage("images/Skull.png"),
+                  //     fit: BoxFit.fill,
+                  //   ),
+                  // ),
+                  borderRadius: new BorderRadius.circular(10.0),
+                ),
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    backgroundColor: fromCssColor('#ffffff'),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
                   ),
-                  child: TextButton(
-                    style: TextButton.styleFrom(
-                      backgroundColor: fromCssColor('#ffffff'),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20),
-                      )
-                    ), 
-                    onPressed: () {
-                      Navigator.push(context,
+                  onPressed: () {
+                    Navigator.push(
+                      context,
                       MaterialPageRoute(
-                        builder: ((context) => Fossa_Kranial_Anterior()))
-                        );},
-                    child: Text(
-                      "Fossa Cranial Anterior",
-                      textAlign: TextAlign.center,
+                          builder: (context) => Fossa_Kranial_Anterior()),
+                    );
+                  },
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        'images/icon_topic/Bony-Landmarks-of-the-Anteroir-Cranial-Fossa.jpg',
+                        width: 120,
+                        height: 100,
+                      ),
+                      Text(
+                        "Fossa Kranial Anterior",
+                        textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 24.0,
                           color: fromCssColor('#000000'),
                         ),
-                    ),
-                  )
-                ),
-                emptySpace,
-                 Container(
-                  width: 353,
-                  height: 100,
-                  decoration: new BoxDecoration(
-                    color: Theme.of(context).primaryColor,
-                    borderRadius: new BorderRadius.circular(20.0),
+                      ),
+                    ],
                   ),
-                  child: TextButton(
-                    style: TextButton.styleFrom(
-                      backgroundColor: fromCssColor('#ffffff'),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20),
-                      )
-                    ), 
-                    onPressed: () {
-                      Navigator.push(context,
-                      MaterialPageRoute(
-                        builder: ((context) => Fossa_Kranial_Tengah()))
-                        );},
-                    child: Text(
-                      "Fossa Cranial Tengah",
-                      textAlign: TextAlign.center,
+                ),
+              ),
+              Container(
+                decoration: new BoxDecoration(
+                  color: Theme.of(context).primaryColor,
+                  //Make a background to the container
+                  // decoration: BoxDecoration(
+                  //   image: DecorationImage(
+                  //     image: AssetImage("images/Skull.png"),
+                  //     fit: BoxFit.fill,
+                  //   ),
+                  // ),
+                  borderRadius: new BorderRadius.circular(10.0),
+                ),
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    backgroundColor: fromCssColor('#ffffff'),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => Fossa_Kranial_Tengah()));
+                  },
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        'images/icon_topic/Bony-Landmarks-of-the-Sphenoid-Body-in-the-Middle-Cranial-Fossa.jpg',
+                        width: 120,
+                        height: 100,
+                      ),
+                      Text(
+                        "Fossa Kranial Tengah",
+                        textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 24.0,
                           color: fromCssColor('#000000'),
                         ),
-                    ),
-                  )
-                ),
-                emptySpace,
-                 Container(
-                  width: 353,
-                  height: 100,
-                  decoration: new BoxDecoration(
-                    color: Theme.of(context).primaryColor,
-                    borderRadius: new BorderRadius.circular(20.0),
+                      ),
+                    ],
                   ),
-                  child: TextButton(
-                    style: TextButton.styleFrom(
-                      backgroundColor: fromCssColor('#ffffff'),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20),
-                      )
-                    ), 
-                    onPressed: () {
-                      Navigator.push(context,
+                ),
+              ),
+              Container(
+                decoration: new BoxDecoration(
+                  color: Theme.of(context).primaryColor,
+                  //Make a background to the container
+                  // decoration: BoxDecoration(
+                  //   image: DecorationImage(
+                  //     image: AssetImage("images/Skull.png"),
+                  //     fit: BoxFit.fill,
+                  //   ),
+                  // ),
+                  borderRadius: new BorderRadius.circular(10.0),
+                ),
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    backgroundColor: fromCssColor('#ffffff'),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
                       MaterialPageRoute(
-                        builder: ((context) => Fossa_Kranial_Posterior()))
-                        );},
-                    child: Text(
-                      "Fossa Cranial Posterior",
-                      textAlign: TextAlign.center,
+                          builder: (context) => Fossa_Kranial_Posterior()),
+                    );
+                  },
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        'images/icon_topic/Bony-Landmarks-and-Foramina-of-the-Posterior-Cranial-Fossa..jpg',
+                        width: 120,
+                        height: 100,
+                      ),
+                      Text(
+                        "Fossa Kranial Posterior",
+                        textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 24.0,
                           color: fromCssColor('#000000'),
                         ),
-                    ),
-                  )
+                      ),
+                    ],
+                  ),
                 ),
-                emptySpace,
-              ],
-            )
-          ],
-      )
-    )));
-
+              ),
+            ],
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2, mainAxisSpacing: 10, crossAxisSpacing: 10),
+          ),
+        ),
+      ),
+    );
   }
 }
