@@ -7,7 +7,7 @@ import '../../../contactUs/contactUs.dart';
 import '../../topic.dart';
 
 class Mata extends StatefulWidget {
-  const Mata({ Key? key }) : super(key: key);
+  const Mata({Key? key}) : super(key: key);
 
   @override
   State<Mata> createState() => _MataState();
@@ -17,201 +17,195 @@ class _MataState extends State<Mata> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Scaffold(
-        appBar: AppBar(
-          title: Text('Mata'),
-          backgroundColor: fromCssColor('#00bcd4'),
-        ),
-        endDrawer: Drawer(
-          child: Column(
-            children: [
-              Container(
-                padding: EdgeInsets.all(20),
-                width: double.infinity,
-                height: 120,
-                color: Colors.lightBlue,
-                alignment: Alignment.bottomLeft,
-                child: Text(
-                  "Head Anatomy",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 24,
-                  ),
-                ),
-              ),
-              SizedBox(
-                height: 10,
-              ),
-              ListTile(
-                onTap: () {
-                  Navigator.of(context).pushReplacement(
-                    MaterialPageRoute(builder: (context) {
-                      return topic();
-                    }),
-                  );
-                },
-                leading: Icon(Icons.home),
-                title: Text(
-                  "Home",
-                  style: TextStyle(
-                    fontSize: 24,
-                  ),
-                ),
-              ),
-              ListTile(
-                onTap: () {
-                  Navigator.of(context).pushReplacement(
-                    MaterialPageRoute(builder: (context) {
-                      return contactus();
-                    }),
-                  );
-                },
-                leading: Icon(Icons.phone),
-                title: Text(
-                  "Contact Us",
-                  style: TextStyle(
-                    fontSize: 24,
-                  ),
-                ),
-              ),
-            ],
-          ),
-
-        ),
-        body: Container(
-          color: fromCssColor('#4A8592'),
-          child: ListView(
-            padding: EdgeInsets.all(32),
-            children: <Widget>[
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
+        child: Scaffold(
+            appBar: AppBar(
+              title: Text('Mata'),
+              backgroundColor: Color.fromARGB(255, 12, 202, 142),
+            ),
+            endDrawer: Drawer(
+              child: Column(
                 children: [
                   Container(
-                    width: 353,
-                  height: 100,
-                  decoration: new BoxDecoration(
-                    color: Theme.of(context).primaryColor,
-                    borderRadius: new BorderRadius.circular(20.0),
-                  ),
-                  child: TextButton(
-                    style: TextButton.styleFrom(
-                      backgroundColor: fromCssColor('#ffffff'),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20),
-                      )
-                    ), 
-                    onPressed: () {
-                      Navigator.push(context,
-                      MaterialPageRoute(builder: ((context) => Orbit_Tulang()))
-                      );
-                    },
+                    padding: EdgeInsets.all(20),
+                    width: double.infinity,
+                    height: 120,
+                    color: Color.fromARGB(255, 12, 202, 142),
+                    alignment: Alignment.bottomLeft,
                     child: Text(
-                      "Orbit Tulang",
-                      textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontSize: 24.0,
-                          color: fromCssColor('#000000'),
-                        ),
+                      "Head Anatomy",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 24,
+                      ),
                     ),
                   ),
+                  SizedBox(
+                    height: 10,
                   ),
-                  emptySpace,
-                  Container(
-                    width: 353,
-                  height: 100,
-                  decoration: new BoxDecoration(
-                    color: Theme.of(context).primaryColor,
-                    borderRadius: new BorderRadius.circular(20.0),
-                  ),
-                  child: TextButton(
-                    style: TextButton.styleFrom(
-                      backgroundColor: fromCssColor('#ffffff'),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20),
-                      )
-                    ), 
-                    onPressed: () {
-                      Navigator.push(context,
-                      MaterialPageRoute(builder: ((context) => Otot_otot_Ekstraokular()))
+                  ListTile(
+                    onTap: () {
+                      Navigator.of(context).pushReplacement(
+                        MaterialPageRoute(builder: (context) {
+                          return topic();
+                        }),
                       );
                     },
-                    child: Text(
-                      "Otot-otot Ekstraokular",
-                      textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontSize: 24.0,
-                          color: fromCssColor('#000000'),
-                        ),
+                    leading: Icon(Icons.home),
+                    title: Text(
+                      "Home",
+                      style: TextStyle(
+                        fontSize: 24,
+                      ),
                     ),
                   ),
-                  ),
-                  emptySpace,
-                  Container(
-                    width: 353,
-                  height: 100,
-                  decoration: new BoxDecoration(
-                    color: Theme.of(context).primaryColor,
-                    borderRadius: new BorderRadius.circular(20.0),
-                  ),
-                  child: TextButton(
-                    style: TextButton.styleFrom(
-                      backgroundColor: fromCssColor('#ffffff'),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20),
-                      )
-                    ), 
-                    onPressed: () {
-                      Navigator.push(context,
-                      MaterialPageRoute(builder: ((context) => Bola_Mata()))
+                  ListTile(
+                    onTap: () {
+                      Navigator.of(context).pushReplacement(
+                        MaterialPageRoute(builder: (context) {
+                          return contactus();
+                        }),
                       );
                     },
-                    child: Text(
-                      "Bola Mata",
-                      textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontSize: 24.0,
-                          color: fromCssColor('#000000'),
-                        ),
+                    leading: Icon(Icons.phone),
+                    title: Text(
+                      "Contact Us",
+                      style: TextStyle(
+                        fontSize: 24,
+                      ),
                     ),
                   ),
-                  ),
-                  emptySpace,
-                  Container(
-                    width: 353,
-                  height: 100,
-                  decoration: new BoxDecoration(
-                    color: Theme.of(context).primaryColor,
-                    borderRadius: new BorderRadius.circular(20.0),
-                  ),
-                  child: TextButton(
-                    style: TextButton.styleFrom(
-                      backgroundColor: fromCssColor('#ffffff'),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20),
-                      )
-                    ), 
-                    onPressed: () {
-                      Navigator.push(context,
-                      MaterialPageRoute(builder: ((context) => Kelenjar_Lakrimal()))
-                      );
-                    },
-                    child: Text(
-                      "Kelenjar Lakrimal",
-                      textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontSize: 24.0,
-                          color: fromCssColor('#000000'),
+                ],
+              ),
+            ),
+            body: Container(
+                color: Color.fromARGB(255, 10, 152, 107),
+                child: ListView(padding: EdgeInsets.all(32), children: <Widget>[
+                  Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                          width: 353,
+                          height: 100,
+                          decoration: new BoxDecoration(
+                            color: Theme.of(context).primaryColor,
+                            borderRadius: new BorderRadius.circular(20.0),
+                          ),
+                          child: TextButton(
+                            style: TextButton.styleFrom(
+                                backgroundColor: fromCssColor('#ffffff'),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20),
+                                )),
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: ((context) => Orbit_Tulang())));
+                            },
+                            child: Text(
+                              "Orbit Tulang",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                fontSize: 24.0,
+                                color: fromCssColor('#000000'),
+                              ),
+                            ),
+                          ),
                         ),
-                    ),
-                  ),
-                  ),
-                  emptySpace,
-                ]
-              )
-            ]
-          )
-        )
-      )
-    );
+                        emptySpace,
+                        Container(
+                          width: 353,
+                          height: 100,
+                          decoration: new BoxDecoration(
+                            color: Theme.of(context).primaryColor,
+                            borderRadius: new BorderRadius.circular(20.0),
+                          ),
+                          child: TextButton(
+                            style: TextButton.styleFrom(
+                                backgroundColor: fromCssColor('#ffffff'),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20),
+                                )),
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: ((context) =>
+                                          Otot_otot_Ekstraokular())));
+                            },
+                            child: Text(
+                              "Otot-otot Ekstraokular",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                fontSize: 24.0,
+                                color: fromCssColor('#000000'),
+                              ),
+                            ),
+                          ),
+                        ),
+                        emptySpace,
+                        Container(
+                          width: 353,
+                          height: 100,
+                          decoration: new BoxDecoration(
+                            color: Theme.of(context).primaryColor,
+                            borderRadius: new BorderRadius.circular(20.0),
+                          ),
+                          child: TextButton(
+                            style: TextButton.styleFrom(
+                                backgroundColor: fromCssColor('#ffffff'),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20),
+                                )),
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: ((context) => Bola_Mata())));
+                            },
+                            child: Text(
+                              "Bola Mata",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                fontSize: 24.0,
+                                color: fromCssColor('#000000'),
+                              ),
+                            ),
+                          ),
+                        ),
+                        emptySpace,
+                        Container(
+                          width: 353,
+                          height: 100,
+                          decoration: new BoxDecoration(
+                            color: Theme.of(context).primaryColor,
+                            borderRadius: new BorderRadius.circular(20.0),
+                          ),
+                          child: TextButton(
+                            style: TextButton.styleFrom(
+                                backgroundColor: fromCssColor('#ffffff'),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20),
+                                )),
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: ((context) =>
+                                          Kelenjar_Lakrimal())));
+                            },
+                            child: Text(
+                              "Kelenjar Lakrimal",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                fontSize: 24.0,
+                                color: fromCssColor('#000000'),
+                              ),
+                            ),
+                          ),
+                        ),
+                        emptySpace,
+                      ])
+                ]))));
   }
 }
