@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:from_css_color/from_css_color.dart';
+import 'package:headanatomi/contactUs/contactUs.dart';
 import 'package:headanatomi/topic/home_view.dart';
 import 'package:headanatomi/topic/subject.dart';
 import 'package:headanatomi/topic/subject2.dart';
@@ -22,7 +23,7 @@ class _TulangKepalaState extends State<TulangKepala> {
           title: Text("Tulang Kepala"),
           backgroundColor: fromCssColor("#00bcd4"),        
         ),
-      drawer: Drawer(
+      endDrawer: Drawer(
           child: Column(
             children: [
               Container(
@@ -46,7 +47,7 @@ class _TulangKepalaState extends State<TulangKepala> {
                 onTap: () {
                   Navigator.of(context).pushReplacement(
                     MaterialPageRoute(builder: (context) {
-                      return MyApp();
+                      return topic();
                     }),
                   );
                 },
@@ -74,18 +75,9 @@ class _TulangKepalaState extends State<TulangKepala> {
                   ),
                 ),
               ),
-               ListTile(
-                onTap: () {},
-                leading: Icon(Icons.settings),
-                title: Text(
-                  "Setting",
-                  style: TextStyle(
-                    fontSize: 24,
-                  ),
-                ),
-              ),
             ],
           ),
+
         ),
       body: Container(
         color: fromCssColor('#4A8592'),

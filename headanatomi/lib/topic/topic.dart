@@ -37,7 +37,7 @@ class _topicState extends State<topic> {
           title: Text("Topic", style: TextStyle(),),
           backgroundColor: fromCssColor("#00bcd4"),
         ),
-        drawer: Drawer(
+        endDrawer: Drawer(
           child: Column(
             children: [
               Container(
@@ -61,7 +61,7 @@ class _topicState extends State<topic> {
                 onTap: () {
                   Navigator.of(context).pushReplacement(
                     MaterialPageRoute(builder: (context) {
-                      return MyApp();
+                      return topic();
                     }),
                   );
                 },
@@ -89,18 +89,9 @@ class _topicState extends State<topic> {
                   ),
                 ),
               ),
-               ListTile(
-                onTap: () {},
-                leading: Icon(Icons.settings),
-                title: Text(
-                  "Setting",
-                  style: TextStyle(
-                    fontSize: 24,
-                  ),
-                ),
-              ),
             ],
           ),
+
         ),
         body: Container(
           color: fromCssColor('#4A8592'),
