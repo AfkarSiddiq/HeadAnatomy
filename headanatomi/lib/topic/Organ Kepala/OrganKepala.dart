@@ -11,6 +11,8 @@ import 'package:headanatomi/topic/subject.dart';
 import 'package:headanatomi/topic/subject2.dart';
 import 'package:headanatomi/topic/topic.dart';
 
+import '../../contactUs/contactUs.dart';
+
 class OrganKepala extends StatefulWidget {
   const OrganKepala({ Key? key }) : super(key: key);
 
@@ -26,6 +28,71 @@ class _OrganKepalaState extends State<OrganKepala> {
         appBar: AppBar(
           title: Text('Organ Kepala'),
           backgroundColor: fromCssColor('#00bcd4'),
+        ),
+        drawer: Drawer(
+          child: Column(
+            children: [
+              Container(
+                padding: EdgeInsets.all(20),
+                width: double.infinity,
+                height: 120,
+                color: Colors.lightBlue,
+                alignment: Alignment.bottomLeft,
+                child: Text(
+                  "Head Anatomy",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return MyApp();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.home),
+                title: Text(
+                  "Home",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return contactus();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.phone),
+                title: Text(
+                  "Contact Us",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+               ListTile(
+                onTap: () {},
+                leading: Icon(Icons.settings),
+                title: Text(
+                  "Setting",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
         body: Container(
           color: fromCssColor('#4A8592'),
@@ -169,7 +236,11 @@ class _OrganKepalaState extends State<OrganKepala> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context, 
+                      MaterialPageRoute(builder: ((context) => rongga_mulut()))
+                      );
+                    },
                     child: Text(
                       "Rongga Mulut", 
                       textAlign: TextAlign.center,

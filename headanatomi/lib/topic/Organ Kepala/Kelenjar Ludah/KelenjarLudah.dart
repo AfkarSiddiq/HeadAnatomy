@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:from_css_color/from_css_color.dart';
 import 'package:headanatomi/topic/Organ Kepala/OrganKepala.dart';
+import 'package:headanatomi/topic/home_view.dart';
+import 'package:headanatomi/topic/subject2.dart';
 
 import '../../topic.dart';
 
@@ -20,6 +22,7 @@ class _KelenjarLudahState extends State<KelenjarLudah> {
           title: Text('Kelenjar Ludah'),
           backgroundColor: fromCssColor('#00bcd4'),
         ),
+        
         body: Container(
           color: fromCssColor('#4A8592'),
           child: ListView(
@@ -42,7 +45,12 @@ class _KelenjarLudahState extends State<KelenjarLudah> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context, 
+                      MaterialPageRoute(builder: ((context) => Kelenjar_Parotis()))
+                      
+                      );
+                    },
                     child: Text(
                       "Kelenjar Parotis",
                       textAlign: TextAlign.center,
@@ -68,7 +76,11 @@ class _KelenjarLudahState extends State<KelenjarLudah> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: (){
+                      Navigator.push(context, 
+                      MaterialPageRoute(builder: ((context) => Kelenjar_Sublingual()))
+                      );
+                    },
                     
                     child: Text(
                       "Kelenjar Sublingual",
@@ -95,7 +107,11 @@ class _KelenjarLudahState extends State<KelenjarLudah> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context, 
+                      MaterialPageRoute(builder: ((context) => kelenjar_submandilar()))
+                      );
+                    },
                     child: Text(
                       "Kelenjar Submandibular",
                       textAlign: TextAlign.center,

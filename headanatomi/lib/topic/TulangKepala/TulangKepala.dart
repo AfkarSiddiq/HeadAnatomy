@@ -22,8 +22,73 @@ class _TulangKepalaState extends State<TulangKepala> {
           title: Text("Tulang Kepala"),
           backgroundColor: fromCssColor("#00bcd4"),        
         ),
+      drawer: Drawer(
+          child: Column(
+            children: [
+              Container(
+                padding: EdgeInsets.all(20),
+                width: double.infinity,
+                height: 120,
+                color: Colors.lightBlue,
+                alignment: Alignment.bottomLeft,
+                child: Text(
+                  "Head Anatomy",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return MyApp();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.home),
+                title: Text(
+                  "Home",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return contactus();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.phone),
+                title: Text(
+                  "Contact Us",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+               ListTile(
+                onTap: () {},
+                leading: Icon(Icons.settings),
+                title: Text(
+                  "Setting",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
       body: Container(
-        color: fromCssColor('#00bcd4'),
+        color: fromCssColor('#4A8592'),
         child: ListView(
           padding: EdgeInsets.all(32),
           children: <Widget>[
@@ -44,7 +109,11 @@ class _TulangKepalaState extends State<TulangKepala> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                                Navigator.push(context,
+                                MaterialPageRoute(builder: ((context) => Tulang_Etmoid()))
+                                );
+                              },
                     child: Text(
                       "Tulang Etmoid",
                       textAlign: TextAlign.center,
@@ -70,7 +139,11 @@ class _TulangKepalaState extends State<TulangKepala> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                                Navigator.push(context,
+                                MaterialPageRoute(builder: ((context) => Mandibula()))
+                                );
+                              },
                     child: Text(
                       "Mandibula",
                       textAlign: TextAlign.center,
@@ -96,7 +169,11 @@ class _TulangKepalaState extends State<TulangKepala> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                                Navigator.push(context,
+                                MaterialPageRoute(builder: ((context) => Tulang_Sphenoid()))
+                                );
+                              },
                     child: Text(
                       "Tulang Sphenoid",
                       textAlign: TextAlign.center,
@@ -122,7 +199,11 @@ class _TulangKepalaState extends State<TulangKepala> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                                Navigator.push(context,
+                                MaterialPageRoute(builder: ((context) => Tulang_Tengkorak()))
+                                );
+                              },
                     child: Text(
                       "Tulang Tengkorak",
                       textAlign: TextAlign.center,
@@ -148,7 +229,11 @@ class _TulangKepalaState extends State<TulangKepala> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context,
+                      MaterialPageRoute(builder: ((context) => Tulang_Temporal()))
+                      );
+                    },
                     child: Text(
                       "Tulang Temporal",
                       textAlign: TextAlign.center,
@@ -174,7 +259,11 @@ class _TulangKepalaState extends State<TulangKepala> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context,
+                      MaterialPageRoute(builder: ((context) => Kerangka_Hidung()))
+                      );
+                    },
                     child: Text(
                       "Kerangka Hidung",
                       textAlign: TextAlign.center,
@@ -200,7 +289,11 @@ class _TulangKepalaState extends State<TulangKepala> {
                         borderRadius: BorderRadius.circular(20),
                       )
                     ), 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context,
+                      MaterialPageRoute(builder: ((context) => Foramen_Kranial()))
+                      );
+                    },
                     child: Text(
                       "Foramen Cranial",
                       textAlign: TextAlign.center,

@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:from_css_color/from_css_color.dart';
 import 'package:headanatomi/topic/AreaKepala/AreaKepala.dart';
+import 'package:headanatomi/topic/Lainnya/lainnya.dart';
 import 'package:headanatomi/topic/Organ%20Kepala/OrganKepala.dart';
 import 'package:headanatomi/topic/Otot-Otot%20Kepala/OtotOtotKepala.dart';
+import 'package:headanatomi/topic/Saraf%20Kranial/SarafKranial.dart';
 import 'package:headanatomi/topic/Sendi%20Kepala/SendiKepala.dart';
 import 'package:headanatomi/topic/TulangKepala/TulangKepala.dart';
 import 'package:headanatomi/topic/home_view.dart';
 import 'package:headanatomi/topic/subject.dart';
 import 'package:headanatomi/topic/subject2.dart';
-
 import 'Saraf Kepala/SarafKepala.dart';
+import 'package:headanatomi/contactUs/contactUs.dart';
 
 class topic extends StatefulWidget {
   const topic({Key? key}) : super(key: key);
@@ -20,10 +22,10 @@ class topic extends StatefulWidget {
 
 Widget emptySpace = Container(
   child: Column(
-        children: <Widget>[
-          SizedBox(height: 30),
-        ],
-      ),
+    children: <Widget>[
+      SizedBox(height: 30),
+    ],
+  ),
 );
 
 class _topicState extends State<topic> {
@@ -32,8 +34,73 @@ class _topicState extends State<topic> {
     return Container(
       child: Scaffold(
         appBar: AppBar(
-          title: Text("Topic"),
+          title: Text("Topic", style: TextStyle(),),
           backgroundColor: fromCssColor("#00bcd4"),
+        ),
+        drawer: Drawer(
+          child: Column(
+            children: [
+              Container(
+                padding: EdgeInsets.all(20),
+                width: double.infinity,
+                height: 120,
+                color: Colors.lightBlue,
+                alignment: Alignment.bottomLeft,
+                child: Text(
+                  "Head Anatomy",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return MyApp();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.home),
+                title: Text(
+                  "Home",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return contactus();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.phone),
+                title: Text(
+                  "Contact Us",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+               ListTile(
+                onTap: () {},
+                leading: Icon(Icons.settings),
+                title: Text(
+                  "Setting",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
         body: Container(
           color: fromCssColor('#4A8592'),
@@ -67,8 +134,7 @@ class _topicState extends State<topic> {
                       onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(
-                              builder: (context) => AreaKepala()),
+                          MaterialPageRoute(builder: (context) => AreaKepala()),
                         );
                       },
                       child: Text(
@@ -105,8 +171,8 @@ class _topicState extends State<topic> {
                       ),
                       onPressed: () {
                         Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => TulangKepala()),
+                          context, MaterialPageRoute(
+                              builder: (context) =>TulangKepala())
                         );
                       },
                       child: Text(
@@ -144,8 +210,9 @@ class _topicState extends State<topic> {
                       onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => OtotOtotKepala()),
-                          );           
+                          MaterialPageRoute(
+                              builder: (context) => OtotOtotKepala()),
+                        );
                       },
                       child: Text(
                         "Otot-Otot Kepala",
@@ -156,82 +223,8 @@ class _topicState extends State<topic> {
                         ),
                       ),
                     ),
-                    ),
-                    emptySpace,
-                  Container(
-                    width: 353.0,
-                    height: 100.0,
-                    decoration: new BoxDecoration(
-                      color: Theme.of(context).primaryColor,
-                      //Make a background to the container
-                      // decoration: BoxDecoration(
-                      //   image: DecorationImage(
-                      //     image: AssetImage("images/Skull.png"),
-                      //     fit: BoxFit.fill,
-                      //   ),
-                      // ),
-                      borderRadius: new BorderRadius.circular(20.0),
-                    ),
-                    child: TextButton(
-                      style: TextButton.styleFrom(
-                        backgroundColor: fromCssColor('#ffffff'),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20),
-                        ),
-                      ),
-                      onPressed: () { 
-                        Navigator.push(context, 
-                        MaterialPageRoute(builder: (context) => SarafKepala()),
-                        );
-                      },
-                      child: Text(
-                        "Saraf Kepala",
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontSize: 24.0,
-                          color: fromCssColor('#000000'),
-                        ),
-                      ),
-                    ),
-                    ),
-                    emptySpace,
-                  Container(
-                    width: 353.0,
-                    height: 100.0,
-                    decoration: new BoxDecoration(
-                      color: Theme.of(context).primaryColor,
-                      //Make a background to the container
-                      // decoration: BoxDecoration(
-                      //   image: DecorationImage(
-                      //     image: AssetImage("images/Skull.png"),
-                      //     fit: BoxFit.fill,
-                      //   ),
-                      // ),
-                      borderRadius: new BorderRadius.circular(20.0),
-                    ),
-                    child: TextButton(
-                      style: TextButton.styleFrom(
-                        backgroundColor: fromCssColor('#ffffff'),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20),
-                        ),
-                      ),
-                      onPressed: () {                     
-                        Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => OrganKepala()),
-                        );
-                      },
-                      child: Text(
-                        "Organ Kepala",
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontSize: 24.0,
-                          color: fromCssColor('#000000'),
-                        ),
-                      ),
-                    ),
-                    ),
-                    emptySpace,
+                  ),
+                  emptySpace,
                   Container(
                     width: 353.0,
                     height: 100.0,
@@ -256,9 +249,88 @@ class _topicState extends State<topic> {
                       onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => SendiKepala()),
+                          MaterialPageRoute(
+                              builder: (context) => SarafKepala()),
                         );
-                      },                          
+                      },
+                      child: Text(
+                        "Saraf Kepala",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 24.0,
+                          color: fromCssColor('#000000'),
+                        ),
+                      ),
+                    ),
+                  ),
+                  emptySpace,
+                  Container(
+                    width: 353.0,
+                    height: 100.0,
+                    decoration: new BoxDecoration(
+                      color: Theme.of(context).primaryColor,
+                      //Make a background to the container
+                      // decoration: BoxDecoration(
+                      //   image: DecorationImage(
+                      //     image: AssetImage("images/Skull.png"),
+                      //     fit: BoxFit.fill,
+                      //   ),
+                      // ),
+                      borderRadius: new BorderRadius.circular(20.0),
+                    ),
+                    child: TextButton(
+                      style: TextButton.styleFrom(
+                        backgroundColor: fromCssColor('#ffffff'),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                      ),
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => OrganKepala()),
+                        );
+                      },
+                      child: Text(
+                        "Organ Kepala",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 24.0,
+                          color: fromCssColor('#000000'),
+                        ),
+                      ),
+                    ),
+                  ),
+                  emptySpace,
+                  Container(
+                    width: 353.0,
+                    height: 100.0,
+                    decoration: new BoxDecoration(
+                      color: Theme.of(context).primaryColor,
+                      //Make a background to the container
+                      // decoration: BoxDecoration(
+                      //   image: DecorationImage(
+                      //     image: AssetImage("images/Skull.png"),
+                      //     fit: BoxFit.fill,
+                      //   ),
+                      // ),
+                      borderRadius: new BorderRadius.circular(20.0),
+                    ),
+                    child: TextButton(
+                      style: TextButton.styleFrom(
+                        backgroundColor: fromCssColor('#ffffff'),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                      ),
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => SendiKepala()),
+                        );
+                      },
                       child: Text(
                         "Sendi Kepala",
                         textAlign: TextAlign.center,
@@ -268,9 +340,9 @@ class _topicState extends State<topic> {
                         ),
                       ),
                     ),
-                    ),
-                    emptySpace,
-                    Container(
+                  ),
+                  emptySpace,
+                  Container(
                     width: 353.0,
                     height: 100.0,
                     decoration: new BoxDecoration(
@@ -291,7 +363,11 @@ class _topicState extends State<topic> {
                           borderRadius: BorderRadius.circular(20),
                         ),
                       ),
-                      onPressed: () {                      },
+                      onPressed: () { 
+                        Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => SarafKranial(),)
+                        );
+                      },
                       child: Text(
                         "Saraf Kranial",
                         textAlign: TextAlign.center,
@@ -301,9 +377,9 @@ class _topicState extends State<topic> {
                         ),
                       ),
                     ),
-                    ),
-                    emptySpace,
-                    Container(
+                  ),
+                  emptySpace,
+                  Container(
                     width: 353.0,
                     height: 100.0,
                     decoration: new BoxDecoration(
@@ -324,7 +400,12 @@ class _topicState extends State<topic> {
                           borderRadius: BorderRadius.circular(20),
                         ),
                       ),
-                      onPressed: () {                      },
+
+                      onPressed: () {                      
+                        Navigator.push(context,
+                         MaterialPageRoute(builder: ((context) => lainnya()))
+                         );
+                      },
                       child: Text(
                         "Lainnya",
                         textAlign: TextAlign.center,
@@ -334,8 +415,8 @@ class _topicState extends State<topic> {
                         ),
                       ),
                     ),
-                    ),
-                    emptySpace,
+                  ),
+                  emptySpace,
                 ],
               ),
               Container(
@@ -381,4 +462,5 @@ class _topicState extends State<topic> {
       ),
     );
   }
+
 }
