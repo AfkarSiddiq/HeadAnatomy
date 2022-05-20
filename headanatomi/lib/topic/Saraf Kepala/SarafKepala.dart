@@ -81,166 +81,244 @@ class _SarafKepalaState extends State<SarafKepala> {
           ),
         ),
         body: Container(
-            color: Color.fromARGB(255, 10, 113, 103),
-            child: ListView(padding: EdgeInsets.all(32), children: <Widget>[
-              Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-                Container(
-                  width: 353,
-                  height: 100,
-                  decoration: new BoxDecoration(
-                    color: Theme.of(context).primaryColor,
-                    borderRadius: new BorderRadius.circular(20.0),
-                  ),
-                  child: TextButton(
-                    style: TextButton.styleFrom(
-                        backgroundColor: fromCssColor('#ffffff'),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20),
-                        )),
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: ((context) =>
-                                  Persarafan_Parasimpatis_ke_Kepala_dan_Leher())));
-                    },
-                    child: Text(
-                      "Persarafan Parasimpatis ke Kepala dan Leher",
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 24.0,
-                        color: fromCssColor('#000000'),
-                      ),
+          color: Color.fromARGB(255, 10, 113, 103),
+          padding: const EdgeInsets.all(10.0),
+          child: GridView(
+            children: [
+              Container(
+                decoration: new BoxDecoration(
+                  color: Theme.of(context).primaryColor,
+                  //Make a background to the container
+                  // decoration: BoxDecoration(
+                  //   image: DecorationImage(
+                  //     image: AssetImage("images/Skull.png"),
+                  //     fit: BoxFit.fill,
+                  //   ),
+                  // ),
+                  borderRadius: new BorderRadius.circular(10.0),
+                ),
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    backgroundColor: fromCssColor('#ffffff'),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
                     ),
                   ),
-                ),
-                emptySpace,
-                Container(
-                  width: 353,
-                  height: 100,
-                  decoration: new BoxDecoration(
-                    color: Theme.of(context).primaryColor,
-                    borderRadius: new BorderRadius.circular(20.0),
-                  ),
-                  child: TextButton(
-                    style: TextButton.styleFrom(
-                        backgroundColor: fromCssColor('#ffffff'),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20),
-                        )),
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: ((context) =>
-                                  Persarafan_Simpatik_ke_Kepala_dan_Leher())));
-                    },
-                    child: Text(
-                      "Persarafan Simpatik ke Kepala dan Leher",
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 24.0,
-                        color: fromCssColor('#000000'),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>
+                              Persarafan_Parasimpatis_ke_Kepala_dan_Leher()),
+                    );
+                  },
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        'images/icon_topic/Overview-of-Parasympathetic-Innervation.jpg',
+                        width: 120,
+                        height: 90,
                       ),
+                      Text(
+                        "Persarafan Parasimpatis ke Kepala dan Leher",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 20.0,
+                          color: fromCssColor('#000000'),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Container(
+                decoration: new BoxDecoration(
+                  color: Theme.of(context).primaryColor,
+                  //Make a background to the container
+                  // decoration: BoxDecoration(
+                  //   image: DecorationImage(
+                  //     image: AssetImage("images/Skull.png"),
+                  //     fit: BoxFit.fill,
+                  //   ),
+                  // ),
+                  borderRadius: new BorderRadius.circular(10.0),
+                ),
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    backgroundColor: fromCssColor('#ffffff'),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
                     ),
                   ),
-                ),
-                emptySpace,
-                Container(
-                  width: 353,
-                  height: 100,
-                  decoration: new BoxDecoration(
-                    color: Theme.of(context).primaryColor,
-                    borderRadius: new BorderRadius.circular(20.0),
-                  ),
-                  child: TextButton(
-                    style: TextButton.styleFrom(
-                        backgroundColor: fromCssColor('#ffffff'),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20),
-                        )),
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: ((context) =>
-                                  Divisi_Oftalmik_Saraf_Trigeminal())));
-                    },
-                    child: Text(
-                      "Divisi Oftalmik Saraf Trigeminal (CNV1)",
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 24.0,
-                        color: fromCssColor('#000000'),
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) =>
+                                Persarafan_Simpatik_ke_Kepala_dan_Leher()));
+                  },
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        'images/icon_topic/The-Superior-Middle-and-Inferior-Cervical-Ganglia.jpg',
+                        width: 120,
+                        height: 90,
                       ),
+                      Text(
+                        "Persarafan Simpatik ke Kepala dan Leher",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 20.0,
+                          color: fromCssColor('#000000'),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Container(
+                decoration: new BoxDecoration(
+                  color: Theme.of(context).primaryColor,
+                  //Make a background to the container
+                  // decoration: BoxDecoration(
+                  //   image: DecorationImage(
+                  //     image: AssetImage("images/Skull.png"),
+                  //     fit: BoxFit.fill,
+                  //   ),
+                  // ),
+                  borderRadius: new BorderRadius.circular(10.0),
+                ),
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    backgroundColor: fromCssColor('#ffffff'),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
                     ),
                   ),
-                ),
-                emptySpace,
-                Container(
-                  width: 353,
-                  height: 100,
-                  decoration: new BoxDecoration(
-                    color: Theme.of(context).primaryColor,
-                    borderRadius: new BorderRadius.circular(20.0),
-                  ),
-                  child: TextButton(
-                    style: TextButton.styleFrom(
-                        backgroundColor: fromCssColor('#ffffff'),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20),
-                        )),
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: ((context) =>
-                                  Divisi_Maksila_dari_Nervus_Trigeminal())));
-                    },
-                    child: Text(
-                      "Divisi Maksila dari Nervus Trigeminal (CNV2)",
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 24.0,
-                        color: fromCssColor('#000000'),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>
+                              Divisi_Oftalmik_Saraf_Trigeminal()),
+                    );
+                  },
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        'images/icon_topic/Anatomical-Course-of-the-Ophthalmic-Nerve.jpg',
+                        width: 120,
+                        height: 100,
                       ),
+                      Text(
+                        "Divisi Oftalmik Saraf Trigeminal",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 20.0,
+                          color: fromCssColor('#000000'),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Container(
+                decoration: new BoxDecoration(
+                  color: Theme.of(context).primaryColor,
+                  //Make a background to the container
+                  // decoration: BoxDecoration(
+                  //   image: DecorationImage(
+                  //     image: AssetImage("images/Skull.png"),
+                  //     fit: BoxFit.fill,
+                  //   ),
+                  // ),
+                  borderRadius: new BorderRadius.circular(10.0),
+                ),
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    backgroundColor: fromCssColor('#ffffff'),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
                     ),
                   ),
-                ),
-                emptySpace,
-                Container(
-                  width: 353,
-                  height: 100,
-                  decoration: new BoxDecoration(
-                    color: Theme.of(context).primaryColor,
-                    borderRadius: new BorderRadius.circular(20.0),
-                  ),
-                  child: TextButton(
-                    style: TextButton.styleFrom(
-                        backgroundColor: fromCssColor('#ffffff'),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20),
-                        )),
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: ((context) =>
-                                  Divisi_Mandibula_Nervus_Trigeminal())));
-                    },
-                    child: Text(
-                      "Divisi Mandibula Nervus Trigeminal (CNV3)",
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 24.0,
-                        color: fromCssColor('#000000'),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>
+                              Divisi_Maksila_dari_Nervus_Trigeminal()),
+                    );
+                  },
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        'images/icon_topic/Anatomy-of-the-Origin-of-the-Trigeminal-Nerve-Nuclei-and-Ganglia.jpg',
+                        width: 120,
+                        height: 100,
                       ),
+                      Text(
+                        "Divisi Maksila dari Nervus Trigeminal",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 20.0,
+                          color: fromCssColor('#000000'),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Container(
+                decoration: new BoxDecoration(
+                  color: Theme.of(context).primaryColor,
+                  //Make a background to the container
+                  // decoration: BoxDecoration(
+                  //   image: DecorationImage(
+                  //     image: AssetImage("images/Skull.png"),
+                  //     fit: BoxFit.fill,
+                  //   ),
+                  // ),
+                  borderRadius: new BorderRadius.circular(10.0),
+                ),
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    backgroundColor: fromCssColor('#ffffff'),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
                     ),
                   ),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>
+                              Divisi_Mandibula_Nervus_Trigeminal()),
+                    );
+                  },
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        'images/icon_topic/Anatomical-Course-of-the-Inferior-Alveolar-Nerve-and-Lingual-Nerve-768x569.jpg',
+                        width: 120,
+                        height: 100,
+                      ),
+                      Text(
+                        "Divisi Mandibula Nervus Trigeminal",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 20.0,
+                          color: fromCssColor('#000000'),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
-                emptySpace,
-              ])
-            ])),
+              ),
+            ],
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2, mainAxisSpacing: 10, crossAxisSpacing: 10),
+          ),
+        ),
       ),
     );
   }
