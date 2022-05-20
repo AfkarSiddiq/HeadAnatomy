@@ -25,7 +25,7 @@ class _AreaKepalaState extends State<AreaKepala> {
           title: Text("Area Kepala"),
           backgroundColor: fromCssColor("#00bcd4"),        
         ),
-      drawer: Drawer(
+      endDrawer: Drawer(
           child: Column(
             children: [
               Container(
@@ -49,7 +49,7 @@ class _AreaKepalaState extends State<AreaKepala> {
                 onTap: () {
                   Navigator.of(context).pushReplacement(
                     MaterialPageRoute(builder: (context) {
-                      return MyApp();
+                      return topic();
                     }),
                   );
                 },
@@ -77,18 +77,9 @@ class _AreaKepalaState extends State<AreaKepala> {
                   ),
                 ),
               ),
-               ListTile(
-                onTap: () {},
-                leading: Icon(Icons.settings),
-                title: Text(
-                  "Setting",
-                  style: TextStyle(
-                    fontSize: 24,
-                  ),
-                ),
-              ),
             ],
           ),
+
         ),
       body: Container(
         color: fromCssColor('#4A8592'),
