@@ -7,7 +7,7 @@ import '../../../contactUs/contactUs.dart';
 import '../../topic.dart';
 
 class Telinga extends StatefulWidget {
-  const Telinga({ Key? key }) : super(key: key);
+  const Telinga({Key? key}) : super(key: key);
 
   @override
   State<Telinga> createState() => _TelingaState();
@@ -17,172 +17,162 @@ class _TelingaState extends State<Telinga> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Scaffold(
-        appBar: AppBar(
-          title: Text('Telinga'),
-          backgroundColor: fromCssColor('#00bcd4'),
+        child: Scaffold(
+      appBar: AppBar(
+        title: Text('Telinga'),
+        backgroundColor: Color.fromARGB(255, 12, 202, 142),
+      ),
+      endDrawer: Drawer(
+        child: Column(
+          children: [
+            Container(
+              padding: EdgeInsets.all(20),
+              width: double.infinity,
+              height: 120,
+              color: Color.fromARGB(255, 12, 202, 142),
+              alignment: Alignment.bottomLeft,
+              child: Text(
+                "Head Anatomy",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 24,
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            ListTile(
+              onTap: () {
+                Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(builder: (context) {
+                    return topic();
+                  }),
+                );
+              },
+              leading: Icon(Icons.home),
+              title: Text(
+                "Home",
+                style: TextStyle(
+                  fontSize: 24,
+                ),
+              ),
+            ),
+            ListTile(
+              onTap: () {
+                Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(builder: (context) {
+                    return contactus();
+                  }),
+                );
+              },
+              leading: Icon(Icons.phone),
+              title: Text(
+                "Contact Us",
+                style: TextStyle(
+                  fontSize: 24,
+                ),
+              ),
+            ),
+          ],
         ),
-        endDrawer: Drawer(
-          child: Column(
-            children: [
+      ),
+      body: Container(
+          color: Color.fromARGB(255, 10, 152, 107),
+          child: ListView(padding: EdgeInsets.all(32), children: <Widget>[
+            Column(mainAxisAlignment: MainAxisAlignment.center, children: [
               Container(
-                padding: EdgeInsets.all(20),
-                width: double.infinity,
-                height: 120,
-                color: Colors.lightBlue,
-                alignment: Alignment.bottomLeft,
-                child: Text(
-                  "Head Anatomy",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 24,
-                  ),
+                width: 353,
+                height: 100,
+                decoration: new BoxDecoration(
+                  color: Theme.of(context).primaryColor,
+                  borderRadius: new BorderRadius.circular(20.0),
                 ),
-              ),
-              SizedBox(
-                height: 10,
-              ),
-              ListTile(
-                onTap: () {
-                  Navigator.of(context).pushReplacement(
-                    MaterialPageRoute(builder: (context) {
-                      return topic();
-                    }),
-                  );
-                },
-                leading: Icon(Icons.home),
-                title: Text(
-                  "Home",
-                  style: TextStyle(
-                    fontSize: 24,
-                  ),
-                ),
-              ),
-              ListTile(
-                onTap: () {
-                  Navigator.of(context).pushReplacement(
-                    MaterialPageRoute(builder: (context) {
-                      return contactus();
-                    }),
-                  );
-                },
-                leading: Icon(Icons.phone),
-                title: Text(
-                  "Contact Us",
-                  style: TextStyle(
-                    fontSize: 24,
-                  ),
-                ),
-              ),
-            ],
-          ),
-
-        ),
-        body: Container(
-          color: fromCssColor('#4A8592'),
-          child: ListView(
-            padding: EdgeInsets.all(32),
-            children: <Widget>[
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    width: 353,
-                  height: 100,
-                  decoration: new BoxDecoration(
-                    color: Theme.of(context).primaryColor,
-                    borderRadius: new BorderRadius.circular(20.0),
-                  ),
-                  child: TextButton(
-                    style: TextButton.styleFrom(
+                child: TextButton(
+                  style: TextButton.styleFrom(
                       backgroundColor: fromCssColor('#ffffff'),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20),
-                      )
-                    ), 
-                    onPressed: () {
-                      Navigator.push(context,
-                      MaterialPageRoute(builder: ((context) => Telinga_luar()))
-                      );
-                    },
-                    child: Text(
-                      "Telinga Luar",
-                      textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontSize: 24.0,
-                          color: fromCssColor('#000000'),
-                        ),
+                      )),
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: ((context) => Telinga_luar())));
+                  },
+                  child: Text(
+                    "Telinga Luar",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 24.0,
+                      color: fromCssColor('#000000'),
                     ),
                   ),
-                  ),
-                  emptySpace,
-                  Container(
-                    width: 353,
-                  height: 100,
-                  decoration: new BoxDecoration(
-                    color: Theme.of(context).primaryColor,
-                    borderRadius: new BorderRadius.circular(20.0),
-                  ),
-                  child: TextButton(
-                    style: TextButton.styleFrom(
+                ),
+              ),
+              emptySpace,
+              Container(
+                width: 353,
+                height: 100,
+                decoration: new BoxDecoration(
+                  color: Theme.of(context).primaryColor,
+                  borderRadius: new BorderRadius.circular(20.0),
+                ),
+                child: TextButton(
+                  style: TextButton.styleFrom(
                       backgroundColor: fromCssColor('#ffffff'),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20),
-                      )
-                    ), 
-                    onPressed: () {
-                      Navigator.push(context,
-                      MaterialPageRoute(builder: ((context) => Telinga_tengah()))
-                      );
-                    },
-                    
-                    child: Text(
-                      "Telinga Tengah",
-                      textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontSize: 24.0,
-                          color: fromCssColor('#000000'),
-                        ),
+                      )),
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: ((context) => Telinga_tengah())));
+                  },
+                  child: Text(
+                    "Telinga Tengah",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 24.0,
+                      color: fromCssColor('#000000'),
                     ),
                   ),
-                  ),
-                  emptySpace,
-                  Container(
-                    width: 353,
-                  height: 100,
-                  decoration: new BoxDecoration(
-                    color: Theme.of(context).primaryColor,
-                    borderRadius: new BorderRadius.circular(20.0),
-                  ),
-                  child: TextButton(
-                    style: TextButton.styleFrom(
+                ),
+              ),
+              emptySpace,
+              Container(
+                width: 353,
+                height: 100,
+                decoration: new BoxDecoration(
+                  color: Theme.of(context).primaryColor,
+                  borderRadius: new BorderRadius.circular(20.0),
+                ),
+                child: TextButton(
+                  style: TextButton.styleFrom(
                       backgroundColor: fromCssColor('#ffffff'),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20),
-                      )
-                    ), 
-                    onPressed: () {
-                      Navigator.push(context,
-                      MaterialPageRoute(builder: ((context) => Telinga_bagian_dalam()))
-                      );
-                    },
-                    child: Text(
-                      "Telinga Bagian Dalam",
-                      textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontSize: 24.0,
-                          color: fromCssColor('#000000'),
-                        ),
+                      )),
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: ((context) => Telinga_bagian_dalam())));
+                  },
+                  child: Text(
+                    "Telinga Bagian Dalam",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 24.0,
+                      color: fromCssColor('#000000'),
                     ),
                   ),
-                  ),
-                  emptySpace,        
-                ]
-              )
-            ]
-          )
-        ),
-      )
-    );
+                ),
+              ),
+              emptySpace,
+            ])
+          ])),
+    ));
   }
 }

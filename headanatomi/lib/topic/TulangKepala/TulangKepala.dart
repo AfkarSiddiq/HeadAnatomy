@@ -21,7 +21,7 @@ class _TulangKepalaState extends State<TulangKepala> {
         child: Scaffold(
             appBar: AppBar(
               title: Text("Tulang Kepala"),
-              backgroundColor: fromCssColor("#00bcd4"),
+              backgroundColor: Color.fromARGB(255, 74, 148, 137),
             ),
             endDrawer: Drawer(
               child: Column(
@@ -30,7 +30,7 @@ class _TulangKepalaState extends State<TulangKepala> {
                     padding: EdgeInsets.all(20),
                     width: double.infinity,
                     height: 120,
-                    color: Colors.lightBlue,
+                    color: Color.fromARGB(255, 74, 148, 137),
                     alignment: Alignment.bottomLeft,
                     child: Text(
                       "Head Anatomy",
@@ -79,7 +79,7 @@ class _TulangKepalaState extends State<TulangKepala> {
               ),
             ),
             body: Container(
-                color: fromCssColor('#4A8592'),
+                color: Color.fromARGB(255, 10, 113, 103),
                 child: ListView(
                   padding: EdgeInsets.all(32),
                   children: <Widget>[

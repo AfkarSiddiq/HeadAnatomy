@@ -20,7 +20,7 @@ class _MataState extends State<Mata> {
         child: Scaffold(
             appBar: AppBar(
               title: Text('Mata'),
-              backgroundColor: fromCssColor('#00bcd4'),
+              backgroundColor: Color.fromARGB(255, 12, 202, 142),
             ),
             endDrawer: Drawer(
               child: Column(
@@ -29,7 +29,7 @@ class _MataState extends State<Mata> {
                     padding: EdgeInsets.all(20),
                     width: double.infinity,
                     height: 120,
-                    color: Colors.lightBlue,
+                    color: Color.fromARGB(255, 12, 202, 142),
                     alignment: Alignment.bottomLeft,
                     child: Text(
                       "Head Anatomy",
@@ -78,7 +78,7 @@ class _MataState extends State<Mata> {
               ),
             ),
             body: Container(
-                color: fromCssColor('#4A8592'),
+                color: Color.fromARGB(255, 10, 152, 107),
                 child: ListView(padding: EdgeInsets.all(32), children: <Widget>[
                   Column(
                       mainAxisAlignment: MainAxisAlignment.center,
