@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
     );
 
     Widget textButton = Container(
-      width: 50.0,
+      width: 201.0,
       height: 40.0,
       decoration: new BoxDecoration(
         color: Theme.of(context).primaryColor,
