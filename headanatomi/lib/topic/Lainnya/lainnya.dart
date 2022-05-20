@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:from_css_color/from_css_color.dart';
+import 'package:headanatomi/contactUs/contactUs.dart';
+import 'package:headanatomi/topic/AreaKepala/FossaCranial/FossaCranial.dart';
+import 'package:headanatomi/topic/home_view.dart';
+import 'package:headanatomi/topic/subject.dart';
 import 'package:headanatomi/topic/subject2.dart';
 import 'package:headanatomi/topic/topic.dart';
-import 'package:from_css_color/from_css_color.dart';
 
 class lainnya extends StatefulWidget {
-  const lainnya({ Key? key }) : super(key: key);
+  const lainnya({Key? key}) : super(key: key);
 
   @override
   State<lainnya> createState() => _lainnyaState();
@@ -16,81 +20,161 @@ class _lainnyaState extends State<lainnya> {
     return Container(
       child: Scaffold(
         appBar: AppBar(
-          title: Text('Lainnya'),
-          backgroundColor: fromCssColor("#00bcd4"),
+            title: Text("Area Kepala"),
+            backgroundColor: Color.fromARGB(255, 74, 148, 137)),
+        endDrawer: Drawer(
+          child: Column(
+            children: [
+              Container(
+                padding: EdgeInsets.all(20),
+                width: double.infinity,
+                height: 120,
+                color: Color.fromARGB(255, 74, 148, 137),
+                alignment: Alignment.bottomLeft,
+                child: Text(
+                  "Head Anatomy",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return topic();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.home),
+                title: Text(
+                  "Home",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return contactus();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.phone),
+                title: Text(
+                  "Contact Us",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
         body: Container(
           color: fromCssColor('#4A8592'),
-          child: ListView(
-            padding: EdgeInsets.all(32),
-            children: <Widget>[
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    width: 353,
-                  height: 100,
-                  decoration: new BoxDecoration(
-                    color: Theme.of(context).primaryColor,
-                    borderRadius: new BorderRadius.circular(20.0),
+          padding: const EdgeInsets.all(10.0),
+          child: GridView(
+            children: [
+              Container(
+                decoration: new BoxDecoration(
+                  color: Theme.of(context).primaryColor,
+                  //Make a background to the container
+                  // decoration: BoxDecoration(
+                  //   image: DecorationImage(
+                  //     image: AssetImage("images/Skull.png"),
+                  //     fit: BoxFit.fill,
+                  //   ),
+                  // ),
+                  borderRadius: new BorderRadius.circular(10.0),
+                ),
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    backgroundColor: fromCssColor('#ffffff'),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
                   ),
-                  child: TextButton(
-                    style: TextButton.styleFrom(
-                      backgroundColor: fromCssColor('#ffffff'),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20),
-                      )
-                    ), 
-                    onPressed: () {
-                      Navigator.push(context, 
-                      MaterialPageRoute(builder: (context) => Gigi_Anak_dan_Dewasa())
-                      );
-                    },
-                    child: Text(
-                      "Gigi Anak dan Dewasa",
-                      textAlign: TextAlign.center,
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => Gigi_Anak_dan_Dewasa()),
+                    );
+                  },
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        'images/icon_topic/Tooth-Structure-Crown-Root-Anatomy.png',
+                        width: 120,
+                        height: 100,
+                      ),
+                      Text(
+                        "Gigi Anak dan Dewasa",
+                        textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 24.0,
                           color: fromCssColor('#000000'),
                         ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Container(
+                decoration: new BoxDecoration(
+                  color: Theme.of(context).primaryColor,
+                  //Make a background to the container
+                  // decoration: BoxDecoration(
+                  //   image: DecorationImage(
+                  //     image: AssetImage("images/Skull.png"),
+                  //     fit: BoxFit.fill,
+                  //   ),
+                  // ),
+                  borderRadius: new BorderRadius.circular(10.0),
+                ),
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    backgroundColor: fromCssColor('#ffffff'),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
                     ),
                   ),
-                  ),
-                  emptySpace,
-                  Container(
-                    width: 353,
-                  height: 100,
-                  decoration: new BoxDecoration(
-                    color: Theme.of(context).primaryColor,
-                    borderRadius: new BorderRadius.circular(20.0),
-                  ),
-                  child: TextButton(
-                    style: TextButton.styleFrom(
-                      backgroundColor: fromCssColor('#ffffff'),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20),
-                      )
-                    ), 
-                    onPressed: () {
-                      Navigator.push(context, 
-                      MaterialPageRoute(builder: (context) => langit_langit())
-                      );
-                    },
-                    child: Text(
-                      "Langit-langit",
-                      textAlign: TextAlign.center,
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => langit_langit()));
+                  },
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        'images/icon_topic/The-Hard-and-Soft-Palate.png',
+                        width: 120,
+                        height: 120,
+                      ),
+                      Text(
+                        "Langit-Langit",
+                        textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 24.0,
                           color: fromCssColor('#000000'),
                         ),
-                    ),
+                      ),
+                    ],
                   ),
-                  ),
-                  emptySpace,  
-                ]
-              )
-            ]
-          )
+                ),
+              ),
+            ],
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2, mainAxisSpacing: 10, crossAxisSpacing: 10),
+          ),
         ),
       ),
     );

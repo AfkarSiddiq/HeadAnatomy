@@ -34,8 +34,11 @@ class _topicState extends State<topic> {
     return Container(
       child: Scaffold(
         appBar: AppBar(
-          title: Text("Topic", style: TextStyle(),),
-          backgroundColor: fromCssColor("#00bcd4"),
+          title: Text(
+            "Topik",
+            style: TextStyle(),
+          ),
+          backgroundColor: Color.fromARGB(255, 17, 146, 165),
         ),
         endDrawer: Drawer(
           child: Column(
@@ -44,7 +47,7 @@ class _topicState extends State<topic> {
                 padding: EdgeInsets.all(20),
                 width: double.infinity,
                 height: 120,
-                color: Colors.lightBlue,
+                color: Color.fromARGB(255, 17, 146, 165),
                 alignment: Alignment.bottomLeft,
                 child: Text(
                   "Head Anatomy",
@@ -91,44 +94,45 @@ class _topicState extends State<topic> {
               ),
             ],
           ),
-
         ),
         body: Container(
           color: fromCssColor('#4A8592'),
-          child: ListView(
-            padding: EdgeInsets.all(32),
-            children: <Widget>[
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    width: 353.0,
-                    height: 100.0,
-                    decoration: new BoxDecoration(
-                      color: Theme.of(context).primaryColor,
-                      //Make a background to the container
-                      // decoration: BoxDecoration(
-                      //   image: DecorationImage(
-                      //     image: AssetImage("images/Skull.png"),
-                      //     fit: BoxFit.fill,
-                      //   ),
-                      // ),
-                      borderRadius: new BorderRadius.circular(20.0),
+          padding: const EdgeInsets.all(10.0),
+          child: GridView(
+            children: [
+              Container(
+                decoration: new BoxDecoration(
+                  color: Theme.of(context).primaryColor,
+                  //Make a background to the container
+                  // decoration: BoxDecoration(
+                  //   image: DecorationImage(
+                  //     image: AssetImage("images/Skull.png"),
+                  //     fit: BoxFit.fill,
+                  //   ),
+                  // ),
+                  borderRadius: new BorderRadius.circular(10.0),
+                ),
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    backgroundColor: fromCssColor('#ffffff'),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
                     ),
-                    child: TextButton(
-                      style: TextButton.styleFrom(
-                        backgroundColor: fromCssColor('#ffffff'),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20),
-                        ),
+                  ),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => AreaKepala()),
+                    );
+                  },
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        'images/icon_topic/HairDirection-Zones.jpg',
+                        width: 120,
+                        height: 120,
                       ),
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => AreaKepala()),
-                        );
-                      },
-                      child: Text(
+                      Text(
                         "Area Kepala",
                         textAlign: TextAlign.center,
                         style: TextStyle(
@@ -136,37 +140,43 @@ class _topicState extends State<topic> {
                           color: fromCssColor('#000000'),
                         ),
                       ),
+                    ],
+                  ),
+                ),
+              ),
+              Container(
+                decoration: new BoxDecoration(
+                  color: Theme.of(context).primaryColor,
+                  //Make a background to the container
+                  // decoration: BoxDecoration(
+                  //   image: DecorationImage(
+                  //     image: AssetImage("images/Skull.png"),
+                  //     fit: BoxFit.fill,
+                  //   ),
+                  // ),
+                  borderRadius: new BorderRadius.circular(10.0),
+                ),
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    backgroundColor: fromCssColor('#ffffff'),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
                     ),
                   ),
-                  emptySpace,
-                  Container(
-                    width: 353.0,
-                    height: 100.0,
-                    decoration: new BoxDecoration(
-                      color: Theme.of(context).primaryColor,
-                      //Make a background to the container
-                      // decoration: BoxDecoration(
-                      //   image: DecorationImage(
-                      //     image: AssetImage("images/Skull.png"),
-                      //     fit: BoxFit.fill,
-                      //   ),
-                      // ),
-                      borderRadius: new BorderRadius.circular(20.0),
-                    ),
-                    child: TextButton(
-                      style: TextButton.styleFrom(
-                        backgroundColor: fromCssColor('#ffffff'),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20),
-                        ),
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => TulangKepala()));
+                  },
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        'images/icon_topic/ce500-fig01-skull-lateral.jpg',
+                        width: 120,
+                        height: 120,
                       ),
-                      onPressed: () {
-                        Navigator.push(
-                          context, MaterialPageRoute(
-                              builder: (context) =>TulangKepala())
-                        );
-                      },
-                      child: Text(
+                      Text(
                         "Tulang Kepala",
                         textAlign: TextAlign.center,
                         style: TextStyle(
@@ -174,77 +184,87 @@ class _topicState extends State<topic> {
                           color: fromCssColor('#000000'),
                         ),
                       ),
+                    ],
+                  ),
+                ),
+              ),
+              Container(
+                decoration: new BoxDecoration(
+                  color: Theme.of(context).primaryColor,
+                  //Make a background to the container
+                  // decoration: BoxDecoration(
+                  //   image: DecorationImage(
+                  //     image: AssetImage("images/Skull.png"),
+                  //     fit: BoxFit.fill,
+                  //   ),
+                  // ),
+                  borderRadius: new BorderRadius.circular(10.0),
+                ),
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    backgroundColor: fromCssColor('#ffffff'),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
                     ),
                   ),
-                  emptySpace,
-                  Container(
-                    width: 353.0,
-                    height: 100.0,
-                    decoration: new BoxDecoration(
-                      color: Theme.of(context).primaryColor,
-                      //Make a background to the container
-                      // decoration: BoxDecoration(
-                      //   image: DecorationImage(
-                      //     image: AssetImage("images/Skull.png"),
-                      //     fit: BoxFit.fill,
-                      //   ),
-                      // ),
-                      borderRadius: new BorderRadius.circular(20.0),
-                    ),
-                    child: TextButton(
-                      style: TextButton.styleFrom(
-                        backgroundColor: fromCssColor('#ffffff'),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20),
-                        ),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => OtotOtotKepala()),
+                    );
+                  },
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        'images/icon_topic/16502.jpg',
+                        width: 120,
+                        height: 100,
                       ),
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => OtotOtotKepala()),
-                        );
-                      },
-                      child: Text(
-                        "Otot-Otot Kepala",
+                      Text(
+                        "Otat-Otat Kepala",
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 24.0,
                           color: fromCssColor('#000000'),
                         ),
                       ),
+                    ],
+                  ),
+                ),
+              ),
+              Container(
+                decoration: new BoxDecoration(
+                  color: Theme.of(context).primaryColor,
+                  //Make a background to the container
+                  // decoration: BoxDecoration(
+                  //   image: DecorationImage(
+                  //     image: AssetImage("images/Skull.png"),
+                  //     fit: BoxFit.fill,
+                  //   ),
+                  // ),
+                  borderRadius: new BorderRadius.circular(10.0),
+                ),
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    backgroundColor: fromCssColor('#ffffff'),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
                     ),
                   ),
-                  emptySpace,
-                  Container(
-                    width: 353.0,
-                    height: 100.0,
-                    decoration: new BoxDecoration(
-                      color: Theme.of(context).primaryColor,
-                      //Make a background to the container
-                      // decoration: BoxDecoration(
-                      //   image: DecorationImage(
-                      //     image: AssetImage("images/Skull.png"),
-                      //     fit: BoxFit.fill,
-                      //   ),
-                      // ),
-                      borderRadius: new BorderRadius.circular(20.0),
-                    ),
-                    child: TextButton(
-                      style: TextButton.styleFrom(
-                        backgroundColor: fromCssColor('#ffffff'),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20),
-                        ),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => SarafKepala()),
+                    );
+                  },
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        'images/icon_topic/c0467563-800px-wm.jpg',
+                        width: 120,
+                        height: 120,
                       ),
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => SarafKepala()),
-                        );
-                      },
-                      child: Text(
+                      Text(
                         "Saraf Kepala",
                         textAlign: TextAlign.center,
                         style: TextStyle(
@@ -252,38 +272,43 @@ class _topicState extends State<topic> {
                           color: fromCssColor('#000000'),
                         ),
                       ),
+                    ],
+                  ),
+                ),
+              ),
+              Container(
+                decoration: new BoxDecoration(
+                  color: Theme.of(context).primaryColor,
+                  //Make a background to the container
+                  // decoration: BoxDecoration(
+                  //   image: DecorationImage(
+                  //     image: AssetImage("images/Skull.png"),
+                  //     fit: BoxFit.fill,
+                  //   ),
+                  // ),
+                  borderRadius: new BorderRadius.circular(10.0),
+                ),
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    backgroundColor: fromCssColor('#ffffff'),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
                     ),
                   ),
-                  emptySpace,
-                  Container(
-                    width: 353.0,
-                    height: 100.0,
-                    decoration: new BoxDecoration(
-                      color: Theme.of(context).primaryColor,
-                      //Make a background to the container
-                      // decoration: BoxDecoration(
-                      //   image: DecorationImage(
-                      //     image: AssetImage("images/Skull.png"),
-                      //     fit: BoxFit.fill,
-                      //   ),
-                      // ),
-                      borderRadius: new BorderRadius.circular(20.0),
-                    ),
-                    child: TextButton(
-                      style: TextButton.styleFrom(
-                        backgroundColor: fromCssColor('#ffffff'),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20),
-                        ),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => OrganKepala()),
+                    );
+                  },
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        'images/icon_topic/png-transparent-human-body-organ-mouth-muscle-viscus-organs-face-head-structure.png',
+                        width: 120,
+                        height: 120,
                       ),
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => OrganKepala()),
-                        );
-                      },
-                      child: Text(
+                      Text(
                         "Organ Kepala",
                         textAlign: TextAlign.center,
                         style: TextStyle(
@@ -291,38 +316,43 @@ class _topicState extends State<topic> {
                           color: fromCssColor('#000000'),
                         ),
                       ),
+                    ],
+                  ),
+                ),
+              ),
+              Container(
+                decoration: new BoxDecoration(
+                  color: Theme.of(context).primaryColor,
+                  //Make a background to the container
+                  // decoration: BoxDecoration(
+                  //   image: DecorationImage(
+                  //     image: AssetImage("images/Skull.png"),
+                  //     fit: BoxFit.fill,
+                  //   ),
+                  // ),
+                  borderRadius: new BorderRadius.circular(10.0),
+                ),
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    backgroundColor: fromCssColor('#ffffff'),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
                     ),
                   ),
-                  emptySpace,
-                  Container(
-                    width: 353.0,
-                    height: 100.0,
-                    decoration: new BoxDecoration(
-                      color: Theme.of(context).primaryColor,
-                      //Make a background to the container
-                      // decoration: BoxDecoration(
-                      //   image: DecorationImage(
-                      //     image: AssetImage("images/Skull.png"),
-                      //     fit: BoxFit.fill,
-                      //   ),
-                      // ),
-                      borderRadius: new BorderRadius.circular(20.0),
-                    ),
-                    child: TextButton(
-                      style: TextButton.styleFrom(
-                        backgroundColor: fromCssColor('#ffffff'),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20),
-                        ),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => SendiKepala()),
+                    );
+                  },
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        'images/icon_topic/boney-surfaces-of-the-temporomandibular-joint-624x367.jpg',
+                        width: 120,
+                        height: 120,
                       ),
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => SendiKepala()),
-                        );
-                      },
-                      child: Text(
+                      Text(
                         "Sendi Kepala",
                         textAlign: TextAlign.center,
                         style: TextStyle(
@@ -330,36 +360,44 @@ class _topicState extends State<topic> {
                           color: fromCssColor('#000000'),
                         ),
                       ),
+                    ],
+                  ),
+                ),
+              ),
+              Container(
+                decoration: new BoxDecoration(
+                  color: Theme.of(context).primaryColor,
+                  //Make a background to the container
+                  // decoration: BoxDecoration(
+                  //   image: DecorationImage(
+                  //     image: AssetImage("images/Skull.png"),
+                  //     fit: BoxFit.fill,
+                  //   ),
+                  // ),
+                  borderRadius: new BorderRadius.circular(10.0),
+                ),
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    backgroundColor: fromCssColor('#ffffff'),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
                     ),
                   ),
-                  emptySpace,
-                  Container(
-                    width: 353.0,
-                    height: 100.0,
-                    decoration: new BoxDecoration(
-                      color: Theme.of(context).primaryColor,
-                      //Make a background to the container
-                      // decoration: BoxDecoration(
-                      //   image: DecorationImage(
-                      //     image: AssetImage("images/Skull.png"),
-                      //     fit: BoxFit.fill,
-                      //   ),
-                      // ),
-                      borderRadius: new BorderRadius.circular(20.0),
-                    ),
-                    child: TextButton(
-                      style: TextButton.styleFrom(
-                        backgroundColor: fromCssColor('#ffffff'),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20),
-                        ),
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => SarafKranial(),
+                        ));
+                  },
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        'images/icon_topic/Brain-stem.png',
+                        width: 120,
+                        height: 120,
                       ),
-                      onPressed: () { 
-                        Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => SarafKranial(),)
-                        );
-                      },
-                      child: Text(
+                      Text(
                         "Saraf Kranial",
                         textAlign: TextAlign.center,
                         style: TextStyle(
@@ -367,37 +405,41 @@ class _topicState extends State<topic> {
                           color: fromCssColor('#000000'),
                         ),
                       ),
+                    ],
+                  ),
+                ),
+              ),
+              Container(
+                decoration: new BoxDecoration(
+                  color: Theme.of(context).primaryColor,
+                  //Make a background to the container
+                  // decoration: BoxDecoration(
+                  //   image: DecorationImage(
+                  //     image: AssetImage("images/Skull.png"),
+                  //     fit: BoxFit.fill,
+                  //   ),
+                  // ),
+                  borderRadius: new BorderRadius.circular(10.0),
+                ),
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    backgroundColor: fromCssColor('#ffffff'),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
                     ),
                   ),
-                  emptySpace,
-                  Container(
-                    width: 353.0,
-                    height: 100.0,
-                    decoration: new BoxDecoration(
-                      color: Theme.of(context).primaryColor,
-                      //Make a background to the container
-                      // decoration: BoxDecoration(
-                      //   image: DecorationImage(
-                      //     image: AssetImage("images/Skull.png"),
-                      //     fit: BoxFit.fill,
-                      //   ),
-                      // ),
-                      borderRadius: new BorderRadius.circular(20.0),
-                    ),
-                    child: TextButton(
-                      style: TextButton.styleFrom(
-                        backgroundColor: fromCssColor('#ffffff'),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20),
-                        ),
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: ((context) => lainnya())));
+                  },
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        'images/icon_topic/C07_04_Human-Head-Model-with-Neck-4-part-3B-Smart-Anatomy.jpg',
+                        width: 120,
+                        height: 120,
                       ),
-
-                      onPressed: () {                      
-                        Navigator.push(context,
-                         MaterialPageRoute(builder: ((context) => lainnya()))
-                         );
-                      },
-                      child: Text(
+                      Text(
                         "Lainnya",
                         textAlign: TextAlign.center,
                         style: TextStyle(
@@ -405,53 +447,16 @@ class _topicState extends State<topic> {
                           color: fromCssColor('#000000'),
                         ),
                       ),
-                    ),
-                  ),
-                  emptySpace,
-                ],
-              ),
-              Container(
-                width: 201.0,
-                height: 40.0,
-                decoration: new BoxDecoration(
-                  color: Theme.of(context).primaryColor,
-                  borderRadius: new BorderRadius.circular(20.0),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.black,
-                      spreadRadius: 2,
-                      blurRadius: 10,
-                      offset: Offset(0, 3), // changes position of shadow
-                    )
-                  ],
-                ),
-                child: TextButton(
-                  style: TextButton.styleFrom(
-                    backgroundColor: fromCssColor('#c4c4c4'),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-                  ),
-                  onPressed: () {
-                    Navigator.pop(
-                      context,
-                      MaterialPageRoute(builder: (context) => MyApp()),
-                    );
-                  },
-                  child: Text(
-                    "Back",
-                    style: TextStyle(
-                      fontSize: 24.0,
-                      color: fromCssColor('#000000'),
-                    ),
+                    ],
                   ),
                 ),
               ),
             ],
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2, mainAxisSpacing: 10, crossAxisSpacing: 10),
           ),
         ),
       ),
     );
   }
-
 }
