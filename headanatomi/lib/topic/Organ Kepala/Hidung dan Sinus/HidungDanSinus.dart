@@ -24,7 +24,7 @@ class _HidungDanSinusState extends State<HidungDanSinus> {
           title: Text('Hidung dan Sinus'),
           backgroundColor: fromCssColor('#00bcd4'),
         ),
-        drawer: Drawer(
+        endDrawer: Drawer(
           child: Column(
             children: [
               Container(
@@ -48,7 +48,7 @@ class _HidungDanSinusState extends State<HidungDanSinus> {
                 onTap: () {
                   Navigator.of(context).pushReplacement(
                     MaterialPageRoute(builder: (context) {
-                      return MyApp();
+                      return topic();
                     }),
                   );
                 },
@@ -71,16 +71,6 @@ class _HidungDanSinusState extends State<HidungDanSinus> {
                 leading: Icon(Icons.phone),
                 title: Text(
                   "Contact Us",
-                  style: TextStyle(
-                    fontSize: 24,
-                  ),
-                ),
-              ),
-               ListTile(
-                onTap: () {},
-                leading: Icon(Icons.settings),
-                title: Text(
-                  "Setting",
                   style: TextStyle(
                     fontSize: 24,
                   ),

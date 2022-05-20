@@ -3,6 +3,7 @@ import 'package:from_css_color/from_css_color.dart';
 import 'package:headanatomi/topic/Organ Kepala/OrganKepala.dart';
 import 'package:headanatomi/topic/home_view.dart';
 import 'package:headanatomi/topic/subject2.dart';
+import '../../../contactUs/contactUs.dart';
 import '../../topic.dart';
 
 class Mata extends StatefulWidget {
@@ -21,7 +22,7 @@ class _MataState extends State<Mata> {
           title: Text('Mata'),
           backgroundColor: fromCssColor('#00bcd4'),
         ),
-        drawer: Drawer(
+        endDrawer: Drawer(
           child: Column(
             children: [
               Container(
@@ -45,7 +46,7 @@ class _MataState extends State<Mata> {
                 onTap: () {
                   Navigator.of(context).pushReplacement(
                     MaterialPageRoute(builder: (context) {
-                      return MyApp();
+                      return topic();
                     }),
                   );
                 },
@@ -73,18 +74,9 @@ class _MataState extends State<Mata> {
                   ),
                 ),
               ),
-               ListTile(
-                onTap: () {},
-                leading: Icon(Icons.settings),
-                title: Text(
-                  "Setting",
-                  style: TextStyle(
-                    fontSize: 24,
-                  ),
-                ),
-              ),
             ],
           ),
+
         ),
         body: Container(
           color: fromCssColor('#4A8592'),
