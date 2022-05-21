@@ -10,7 +10,7 @@ import 'package:headanatomi/topic/topic.dart';
 import '../../contactUs/contactUs.dart';
 
 class OtotOtotKepala extends StatefulWidget {
-  const OtotOtotKepala({ Key? key }) : super(key: key);
+  const OtotOtotKepala({Key? key}) : super(key: key);
 
   @override
   State<OtotOtotKepala> createState() => _OtotOtotKepalaState();
@@ -23,7 +23,7 @@ class _OtotOtotKepalaState extends State<OtotOtotKepala> {
       child: Scaffold(
         appBar: AppBar(
           title: Text('Otot-otot Kepala'),
-          backgroundColor: fromCssColor("#00bcd4"),
+          backgroundColor: Color.fromARGB(255, 74, 148, 137),
         ),
         endDrawer: Drawer(
           child: Column(
@@ -32,7 +32,7 @@ class _OtotOtotKepalaState extends State<OtotOtotKepala> {
                 padding: EdgeInsets.all(20),
                 width: double.infinity,
                 height: 120,
-                color: Colors.lightBlue,
+                color: Color.fromARGB(255, 74, 148, 137),
                 alignment: Alignment.bottomLeft,
                 child: Text(
                   "Head Anatomy",
@@ -79,110 +79,149 @@ class _OtotOtotKepalaState extends State<OtotOtotKepala> {
               ),
             ],
           ),
-
         ),
         body: Container(
-          color: fromCssColor('#4A8592'),
-          child: ListView(
-            padding: EdgeInsets.all(32),
-            children: <Widget>[
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    width: 353,
-                  height: 100,
-                  decoration: new BoxDecoration(
-                    color: Theme.of(context).primaryColor,
-                    borderRadius: new BorderRadius.circular(20.0),
+          color: Color.fromARGB(255, 10, 113, 103),
+          padding: const EdgeInsets.all(10.0),
+          child: GridView(
+            children: [
+              Container(
+                decoration: new BoxDecoration(
+                  color: Theme.of(context).primaryColor,
+                  //Make a background to the container
+                  // decoration: BoxDecoration(
+                  //   image: DecorationImage(
+                  //     image: AssetImage("images/Skull.png"),
+                  //     fit: BoxFit.fill,
+                  //   ),
+                  // ),
+                  borderRadius: new BorderRadius.circular(10.0),
+                ),
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    backgroundColor: fromCssColor('#ffffff'),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
                   ),
-                  child: TextButton(
-                    style: TextButton.styleFrom(
-                      backgroundColor: fromCssColor('#ffffff'),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20),
-                      )
-                    ), 
-                    onPressed: () {
-                      Navigator.push(context,
-                      MaterialPageRoute(builder: ((context) => Otot_otot_Ekspresi_Wajah()))
-                      );
-                    },
-                    child: Text(
-                      "Otot-otot Ekspresi Wajah",
-                      textAlign: TextAlign.center,
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => Otot_otot_Ekspresi_Wajah()),
+                    );
+                  },
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        'images/icon_topic/Labelled-Diagram-of-the-Oral-Muscles-of-Facial-Expression-Lateral-View.jpg',
+                        width: 120,
+                        height: 100,
+                      ),
+                      Text(
+                        "Otot-Otot Ekspresi Wajah",
+                        textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 24.0,
                           color: fromCssColor('#000000'),
                         ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Container(
+                decoration: new BoxDecoration(
+                  color: Theme.of(context).primaryColor,
+                  //Make a background to the container
+                  // decoration: BoxDecoration(
+                  //   image: DecorationImage(
+                  //     image: AssetImage("images/Skull.png"),
+                  //     fit: BoxFit.fill,
+                  //   ),
+                  // ),
+                  borderRadius: new BorderRadius.circular(10.0),
+                ),
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    backgroundColor: fromCssColor('#ffffff'),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
                     ),
                   ),
-                  ),
-                  emptySpace,
-                  Container(
-                    width: 353,
-                  height: 100,
-                  decoration: new BoxDecoration(
-                    color: Theme.of(context).primaryColor,
-                    borderRadius: new BorderRadius.circular(20.0),
-                  ),
-                  child: TextButton(
-                    style: TextButton.styleFrom(
-                      backgroundColor: fromCssColor('#ffffff'),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20),
-                      )
-                    ), 
-                    onPressed: () {
-                      Navigator.push(context,
-                      MaterialPageRoute(builder: ((context) => Otot_Pengunyahan()))
-                      );
-                    },
-                    child: Text(
-                      "Otot Pengunyahan",
-                      textAlign: TextAlign.center,
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => Otot_Pengunyahan()));
+                  },
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        'images/icon_topic/Muscles-of-Mastication-Masseter.jpg',
+                        width: 120,
+                        height: 100,
+                      ),
+                      Text(
+                        "Otot Pengunyahan",
+                        textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 24.0,
                           color: fromCssColor('#000000'),
                         ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Container(
+                decoration: new BoxDecoration(
+                  color: Theme.of(context).primaryColor,
+                  //Make a background to the container
+                  // decoration: BoxDecoration(
+                  //   image: DecorationImage(
+                  //     image: AssetImage("images/Skull.png"),
+                  //     fit: BoxFit.fill,
+                  //   ),
+                  // ),
+                  borderRadius: new BorderRadius.circular(10.0),
+                ),
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    backgroundColor: fromCssColor('#ffffff'),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
                     ),
                   ),
-                  ),
-                  emptySpace,
-                  Container(
-                    width: 353,
-                  height: 100,
-                  decoration: new BoxDecoration(
-                    color: Theme.of(context).primaryColor,
-                    borderRadius: new BorderRadius.circular(20.0),
-                  ),
-                  child: TextButton(
-                    style: TextButton.styleFrom(
-                      backgroundColor: fromCssColor('#ffffff'),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20),
-                      )
-                    ), 
-                    onPressed: () {
-                      Navigator.push(context,
-                      MaterialPageRoute(builder: ((context) => Lidah()))
-                      );
-                    },
-                    child: Text(
-                      "Lidah",
-                      textAlign: TextAlign.center,
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => kulit_kepala()),
+                    );
+                  },
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        'images/icon_topic/Lingual-Nerve-Sensory-Innervation-to-the-Tongue.jpg',
+                        width: 120,
+                        height: 120,
+                      ),
+                      Text(
+                        "Lidah",
+                        textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 24.0,
                           color: fromCssColor('#000000'),
                         ),
-                    ),
+                      ),
+                    ],
                   ),
-                  ),
-                  emptySpace,
-                ]
-              )
-            ]
-          )
+                ),
+              ),
+            ],
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2, mainAxisSpacing: 10, crossAxisSpacing: 10),
+          ),
         ),
       ),
     );

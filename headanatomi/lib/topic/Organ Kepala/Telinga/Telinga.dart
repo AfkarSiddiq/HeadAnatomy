@@ -7,7 +7,7 @@ import '../../../contactUs/contactUs.dart';
 import '../../topic.dart';
 
 class Telinga extends StatefulWidget {
-  const Telinga({ Key? key }) : super(key: key);
+  const Telinga({Key? key}) : super(key: key);
 
   @override
   State<Telinga> createState() => _TelingaState();
@@ -20,7 +20,7 @@ class _TelingaState extends State<Telinga> {
       child: Scaffold(
         appBar: AppBar(
           title: Text('Telinga'),
-          backgroundColor: fromCssColor('#00bcd4'),
+          backgroundColor: Color.fromARGB(255, 12, 202, 142),
         ),
         endDrawer: Drawer(
           child: Column(
@@ -29,7 +29,7 @@ class _TelingaState extends State<Telinga> {
                 padding: EdgeInsets.all(20),
                 width: double.infinity,
                 height: 120,
-                color: Colors.lightBlue,
+                color: Color.fromARGB(255, 12, 202, 142),
                 alignment: Alignment.bottomLeft,
                 child: Text(
                   "Head Anatomy",
@@ -76,113 +76,151 @@ class _TelingaState extends State<Telinga> {
               ),
             ],
           ),
-
         ),
         body: Container(
-          color: fromCssColor('#4A8592'),
-          child: ListView(
-            padding: EdgeInsets.all(32),
-            children: <Widget>[
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    width: 353,
-                  height: 100,
-                  decoration: new BoxDecoration(
-                    color: Theme.of(context).primaryColor,
-                    borderRadius: new BorderRadius.circular(20.0),
+          color: Color.fromARGB(255, 10, 152, 107),
+          padding: const EdgeInsets.all(10.0),
+          child: GridView(
+            children: [
+              Container(
+                decoration: new BoxDecoration(
+                  color: Theme.of(context).primaryColor,
+                  //Make a background to the container
+                  // decoration: BoxDecoration(
+                  //   image: DecorationImage(
+                  //     image: AssetImage("images/Skull.png"),
+                  //     fit: BoxFit.fill,
+                  //   ),
+                  // ),
+                  borderRadius: new BorderRadius.circular(10.0),
+                ),
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    backgroundColor: fromCssColor('#ffffff'),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
                   ),
-                  child: TextButton(
-                    style: TextButton.styleFrom(
-                      backgroundColor: fromCssColor('#ffffff'),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20),
-                      )
-                    ), 
-                    onPressed: () {
-                      Navigator.push(context,
-                      MaterialPageRoute(builder: ((context) => Telinga_luar()))
-                      );
-                    },
-                    child: Text(
-                      "Telinga Luar",
-                      textAlign: TextAlign.center,
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Telinga_luar()),
+                    );
+                  },
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        'images/icon_topic/Auricle-or-Pinna-of-the-Ear-Labelled-Diagram.png',
+                        width: 120,
+                        height: 120,
+                      ),
+                      Text(
+                        "Telinga Luar",
+                        textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 24.0,
                           color: fromCssColor('#000000'),
                         ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Container(
+                decoration: new BoxDecoration(
+                  color: Theme.of(context).primaryColor,
+                  //Make a background to the container
+                  // decoration: BoxDecoration(
+                  //   image: DecorationImage(
+                  //     image: AssetImage("images/Skull.png"),
+                  //     fit: BoxFit.fill,
+                  //   ),
+                  // ),
+                  borderRadius: new BorderRadius.circular(10.0),
+                ),
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    backgroundColor: fromCssColor('#ffffff'),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
                     ),
                   ),
-                  ),
-                  emptySpace,
-                  Container(
-                    width: 353,
-                  height: 100,
-                  decoration: new BoxDecoration(
-                    color: Theme.of(context).primaryColor,
-                    borderRadius: new BorderRadius.circular(20.0),
-                  ),
-                  child: TextButton(
-                    style: TextButton.styleFrom(
-                      backgroundColor: fromCssColor('#ffffff'),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20),
-                      )
-                    ), 
-                    onPressed: () {
-                      Navigator.push(context,
-                      MaterialPageRoute(builder: ((context) => Telinga_tengah()))
-                      );
-                    },
-                    
-                    child: Text(
-                      "Telinga Tengah",
-                      textAlign: TextAlign.center,
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => Telinga_tengah()));
+                  },
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        'images/icon_topic/The-Two-Parts-of-the-Middle-Ear-Tympanic-Cavity-and-Epitympanic-Recess.-Labelled-diagram.jpg',
+                        width: 120,
+                        height: 120,
+                      ),
+                      Text(
+                        "Telinga Tengah",
+                        textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 24.0,
                           color: fromCssColor('#000000'),
                         ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Container(
+                decoration: new BoxDecoration(
+                  color: Theme.of(context).primaryColor,
+                  //Make a background to the container
+                  // decoration: BoxDecoration(
+                  //   image: DecorationImage(
+                  //     image: AssetImage("images/Skull.png"),
+                  //     fit: BoxFit.fill,
+                  //   ),
+                  // ),
+                  borderRadius: new BorderRadius.circular(10.0),
+                ),
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    backgroundColor: fromCssColor('#ffffff'),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
                     ),
                   ),
-                  ),
-                  emptySpace,
-                  Container(
-                    width: 353,
-                  height: 100,
-                  decoration: new BoxDecoration(
-                    color: Theme.of(context).primaryColor,
-                    borderRadius: new BorderRadius.circular(20.0),
-                  ),
-                  child: TextButton(
-                    style: TextButton.styleFrom(
-                      backgroundColor: fromCssColor('#ffffff'),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20),
-                      )
-                    ), 
-                    onPressed: () {
-                      Navigator.push(context,
-                      MaterialPageRoute(builder: ((context) => Telinga_bagian_dalam()))
-                      );
-                    },
-                    child: Text(
-                      "Telinga Bagian Dalam",
-                      textAlign: TextAlign.center,
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => Telinga_bagian_dalam()),
+                    );
+                  },
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        'images/icon_topic/The-Membranous-Labyrinth.jpg',
+                        width: 120,
+                        height: 100,
+                      ),
+                      Text(
+                        "Telinga Bagian Dalam",
+                        textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 24.0,
                           color: fromCssColor('#000000'),
                         ),
-                    ),
+                      ),
+                    ],
                   ),
-                  ),
-                  emptySpace,        
-                ]
-              )
-            ]
-          )
+                ),
+              ),
+            ],
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2, mainAxisSpacing: 10, crossAxisSpacing: 10),
+          ),
         ),
-      )
+      ),
     );
   }
 }
