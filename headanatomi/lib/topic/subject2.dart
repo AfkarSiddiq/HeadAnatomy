@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:from_css_color/from_css_color.dart';
+import 'package:get/get.dart';
+import 'package:headanatomi/Favorite/favorite.dart';
 
 class Otot_otot_Ekspresi_Wajah extends StatelessWidget {
   Widget gambar = Container(
@@ -52,7 +54,7 @@ class Otot_otot_Ekspresi_Wajah extends StatelessWidget {
                 text: 'orbital , hidung dan mulut.',
                 style: TextStyle(fontWeight: FontWeight.bold)),
           ]),
-      textAlign: TextAlign.justify,
+      textAlign: TextAlign.left,
     ),
   );
 
@@ -860,12 +862,38 @@ class Lidah extends StatelessWidget {
       textAlign: TextAlign.justify,
     ),
   );
+
+  var controller = Get.put(FavoriteController());
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text("lidah "),
         backgroundColor: fromCssColor("#00bcd4"),
+        //make a favorite icon
+        actions: <Widget>[
+          // Obx(
+          //   () {
+              // return controller.favorites.contains(Favorite(title: "lidah")) ?
+               IconButton(
+              icon: Icon(Icons.favorite_border_outlined),
+              onPressed: () {
+                var favorite = Favorite(title: "lidah");
+
+                controller.addFavorite(favorite);
+              },),
+            // ) : IconButton(
+            //   icon: Icon(Icons.favorite),
+            //   onPressed: () {
+            //     var favorite = Favorite(title: "lidah");
+
+            //     controller.removeFavorite(favorite);
+            //   },
+            // );
+            // } 
+          // ),
+        ],
       ),
       body: Container(
         child: ListView(

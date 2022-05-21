@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:from_css_color/from_css_color.dart';
+import 'package:headanatomi/Favorite/favorite_page.dart';
 import 'package:headanatomi/topic/AreaKepala/AreaKepala.dart';
 import 'package:headanatomi/topic/Lainnya/lainnya.dart';
 import 'package:headanatomi/topic/Organ%20Kepala/OrganKepala.dart';
@@ -38,6 +39,8 @@ class _topicState extends State<topic> {
             "Topik",
             style: TextStyle(),
           ),
+          //make back button
+          
           backgroundColor: Color.fromARGB(255, 17, 146, 165),
         ),
         endDrawer: Drawer(
@@ -87,6 +90,22 @@ class _topicState extends State<topic> {
                 leading: Icon(Icons.phone),
                 title: Text(
                   "Contact Us",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return favorite();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.favorite),
+                title: Text(
+                  "Favorite",
                   style: TextStyle(
                     fontSize: 24,
                   ),
@@ -221,7 +240,7 @@ class _topicState extends State<topic> {
                         height: 100,
                       ),
                       Text(
-                        "Otat-Otat Kepala",
+                        "Otot-Otot Kepala",
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 24.0,
