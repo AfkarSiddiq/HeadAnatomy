@@ -195,7 +195,7 @@ class _KelenjarLudahState extends State<KelenjarLudah> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => kelenjar_submandilar()),
+                          builder: (context) => kelenjar_submandibular()),
                     );
                   },
                   child: Column(
@@ -206,7 +206,7 @@ class _KelenjarLudahState extends State<KelenjarLudah> {
                         height: 100,
                       ),
                       Text(
-                        "Kelanjar Submandilar",
+                        "Kelanjar Submandibular",
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 24.0,
