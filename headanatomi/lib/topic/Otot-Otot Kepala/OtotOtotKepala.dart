@@ -196,7 +196,7 @@ class _OtotOtotKepalaState extends State<OtotOtotKepala> {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => kulit_kepala()),
+                      MaterialPageRoute(builder: (context) => Lidah()),
                     );
                   },
                   child: Column(

@@ -104,7 +104,7 @@ class _SendiKepalaState extends State<SendiKepala> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => Sendi_Temporomandibular()),
+                          builder: (context) => Sendi_Tempromandibular()),
                     );
                   },
                   child: Column(
@@ -112,13 +112,13 @@ class _SendiKepalaState extends State<SendiKepala> {
                       Image.asset(
                         'images/icon_topic/boney-surfaces-of-the-temporomandibular-joint.jpg',
                         width: 120,
-                        height: 100,
+                        height: 90,
                       ),
                       Text(
-                        "Sendi_Temporomandibular",
+                        "Sendi Tempromandibular",
                         textAlign: TextAlign.center,
                         style: TextStyle(
-                          fontSize: 24.0,
+                          fontSize: 22.0,
                           color: fromCssColor('#000000'),
                         ),
                       ),

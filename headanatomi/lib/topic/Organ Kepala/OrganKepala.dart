@@ -252,7 +252,7 @@ class _OrganKepalaState extends State<OrganKepala> {
                         height: 100,
                       ),
                       Text(
-                        "Kelanja Ludah",
+                        "Kelenjar Ludah",
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 24.0,
