@@ -115,7 +115,7 @@ class Fossa_Kranial_Anterior extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Fossa Kranial Anterior");
+                var favorite = Favorite(title: "Fossa Kranial Anterior", route: '/fossaKranialAnterior');
 
                 controller.addFavorite(favorite);
               },),
@@ -310,7 +310,7 @@ class Fossa_Kranial_Tengah extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Fossa Kranial Tengah");
+                var favorite = Favorite(title: "Fossa Kranial Tengah", route: '/fossaKranialTengah');
 
                 controller.addFavorite(favorite);
               },),
@@ -434,7 +434,7 @@ class Fossa_Kranial_Posterior extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Fossa Kranial Posterior");
+                var favorite = Favorite(title: "Fossa Kranial Posterior", route: '/fossaKranialPosterior');
 
                 controller.addFavorite(favorite);
               },),
@@ -563,7 +563,7 @@ class Fossa_mastoid extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Fossa Mastoid");
+                var favorite = Favorite(title: "Fossa Mastoid", route: '/fossaMastoid');
 
                 controller.addFavorite(favorite);
               },),
@@ -740,7 +740,7 @@ class kulit_kepala extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Kulit Kepala");
+                var favorite = Favorite(title: "Kulit Kepala", route: '/kulitKepala');
 
                 controller.addFavorite(favorite);
               },),
@@ -918,7 +918,7 @@ class Fossa_Infratemporal extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Fossa Infratemporal");
+                var favorite = Favorite(title: "Fossa Infratemporal", route: 'fossaInfratemporal');
 
                 controller.addFavorite(favorite);
               },),
@@ -1093,7 +1093,7 @@ class Fossa_Pterigopalatina extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Fossa Pterigopalatina");
+                var favorite = Favorite(title: "Fossa Pterigopalatina", route: '/fossaPterigopalatina');
 
                 controller.addFavorite(favorite);
               },),
@@ -1328,7 +1328,7 @@ class Tulang_Etmoid extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Tulang Etmoid");
+                var favorite = Favorite(title: "Tulang Etmoid", route: '/tulangEtmoid');
 
                 controller.addFavorite(favorite);
               },),
@@ -1541,7 +1541,7 @@ class Mandibula extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Mandibula");
+                var favorite = Favorite(title: "Mandibula", route: '/mandibula');
 
                 controller.addFavorite(favorite);
               },),
@@ -1796,7 +1796,7 @@ class Tulang_Sphenoid extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Tulang Sphenoid");
+                var favorite = Favorite(title: "Tulang Sphenoid", route: '/tulangSphenoid');
 
                 controller.addFavorite(favorite);
               },),
@@ -2084,7 +2084,7 @@ class Tulang_Tengkorak extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Tulang Tengkorak");
+                var favorite = Favorite(title: "Tulang Tengkorak", route: '/tulangTengkorak');
 
                 controller.addFavorite(favorite);
               },),
@@ -2296,7 +2296,7 @@ class Tulang_Temporal extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Tulang Temporal");
+                var favorite = Favorite(title: "Tulang Temporal", route: '/tulangTemporal');
 
                 controller.addFavorite(favorite);
               },),
@@ -2488,7 +2488,7 @@ class Kerangka_Hidung extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Kerangka Hidung");
+                var favorite = Favorite(title: "Kerangka Hidung", route: '/kerangkaHidung');
 
                 controller.addFavorite(favorite);
               },),
@@ -2757,7 +2757,7 @@ class Foramen_Kranial extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Foramen Kranial");
+                var favorite = Favorite(title: "Foramen Kranial", route: '/foramenKranial');
 
                 controller.addFavorite(favorite);
               },),
@@ -2977,7 +2977,7 @@ class Sendi_Tempromandibular extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Sendi Tempromandibular");
+                var favorite = Favorite(title: "Sendi Tempromandibular", route: '/sendiTempromandibular');
 
                 controller.addFavorite(favorite);
               },),
@@ -3210,7 +3210,7 @@ class Ringkasan_Saraf_Kranial extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Ringkasan Saraf Kranial");
+                var favorite = Favorite(title: "Ringkasan Saraf Kranial", route: '/ringkasanKranial');
 
                 controller.addFavorite(favorite);
               },),
@@ -3429,7 +3429,7 @@ class Saraf_Penciuman_CN_I_dan_Jalur_Penciuman extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Saraf Penciuman dan jalur Penciuman");
+                var favorite = Favorite(title: "Saraf Penciuman dan jalur Penciuman", route: '/cn1');
 
                 controller.addFavorite(favorite);
               },),
@@ -3678,7 +3678,7 @@ class Saraf_Optik_CN_II_dan_Jalur_Visual extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Saraf Optik dan Jalur Visual");
+                var favorite = Favorite(title: "Saraf Optik dan Jalur Visual", route: '/cn2');
 
                 controller.addFavorite(favorite);
               },),
@@ -3865,7 +3865,7 @@ class Saraf_Okulomotor_CN_III extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Saraf Okulomotor");
+                var favorite = Favorite(title: "Saraf Okulomotor", route: '/cn3');
 
                 controller.addFavorite(favorite);
               },),
@@ -4047,7 +4047,7 @@ class Saraf_Troklearis_CN_IV extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Saraf Troklearis");
+                var favorite = Favorite(title: "Saraf Troklearis", route: '/cn4');
 
                 controller.addFavorite(favorite);
               },),
@@ -4230,7 +4230,7 @@ class Saraf_Trigeminal_CN_V extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Saraf Trigeminal");
+                var favorite = Favorite(title: "Saraf Trigeminal", route: '/cn5');
 
                 controller.addFavorite(favorite);
               },),
@@ -4397,7 +4397,7 @@ class Saraf_Abdusen_CN_VI extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Saraf Abdusen");
+                var favorite = Favorite(title: "Saraf Abdusen", route: '/cn6');
 
                 controller.addFavorite(favorite);
               },),
@@ -4657,7 +4657,7 @@ class Saraf_Wajah_CN_VII extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Saraf Wajah");
+                var favorite = Favorite(title: "Saraf Wajah", route: '/cn7');
 
                 controller.addFavorite(favorite);
               },),
@@ -4828,7 +4828,7 @@ class Saraf_Vestibulocochlear_CN_VIII extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Saraf Vestibulocochlear");
+                var favorite = Favorite(title: "Saraf Vestibulocochlear", route: '/cn8');
 
                 controller.addFavorite(favorite);
               },),
@@ -5006,7 +5006,7 @@ class Saraf_Glossofaringeal_CN_IX extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Saraf Glossofaringeal");
+                var favorite = Favorite(title: "Saraf Glossofaringeal", route: '/cn9');
 
                 controller.addFavorite(favorite);
               },),
@@ -5243,7 +5243,7 @@ class Saraf_Vagus_CN_X extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Saraf Vagus");
+                var favorite = Favorite(title: "Saraf Vagus", route: '/cn10');
 
                 controller.addFavorite(favorite);
               },),
@@ -5414,7 +5414,7 @@ class Saraf_Aksesori_CN_XI extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Saraf Aksesori");
+                var favorite = Favorite(title: "Saraf Aksesori", route: '/cn11');
 
                 controller.addFavorite(favorite);
               },),
@@ -5572,7 +5572,7 @@ class Saraf_Hipoglosus_CN_XII extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Saraf Hipoglosus");
+                var favorite = Favorite(title: "Saraf Hipoglosus", route: '/cn12');
 
                 controller.addFavorite(favorite);
               },),
