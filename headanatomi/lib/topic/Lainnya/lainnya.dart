@@ -7,6 +7,8 @@ import 'package:headanatomi/topic/subject.dart';
 import 'package:headanatomi/topic/subject2.dart';
 import 'package:headanatomi/topic/topic.dart';
 
+import '../../Favorite/favorite_page.dart';
+
 class lainnya extends StatefulWidget {
   const lainnya({Key? key}) : super(key: key);
 
@@ -29,7 +31,7 @@ class _lainnyaState extends State<lainnya> {
                 padding: EdgeInsets.all(20),
                 width: double.infinity,
                 height: 120,
-                color: Color.fromARGB(255, 74, 148, 137),
+                color: Color.fromARGB(255, 17, 146, 165),
                 alignment: Alignment.bottomLeft,
                 child: Text(
                   "Head Anatomy",
@@ -69,6 +71,22 @@ class _lainnyaState extends State<lainnya> {
                 leading: Icon(Icons.phone),
                 title: Text(
                   "Contact Us",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return favorite();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.favorite),
+                title: Text(
+                  "Favorite",
                   style: TextStyle(
                     fontSize: 24,
                   ),
