@@ -1,5 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:from_css_color/from_css_color.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:headanatomi/topic/topic.dart';
+
+import '../Favorite/favorite.dart';
+import '../Favorite/favorite_page.dart';
+import '../contactUs/contactUs.dart';
 
 class Fossa_Kranial_Anterior extends StatelessWidget {
   Widget gambar = Container(
@@ -92,12 +99,37 @@ class Fossa_Kranial_Anterior extends StatelessWidget {
     ),
   );
 
+  var controller = Get.put(FavoriteController());
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text("Fossa Kranial Anterior"),
         backgroundColor: fromCssColor("#00bcd4"),
+        //make a favorite icon
+        actions: <Widget>[
+          // Obx(
+          //   () {
+              // return controller.favorites.contains(Favorite(title: "lidah")) ?
+               IconButton(
+              icon: Icon(Icons.favorite_border_outlined),
+              onPressed: () {
+                var favorite = Favorite(title: "Fossa Kranial Anterior", route: '/fossaKranialAnterior');
+
+                controller.addFavorite(favorite);
+              },),
+            // ) : IconButton(
+            //   icon: Icon(Icons.favorite),
+            //   onPressed: () {
+            //     var favorite = Favorite(title: "lidah");
+
+            //     controller.removeFavorite(favorite);
+            //   },
+            // );
+            // } 
+          // ),
+        ],
       ),
       body: Container(
         child: ListView(
@@ -262,12 +294,37 @@ class Fossa_Kranial_Tengah extends StatelessWidget {
       textAlign: TextAlign.justify,
     ),
   );
+  var controller = Get.put(FavoriteController());
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text("Fossa Kranial Tengah"),
         backgroundColor: fromCssColor("#00bcd4"),
+        //make a favorite icon
+        actions: <Widget>[
+          // Obx(
+          //   () {
+              // return controller.favorites.contains(Favorite(title: "lidah")) ?
+               IconButton(
+              icon: Icon(Icons.favorite_border_outlined),
+              onPressed: () {
+                var favorite = Favorite(title: "Fossa Kranial Tengah", route: '/fossaKranialTengah');
+
+                controller.addFavorite(favorite);
+              },),
+            // ) : IconButton(
+            //   icon: Icon(Icons.favorite),
+            //   onPressed: () {
+            //     var favorite = Favorite(title: "lidah");
+
+            //     controller.removeFavorite(favorite);
+            //   },
+            // );
+            // } 
+          // ),
+        ],
       ),
       body: Container(
         child: ListView(
@@ -361,12 +418,37 @@ class Fossa_Kranial_Posterior extends StatelessWidget {
     ),
   );
 
+ var controller = Get.put(FavoriteController());
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text("Fossa Kranial Posterior"),
         backgroundColor: fromCssColor("#00bcd4"),
+        //make a favorite icon
+        actions: <Widget>[
+          // Obx(
+          //   () {
+              // return controller.favorites.contains(Favorite(title: "lidah")) ?
+               IconButton(
+              icon: Icon(Icons.favorite_border_outlined),
+              onPressed: () {
+                var favorite = Favorite(title: "Fossa Kranial Posterior", route: '/fossaKranialPosterior');
+
+                controller.addFavorite(favorite);
+              },),
+            // ) : IconButton(
+            //   icon: Icon(Icons.favorite),
+            //   onPressed: () {
+            //     var favorite = Favorite(title: "lidah");
+
+            //     controller.removeFavorite(favorite);
+            //   },
+            // );
+            // } 
+          // ),
+        ],
       ),
       body: Container(
         child: ListView(
@@ -465,12 +547,37 @@ class Fossa_mastoid extends StatelessWidget {
     ),
   );
 
+  var controller = Get.put(FavoriteController());
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Fossa Mastoid (Segitiga MacEwen)"),
+        title: Text("Fossa Mastoid"),
         backgroundColor: fromCssColor("#00bcd4"),
+        //make a favorite icon
+        actions: <Widget>[
+          // Obx(
+          //   () {
+              // return controller.favorites.contains(Favorite(title: "lidah")) ?
+               IconButton(
+              icon: Icon(Icons.favorite_border_outlined),
+              onPressed: () {
+                var favorite = Favorite(title: "Fossa Mastoid", route: '/fossaMastoid');
+
+                controller.addFavorite(favorite);
+              },),
+            // ) : IconButton(
+            //   icon: Icon(Icons.favorite),
+            //   onPressed: () {
+            //     var favorite = Favorite(title: "lidah");
+
+            //     controller.removeFavorite(favorite);
+            //   },
+            // );
+            // } 
+          // ),
+        ],
       ),
       body: Container(
         child: ListView(
@@ -617,12 +724,37 @@ class kulit_kepala extends StatelessWidget {
     ),
   );
 
+  var controller = Get.put(FavoriteController());
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Kulit kepala"),
+        title: Text("Kulit Kepala"),
         backgroundColor: fromCssColor("#00bcd4"),
+        //make a favorite icon
+        actions: <Widget>[
+          // Obx(
+          //   () {
+              // return controller.favorites.contains(Favorite(title: "lidah")) ?
+               IconButton(
+              icon: Icon(Icons.favorite_border_outlined),
+              onPressed: () {
+                var favorite = Favorite(title: "Kulit Kepala", route: '/kulitKepala');
+
+                controller.addFavorite(favorite);
+              },),
+            // ) : IconButton(
+            //   icon: Icon(Icons.favorite),
+            //   onPressed: () {
+            //     var favorite = Favorite(title: "lidah");
+
+            //     controller.removeFavorite(favorite);
+            //   },
+            // );
+            // } 
+          // ),
+        ],
       ),
       body: Container(
         child: ListView(
@@ -770,12 +902,37 @@ class Fossa_Infratemporal extends StatelessWidget {
       textAlign: TextAlign.justify,
     ),
   );
+  var controller = Get.put(FavoriteController());
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text("Fossa Infratemporal"),
         backgroundColor: fromCssColor("#00bcd4"),
+        //make a favorite icon
+        actions: <Widget>[
+          // Obx(
+          //   () {
+              // return controller.favorites.contains(Favorite(title: "lidah")) ?
+               IconButton(
+              icon: Icon(Icons.favorite_border_outlined),
+              onPressed: () {
+                var favorite = Favorite(title: "Fossa Infratemporal", route: 'fossaInfratemporal');
+
+                controller.addFavorite(favorite);
+              },),
+            // ) : IconButton(
+            //   icon: Icon(Icons.favorite),
+            //   onPressed: () {
+            //     var favorite = Favorite(title: "lidah");
+
+            //     controller.removeFavorite(favorite);
+            //   },
+            // );
+            // } 
+          // ),
+        ],
       ),
       body: Container(
         child: ListView(
@@ -920,13 +1077,109 @@ class Fossa_Pterigopalatina extends StatelessWidget {
       textAlign: TextAlign.justify,
     ),
   );
+  var controller = Get.put(FavoriteController());
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text("Fossa Pterigopalatina"),
         backgroundColor: fromCssColor("#00bcd4"),
+        //make a favorite icon
+        actions: <Widget>[
+          // Obx(
+          //   () {
+              // return controller.favorites.contains(Favorite(title: "lidah")) ?
+               IconButton(
+              icon: Icon(Icons.favorite_border_outlined),
+              onPressed: () {
+                var favorite = Favorite(title: "Fossa Pterigopalatina", route: '/fossaPterigopalatina');
+
+                controller.addFavorite(favorite);
+              },),
+            // ) : IconButton(
+            //   icon: Icon(Icons.favorite),
+            //   onPressed: () {
+            //     var favorite = Favorite(title: "lidah");
+
+            //     controller.removeFavorite(favorite);
+            //   },
+            // );
+            // } 
+          // ),
+        ],
       ),
+      drawer: Drawer(
+          child: Column(
+            children: [
+              Container(
+                padding: EdgeInsets.all(20),
+                width: double.infinity,
+                height: 120,
+                color: Color.fromARGB(255, 17, 146, 165),
+                alignment: Alignment.bottomLeft,
+                child: Text(
+                  "Head Anatomy",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return topic();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.home),
+                title: Text(
+                  "Home",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return contactus();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.phone),
+                title: Text(
+                  "Contact Us",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return favorite();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.favorite),
+                title: Text(
+                  "Favorite",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
       body: Container(
         child: ListView(
           children: <Widget>[
@@ -1059,13 +1312,109 @@ class Tulang_Etmoid extends StatelessWidget {
     ),
   );
 
+  var controller = Get.put(FavoriteController());
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text("Tulang Etmoid"),
         backgroundColor: fromCssColor("#00bcd4"),
+        //make a favorite icon
+        actions: <Widget>[
+          // Obx(
+          //   () {
+              // return controller.favorites.contains(Favorite(title: "lidah")) ?
+               IconButton(
+              icon: Icon(Icons.favorite_border_outlined),
+              onPressed: () {
+                var favorite = Favorite(title: "Tulang Etmoid", route: '/tulangEtmoid');
+
+                controller.addFavorite(favorite);
+              },),
+            // ) : IconButton(
+            //   icon: Icon(Icons.favorite),
+            //   onPressed: () {
+            //     var favorite = Favorite(title: "lidah");
+
+            //     controller.removeFavorite(favorite);
+            //   },
+            // );
+            // } 
+          // ),
+        ],
       ),
+      drawer: Drawer(
+          child: Column(
+            children: [
+              Container(
+                padding: EdgeInsets.all(20),
+                width: double.infinity,
+                height: 120,
+                color: Color.fromARGB(255, 17, 146, 165),
+                alignment: Alignment.bottomLeft,
+                child: Text(
+                  "Head Anatomy",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return topic();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.home),
+                title: Text(
+                  "Home",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return contactus();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.phone),
+                title: Text(
+                  "Contact Us",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return favorite();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.favorite),
+                title: Text(
+                  "Favorite",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
       body: Container(
         child: ListView(
           children: <Widget>[
@@ -1176,13 +1525,109 @@ class Mandibula extends StatelessWidget {
     ),
   );
 
+  var controller = Get.put(FavoriteController());
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text("Mandibula"),
         backgroundColor: fromCssColor("#00bcd4"),
+        //make a favorite icon
+        actions: <Widget>[
+          // Obx(
+          //   () {
+              // return controller.favorites.contains(Favorite(title: "lidah")) ?
+               IconButton(
+              icon: Icon(Icons.favorite_border_outlined),
+              onPressed: () {
+                var favorite = Favorite(title: "Mandibula", route: '/mandibula');
+
+                controller.addFavorite(favorite);
+              },),
+            // ) : IconButton(
+            //   icon: Icon(Icons.favorite),
+            //   onPressed: () {
+            //     var favorite = Favorite(title: "lidah");
+
+            //     controller.removeFavorite(favorite);
+            //   },
+            // );
+            // } 
+          // ),
+        ],
       ),
+      drawer: Drawer(
+          child: Column(
+            children: [
+              Container(
+                padding: EdgeInsets.all(20),
+                width: double.infinity,
+                height: 120,
+                color: Color.fromARGB(255, 17, 146, 165),
+                alignment: Alignment.bottomLeft,
+                child: Text(
+                  "Head Anatomy",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return topic();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.home),
+                title: Text(
+                  "Home",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return contactus();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.phone),
+                title: Text(
+                  "Contact Us",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return favorite();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.favorite),
+                title: Text(
+                  "Favorite",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
       body: Container(
         child: ListView(
           children: <Widget>[
@@ -1335,13 +1780,109 @@ class Tulang_Sphenoid extends StatelessWidget {
       textAlign: TextAlign.justify,
     ),
   );
+  var controller = Get.put(FavoriteController());
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text("Tulang Sphenoid"),
         backgroundColor: fromCssColor("#00bcd4"),
+        //make a favorite icon
+        actions: <Widget>[
+          // Obx(
+          //   () {
+              // return controller.favorites.contains(Favorite(title: "lidah")) ?
+               IconButton(
+              icon: Icon(Icons.favorite_border_outlined),
+              onPressed: () {
+                var favorite = Favorite(title: "Tulang Sphenoid", route: '/tulangSphenoid');
+
+                controller.addFavorite(favorite);
+              },),
+            // ) : IconButton(
+            //   icon: Icon(Icons.favorite),
+            //   onPressed: () {
+            //     var favorite = Favorite(title: "lidah");
+
+            //     controller.removeFavorite(favorite);
+            //   },
+            // );
+            // } 
+          // ),
+        ],
       ),
+      drawer: Drawer(
+          child: Column(
+            children: [
+              Container(
+                padding: EdgeInsets.all(20),
+                width: double.infinity,
+                height: 120,
+                color: Color.fromARGB(255, 17, 146, 165),
+                alignment: Alignment.bottomLeft,
+                child: Text(
+                  "Head Anatomy",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return topic();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.home),
+                title: Text(
+                  "Home",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return contactus();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.phone),
+                title: Text(
+                  "Contact Us",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return favorite();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.favorite),
+                title: Text(
+                  "Favorite",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
       body: Container(
         child: ListView(
           children: <Widget>[
@@ -1527,13 +2068,109 @@ class Tulang_Tengkorak extends StatelessWidget {
       textAlign: TextAlign.justify,
     ),
   );
+  var controller = Get.put(FavoriteController());
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text("Tulang Tengkorak"),
         backgroundColor: fromCssColor("#00bcd4"),
+        //make a favorite icon
+        actions: <Widget>[
+          // Obx(
+          //   () {
+              // return controller.favorites.contains(Favorite(title: "lidah")) ?
+               IconButton(
+              icon: Icon(Icons.favorite_border_outlined),
+              onPressed: () {
+                var favorite = Favorite(title: "Tulang Tengkorak", route: '/tulangTengkorak');
+
+                controller.addFavorite(favorite);
+              },),
+            // ) : IconButton(
+            //   icon: Icon(Icons.favorite),
+            //   onPressed: () {
+            //     var favorite = Favorite(title: "lidah");
+
+            //     controller.removeFavorite(favorite);
+            //   },
+            // );
+            // } 
+          // ),
+        ],
       ),
+      drawer: Drawer(
+          child: Column(
+            children: [
+              Container(
+                padding: EdgeInsets.all(20),
+                width: double.infinity,
+                height: 120,
+                color: Color.fromARGB(255, 17, 146, 165),
+                alignment: Alignment.bottomLeft,
+                child: Text(
+                  "Head Anatomy",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return topic();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.home),
+                title: Text(
+                  "Home",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return contactus();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.phone),
+                title: Text(
+                  "Contact Us",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return favorite();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.favorite),
+                title: Text(
+                  "Favorite",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
       body: Container(
         child: ListView(
           children: <Widget>[
@@ -1643,13 +2280,109 @@ class Tulang_Temporal extends StatelessWidget {
       textAlign: TextAlign.justify,
     ),
   );
+  var controller = Get.put(FavoriteController());
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text("Tulang Temporal"),
         backgroundColor: fromCssColor("#00bcd4"),
+        //make a favorite icon
+        actions: <Widget>[
+          // Obx(
+          //   () {
+              // return controller.favorites.contains(Favorite(title: "lidah")) ?
+               IconButton(
+              icon: Icon(Icons.favorite_border_outlined),
+              onPressed: () {
+                var favorite = Favorite(title: "Tulang Temporal", route: '/tulangTemporal');
+
+                controller.addFavorite(favorite);
+              },),
+            // ) : IconButton(
+            //   icon: Icon(Icons.favorite),
+            //   onPressed: () {
+            //     var favorite = Favorite(title: "lidah");
+
+            //     controller.removeFavorite(favorite);
+            //   },
+            // );
+            // } 
+          // ),
+        ],
       ),
+      drawer: Drawer(
+          child: Column(
+            children: [
+              Container(
+                padding: EdgeInsets.all(20),
+                width: double.infinity,
+                height: 120,
+                color: Color.fromARGB(255, 17, 146, 165),
+                alignment: Alignment.bottomLeft,
+                child: Text(
+                  "Head Anatomy",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return topic();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.home),
+                title: Text(
+                  "Home",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return contactus();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.phone),
+                title: Text(
+                  "Contact Us",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return favorite();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.favorite),
+                title: Text(
+                  "Favorite",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
       body: Container(
         child: ListView(
           children: <Widget>[
@@ -1739,13 +2472,109 @@ class Kerangka_Hidung extends StatelessWidget {
     ),
   );
 
+  var controller = Get.put(FavoriteController());
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text("Kerangka Hidung"),
         backgroundColor: fromCssColor("#00bcd4"),
+        //make a favorite icon
+        actions: <Widget>[
+          // Obx(
+          //   () {
+              // return controller.favorites.contains(Favorite(title: "lidah")) ?
+               IconButton(
+              icon: Icon(Icons.favorite_border_outlined),
+              onPressed: () {
+                var favorite = Favorite(title: "Kerangka Hidung", route: '/kerangkaHidung');
+
+                controller.addFavorite(favorite);
+              },),
+            // ) : IconButton(
+            //   icon: Icon(Icons.favorite),
+            //   onPressed: () {
+            //     var favorite = Favorite(title: "lidah");
+
+            //     controller.removeFavorite(favorite);
+            //   },
+            // );
+            // } 
+          // ),
+        ],
       ),
+      drawer: Drawer(
+          child: Column(
+            children: [
+              Container(
+                padding: EdgeInsets.all(20),
+                width: double.infinity,
+                height: 120,
+                color: Color.fromARGB(255, 17, 146, 165),
+                alignment: Alignment.bottomLeft,
+                child: Text(
+                  "Head Anatomy",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return topic();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.home),
+                title: Text(
+                  "Home",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return contactus();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.phone),
+                title: Text(
+                  "Contact Us",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return favorite();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.favorite),
+                title: Text(
+                  "Favorite",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
       body: Container(
         child: ListView(
           children: <Widget>[
@@ -1912,13 +2741,109 @@ class Foramen_Kranial extends StatelessWidget {
       textAlign: TextAlign.justify,
     ),
   );
+  var controller = Get.put(FavoriteController());
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text("Foramen Kranial"),
         backgroundColor: fromCssColor("#00bcd4"),
+        //make a favorite icon
+        actions: <Widget>[
+          // Obx(
+          //   () {
+              // return controller.favorites.contains(Favorite(title: "lidah")) ?
+               IconButton(
+              icon: Icon(Icons.favorite_border_outlined),
+              onPressed: () {
+                var favorite = Favorite(title: "Foramen Kranial", route: '/foramenKranial');
+
+                controller.addFavorite(favorite);
+              },),
+            // ) : IconButton(
+            //   icon: Icon(Icons.favorite),
+            //   onPressed: () {
+            //     var favorite = Favorite(title: "lidah");
+
+            //     controller.removeFavorite(favorite);
+            //   },
+            // );
+            // } 
+          // ),
+        ],
       ),
+      drawer: Drawer(
+          child: Column(
+            children: [
+              Container(
+                padding: EdgeInsets.all(20),
+                width: double.infinity,
+                height: 120,
+                color: Color.fromARGB(255, 17, 146, 165),
+                alignment: Alignment.bottomLeft,
+                child: Text(
+                  "Head Anatomy",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return topic();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.home),
+                title: Text(
+                  "Home",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return contactus();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.phone),
+                title: Text(
+                  "Contact Us",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return favorite();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.favorite),
+                title: Text(
+                  "Favorite",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
       body: Container(
         child: ListView(
           children: <Widget>[
@@ -1936,7 +2861,7 @@ class Foramen_Kranial extends StatelessWidget {
   }
 }
 
-class Sendi_Temporomandibular extends StatelessWidget {
+class Sendi_Tempromandibular extends StatelessWidget {
   Widget gambar = Container(
     child: Image.asset(
       'images/boney-surfaces-of-the-temporomandibular-joint.jpg',
@@ -2036,13 +2961,109 @@ class Sendi_Temporomandibular extends StatelessWidget {
     ),
   );
 
+ var controller = Get.put(FavoriteController());
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Sendi Temporomandibular"),
+        title: Text("Sendi Tempromandibular"),
         backgroundColor: fromCssColor("#00bcd4"),
+        //make a favorite icon
+        actions: <Widget>[
+          // Obx(
+          //   () {
+              // return controller.favorites.contains(Favorite(title: "lidah")) ?
+               IconButton(
+              icon: Icon(Icons.favorite_border_outlined),
+              onPressed: () {
+                var favorite = Favorite(title: "Sendi Tempromandibular", route: '/sendiTempromandibular');
+
+                controller.addFavorite(favorite);
+              },),
+            // ) : IconButton(
+            //   icon: Icon(Icons.favorite),
+            //   onPressed: () {
+            //     var favorite = Favorite(title: "lidah");
+
+            //     controller.removeFavorite(favorite);
+            //   },
+            // );
+            // } 
+          // ),
+        ],
       ),
+      drawer: Drawer(
+          child: Column(
+            children: [
+              Container(
+                padding: EdgeInsets.all(20),
+                width: double.infinity,
+                height: 120,
+                color: Color.fromARGB(255, 17, 146, 165),
+                alignment: Alignment.bottomLeft,
+                child: Text(
+                  "Head Anatomy",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return topic();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.home),
+                title: Text(
+                  "Home",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return contactus();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.phone),
+                title: Text(
+                  "Contact Us",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return favorite();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.favorite),
+                title: Text(
+                  "Favorite",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
       body: Container(
         child: ListView(
           children: <Widget>[
@@ -2173,13 +3194,109 @@ class Ringkasan_Saraf_Kranial extends StatelessWidget {
     ),
   );
 
+  var controller = Get.put(FavoriteController());
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text("Ringkasan Saraf Kranial"),
         backgroundColor: fromCssColor("#00bcd4"),
+        //make a favorite icon
+        actions: <Widget>[
+          // Obx(
+          //   () {
+              // return controller.favorites.contains(Favorite(title: "lidah")) ?
+               IconButton(
+              icon: Icon(Icons.favorite_border_outlined),
+              onPressed: () {
+                var favorite = Favorite(title: "Ringkasan Saraf Kranial", route: '/ringkasanKranial');
+
+                controller.addFavorite(favorite);
+              },),
+            // ) : IconButton(
+            //   icon: Icon(Icons.favorite),
+            //   onPressed: () {
+            //     var favorite = Favorite(title: "lidah");
+
+            //     controller.removeFavorite(favorite);
+            //   },
+            // );
+            // } 
+          // ),
+        ],
       ),
+      drawer: Drawer(
+          child: Column(
+            children: [
+              Container(
+                padding: EdgeInsets.all(20),
+                width: double.infinity,
+                height: 120,
+                color: Color.fromARGB(255, 17, 146, 165),
+                alignment: Alignment.bottomLeft,
+                child: Text(
+                  "Head Anatomy",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return topic();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.home),
+                title: Text(
+                  "Home",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return contactus();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.phone),
+                title: Text(
+                  "Contact Us",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return favorite();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.favorite),
+                title: Text(
+                  "Favorite",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
       body: Container(
         child: ListView(
           children: <Widget>[
@@ -2296,13 +3413,109 @@ class Saraf_Penciuman_CN_I_dan_Jalur_Penciuman extends StatelessWidget {
       textAlign: TextAlign.justify,
     ),
   );
+  var controller = Get.put(FavoriteController());
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Saraf Penciuman (CN I) dan Jalur Penciuman"),
+        title: Text("Saraf Penciuman dan jalur Penciuman"),
         backgroundColor: fromCssColor("#00bcd4"),
+        //make a favorite icon
+        actions: <Widget>[
+          // Obx(
+          //   () {
+              // return controller.favorites.contains(Favorite(title: "lidah")) ?
+               IconButton(
+              icon: Icon(Icons.favorite_border_outlined),
+              onPressed: () {
+                var favorite = Favorite(title: "Saraf Penciuman dan jalur Penciuman", route: '/cn1');
+
+                controller.addFavorite(favorite);
+              },),
+            // ) : IconButton(
+            //   icon: Icon(Icons.favorite),
+            //   onPressed: () {
+            //     var favorite = Favorite(title: "lidah");
+
+            //     controller.removeFavorite(favorite);
+            //   },
+            // );
+            // } 
+          // ),
+        ],
       ),
+      drawer: Drawer(
+          child: Column(
+            children: [
+              Container(
+                padding: EdgeInsets.all(20),
+                width: double.infinity,
+                height: 120,
+                color: Color.fromARGB(255, 17, 146, 165),
+                alignment: Alignment.bottomLeft,
+                child: Text(
+                  "Head Anatomy",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return topic();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.home),
+                title: Text(
+                  "Home",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return contactus();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.phone),
+                title: Text(
+                  "Contact Us",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return favorite();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.favorite),
+                title: Text(
+                  "Favorite",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
       body: Container(
         child: ListView(
           children: <Widget>[
@@ -2449,13 +3662,109 @@ class Saraf_Optik_CN_II_dan_Jalur_Visual extends StatelessWidget {
       textAlign: TextAlign.justify,
     ),
   );
+  var controller = Get.put(FavoriteController());
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Saraf Optik (CN II) dan Jalur Visual"),
+        title: Text("Saraf Optik dan Jalur Visual"),
         backgroundColor: fromCssColor("#00bcd4"),
+        //make a favorite icon
+        actions: <Widget>[
+          // Obx(
+          //   () {
+              // return controller.favorites.contains(Favorite(title: "lidah")) ?
+               IconButton(
+              icon: Icon(Icons.favorite_border_outlined),
+              onPressed: () {
+                var favorite = Favorite(title: "Saraf Optik dan Jalur Visual", route: '/cn2');
+
+                controller.addFavorite(favorite);
+              },),
+            // ) : IconButton(
+            //   icon: Icon(Icons.favorite),
+            //   onPressed: () {
+            //     var favorite = Favorite(title: "lidah");
+
+            //     controller.removeFavorite(favorite);
+            //   },
+            // );
+            // } 
+          // ),
+        ],
       ),
+      drawer: Drawer(
+          child: Column(
+            children: [
+              Container(
+                padding: EdgeInsets.all(20),
+                width: double.infinity,
+                height: 120,
+                color: Color.fromARGB(255, 17, 146, 165),
+                alignment: Alignment.bottomLeft,
+                child: Text(
+                  "Head Anatomy",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return topic();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.home),
+                title: Text(
+                  "Home",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return contactus();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.phone),
+                title: Text(
+                  "Contact Us",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return favorite();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.favorite),
+                title: Text(
+                  "Favorite",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
       body: Container(
         child: ListView(
           children: <Widget>[
@@ -2540,13 +3849,109 @@ class Saraf_Okulomotor_CN_III extends StatelessWidget {
     ),
   );
 
+  var controller = Get.put(FavoriteController());
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Saraf Okulomotor (CN III)"),
+        title: Text("Saraf Okulomotor"),
         backgroundColor: fromCssColor("#00bcd4"),
+        //make a favorite icon
+        actions: <Widget>[
+          // Obx(
+          //   () {
+              // return controller.favorites.contains(Favorite(title: "lidah")) ?
+               IconButton(
+              icon: Icon(Icons.favorite_border_outlined),
+              onPressed: () {
+                var favorite = Favorite(title: "Saraf Okulomotor", route: '/cn3');
+
+                controller.addFavorite(favorite);
+              },),
+            // ) : IconButton(
+            //   icon: Icon(Icons.favorite),
+            //   onPressed: () {
+            //     var favorite = Favorite(title: "lidah");
+
+            //     controller.removeFavorite(favorite);
+            //   },
+            // );
+            // } 
+          // ),
+        ],
       ),
+      drawer: Drawer(
+          child: Column(
+            children: [
+              Container(
+                padding: EdgeInsets.all(20),
+                width: double.infinity,
+                height: 120,
+                color: Color.fromARGB(255, 17, 146, 165),
+                alignment: Alignment.bottomLeft,
+                child: Text(
+                  "Head Anatomy",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return topic();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.home),
+                title: Text(
+                  "Home",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return contactus();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.phone),
+                title: Text(
+                  "Contact Us",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return favorite();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.favorite),
+                title: Text(
+                  "Favorite",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
       body: Container(
         child: ListView(
           children: <Widget>[
@@ -2626,13 +4031,109 @@ class Saraf_Troklearis_CN_IV extends StatelessWidget {
     ),
   );
 
+  var controller = Get.put(FavoriteController());
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Saraf Troklearis (CN IV)"),
+        title: Text("Saraf Troklearis"),
         backgroundColor: fromCssColor("#00bcd4"),
+        //make a favorite icon
+        actions: <Widget>[
+          // Obx(
+          //   () {
+              // return controller.favorites.contains(Favorite(title: "lidah")) ?
+               IconButton(
+              icon: Icon(Icons.favorite_border_outlined),
+              onPressed: () {
+                var favorite = Favorite(title: "Saraf Troklearis", route: '/cn4');
+
+                controller.addFavorite(favorite);
+              },),
+            // ) : IconButton(
+            //   icon: Icon(Icons.favorite),
+            //   onPressed: () {
+            //     var favorite = Favorite(title: "lidah");
+
+            //     controller.removeFavorite(favorite);
+            //   },
+            // );
+            // } 
+          // ),
+        ],
       ),
+      drawer: Drawer(
+          child: Column(
+            children: [
+              Container(
+                padding: EdgeInsets.all(20),
+                width: double.infinity,
+                height: 120,
+                color: Color.fromARGB(255, 17, 146, 165),
+                alignment: Alignment.bottomLeft,
+                child: Text(
+                  "Head Anatomy",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return topic();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.home),
+                title: Text(
+                  "Home",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return contactus();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.phone),
+                title: Text(
+                  "Contact Us",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return favorite();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.favorite),
+                title: Text(
+                  "Favorite",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
       body: Container(
         child: ListView(
           children: <Widget>[
@@ -2713,13 +4214,109 @@ class Saraf_Trigeminal_CN_V extends StatelessWidget {
     ),
   );
 
+  var controller = Get.put(FavoriteController());
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Saraf Trigeminal (CN V)"),
+        title: Text("Saraf Trigeminal"),
         backgroundColor: fromCssColor("#00bcd4"),
+        //make a favorite icon
+        actions: <Widget>[
+          // Obx(
+          //   () {
+              // return controller.favorites.contains(Favorite(title: "lidah")) ?
+               IconButton(
+              icon: Icon(Icons.favorite_border_outlined),
+              onPressed: () {
+                var favorite = Favorite(title: "Saraf Trigeminal", route: '/cn5');
+
+                controller.addFavorite(favorite);
+              },),
+            // ) : IconButton(
+            //   icon: Icon(Icons.favorite),
+            //   onPressed: () {
+            //     var favorite = Favorite(title: "lidah");
+
+            //     controller.removeFavorite(favorite);
+            //   },
+            // );
+            // } 
+          // ),
+        ],
       ),
+      drawer: Drawer(
+          child: Column(
+            children: [
+              Container(
+                padding: EdgeInsets.all(20),
+                width: double.infinity,
+                height: 120,
+                color: Color.fromARGB(255, 17, 146, 165),
+                alignment: Alignment.bottomLeft,
+                child: Text(
+                  "Head Anatomy",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return topic();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.home),
+                title: Text(
+                  "Home",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return contactus();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.phone),
+                title: Text(
+                  "Contact Us",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return favorite();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.favorite),
+                title: Text(
+                  "Favorite",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
       body: Container(
         child: ListView(
           children: <Widget>[
@@ -2784,13 +4381,109 @@ class Saraf_Abdusen_CN_VI extends StatelessWidget {
     ),
   );
 
+ var controller = Get.put(FavoriteController());
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Saraf Wajah (CN VII)"),
+        title: Text("Saraf Abdusen"),
         backgroundColor: fromCssColor("#00bcd4"),
+        //make a favorite icon
+        actions: <Widget>[
+          // Obx(
+          //   () {
+              // return controller.favorites.contains(Favorite(title: "lidah")) ?
+               IconButton(
+              icon: Icon(Icons.favorite_border_outlined),
+              onPressed: () {
+                var favorite = Favorite(title: "Saraf Abdusen", route: '/cn6');
+
+                controller.addFavorite(favorite);
+              },),
+            // ) : IconButton(
+            //   icon: Icon(Icons.favorite),
+            //   onPressed: () {
+            //     var favorite = Favorite(title: "lidah");
+
+            //     controller.removeFavorite(favorite);
+            //   },
+            // );
+            // } 
+          // ),
+        ],
       ),
+      drawer: Drawer(
+          child: Column(
+            children: [
+              Container(
+                padding: EdgeInsets.all(20),
+                width: double.infinity,
+                height: 120,
+                color: Color.fromARGB(255, 17, 146, 165),
+                alignment: Alignment.bottomLeft,
+                child: Text(
+                  "Head Anatomy",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return topic();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.home),
+                title: Text(
+                  "Home",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return contactus();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.phone),
+                title: Text(
+                  "Contact Us",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return favorite();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.favorite),
+                title: Text(
+                  "Favorite",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
       body: Container(
         child: ListView(
           children: <Widget>[
@@ -2948,13 +4641,109 @@ class Saraf_Wajah_CN_VII extends StatelessWidget {
       textAlign: TextAlign.justify,
     ),
   );
+  var controller = Get.put(FavoriteController());
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Saraf Wajah (CN VII)"),
+        title: Text("Saraf Wajah"),
         backgroundColor: fromCssColor("#00bcd4"),
+        //make a favorite icon
+        actions: <Widget>[
+          // Obx(
+          //   () {
+              // return controller.favorites.contains(Favorite(title: "lidah")) ?
+               IconButton(
+              icon: Icon(Icons.favorite_border_outlined),
+              onPressed: () {
+                var favorite = Favorite(title: "Saraf Wajah", route: '/cn7');
+
+                controller.addFavorite(favorite);
+              },),
+            // ) : IconButton(
+            //   icon: Icon(Icons.favorite),
+            //   onPressed: () {
+            //     var favorite = Favorite(title: "lidah");
+
+            //     controller.removeFavorite(favorite);
+            //   },
+            // );
+            // } 
+          // ),
+        ],
       ),
+      drawer: Drawer(
+          child: Column(
+            children: [
+              Container(
+                padding: EdgeInsets.all(20),
+                width: double.infinity,
+                height: 120,
+                color: Color.fromARGB(255, 17, 146, 165),
+                alignment: Alignment.bottomLeft,
+                child: Text(
+                  "Head Anatomy",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return topic();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.home),
+                title: Text(
+                  "Home",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return contactus();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.phone),
+                title: Text(
+                  "Contact Us",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return favorite();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.favorite),
+                title: Text(
+                  "Favorite",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
       body: Container(
         child: ListView(
           children: <Widget>[
@@ -3023,13 +4812,109 @@ class Saraf_Vestibulocochlear_CN_VIII extends StatelessWidget {
     ),
   );
 
+  var controller = Get.put(FavoriteController());
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Saraf Vestibulocochlear (CN VIII)"),
+        title: Text("Saraf Vestibulocochlear"),
         backgroundColor: fromCssColor("#00bcd4"),
+        //make a favorite icon
+        actions: <Widget>[
+          // Obx(
+          //   () {
+              // return controller.favorites.contains(Favorite(title: "lidah")) ?
+               IconButton(
+              icon: Icon(Icons.favorite_border_outlined),
+              onPressed: () {
+                var favorite = Favorite(title: "Saraf Vestibulocochlear", route: '/cn8');
+
+                controller.addFavorite(favorite);
+              },),
+            // ) : IconButton(
+            //   icon: Icon(Icons.favorite),
+            //   onPressed: () {
+            //     var favorite = Favorite(title: "lidah");
+
+            //     controller.removeFavorite(favorite);
+            //   },
+            // );
+            // } 
+          // ),
+        ],
       ),
+      drawer: Drawer(
+          child: Column(
+            children: [
+              Container(
+                padding: EdgeInsets.all(20),
+                width: double.infinity,
+                height: 120,
+                color: Color.fromARGB(255, 17, 146, 165),
+                alignment: Alignment.bottomLeft,
+                child: Text(
+                  "Head Anatomy",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return topic();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.home),
+                title: Text(
+                  "Home",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return contactus();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.phone),
+                title: Text(
+                  "Contact Us",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return favorite();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.favorite),
+                title: Text(
+                  "Favorite",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
       body: Container(
         child: ListView(
           children: <Widget>[
@@ -3105,13 +4990,109 @@ class Saraf_Glossofaringeal_CN_IX extends StatelessWidget {
     ),
   );
 
+ var controller = Get.put(FavoriteController());
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Saraf Glossofaringeal (CN IX)"),
+        title: Text("Saraf Glossofaringeal"),
         backgroundColor: fromCssColor("#00bcd4"),
+        //make a favorite icon
+        actions: <Widget>[
+          // Obx(
+          //   () {
+              // return controller.favorites.contains(Favorite(title: "lidah")) ?
+               IconButton(
+              icon: Icon(Icons.favorite_border_outlined),
+              onPressed: () {
+                var favorite = Favorite(title: "Saraf Glossofaringeal", route: '/cn9');
+
+                controller.addFavorite(favorite);
+              },),
+            // ) : IconButton(
+            //   icon: Icon(Icons.favorite),
+            //   onPressed: () {
+            //     var favorite = Favorite(title: "lidah");
+
+            //     controller.removeFavorite(favorite);
+            //   },
+            // );
+            // } 
+          // ),
+        ],
       ),
+      drawer: Drawer(
+          child: Column(
+            children: [
+              Container(
+                padding: EdgeInsets.all(20),
+                width: double.infinity,
+                height: 120,
+                color: Color.fromARGB(255, 17, 146, 165),
+                alignment: Alignment.bottomLeft,
+                child: Text(
+                  "Head Anatomy",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return topic();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.home),
+                title: Text(
+                  "Home",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return contactus();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.phone),
+                title: Text(
+                  "Contact Us",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return favorite();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.favorite),
+                title: Text(
+                  "Favorite",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
       body: Container(
         child: ListView(
           children: <Widget>[
@@ -3246,13 +5227,109 @@ class Saraf_Vagus_CN_X extends StatelessWidget {
       textAlign: TextAlign.justify,
     ),
   );
+  var controller = Get.put(FavoriteController());
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Saraf Vagus (CN X)"),
+        title: Text("Saraf Vagus"),
         backgroundColor: fromCssColor("#00bcd4"),
+        //make a favorite icon
+        actions: <Widget>[
+          // Obx(
+          //   () {
+              // return controller.favorites.contains(Favorite(title: "lidah")) ?
+               IconButton(
+              icon: Icon(Icons.favorite_border_outlined),
+              onPressed: () {
+                var favorite = Favorite(title: "Saraf Vagus", route: '/cn10');
+
+                controller.addFavorite(favorite);
+              },),
+            // ) : IconButton(
+            //   icon: Icon(Icons.favorite),
+            //   onPressed: () {
+            //     var favorite = Favorite(title: "lidah");
+
+            //     controller.removeFavorite(favorite);
+            //   },
+            // );
+            // } 
+          // ),
+        ],
       ),
+      drawer: Drawer(
+          child: Column(
+            children: [
+              Container(
+                padding: EdgeInsets.all(20),
+                width: double.infinity,
+                height: 120,
+                color: Color.fromARGB(255, 17, 146, 165),
+                alignment: Alignment.bottomLeft,
+                child: Text(
+                  "Head Anatomy",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return topic();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.home),
+                title: Text(
+                  "Home",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return contactus();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.phone),
+                title: Text(
+                  "Contact Us",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return favorite();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.favorite),
+                title: Text(
+                  "Favorite",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
       body: Container(
         child: ListView(
           children: <Widget>[
@@ -3321,13 +5398,109 @@ class Saraf_Aksesori_CN_XI extends StatelessWidget {
     ),
   );
 
+  var controller = Get.put(FavoriteController());
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Saraf Aksesori (CN XI)"),
+        title: Text("Saraf Aksesori"),
         backgroundColor: fromCssColor("#00bcd4"),
+        //make a favorite icon
+        actions: <Widget>[
+          // Obx(
+          //   () {
+              // return controller.favorites.contains(Favorite(title: "lidah")) ?
+               IconButton(
+              icon: Icon(Icons.favorite_border_outlined),
+              onPressed: () {
+                var favorite = Favorite(title: "Saraf Aksesori", route: '/cn11');
+
+                controller.addFavorite(favorite);
+              },),
+            // ) : IconButton(
+            //   icon: Icon(Icons.favorite),
+            //   onPressed: () {
+            //     var favorite = Favorite(title: "lidah");
+
+            //     controller.removeFavorite(favorite);
+            //   },
+            // );
+            // } 
+          // ),
+        ],
       ),
+      drawer: Drawer(
+          child: Column(
+            children: [
+              Container(
+                padding: EdgeInsets.all(20),
+                width: double.infinity,
+                height: 120,
+                color: Color.fromARGB(255, 17, 146, 165),
+                alignment: Alignment.bottomLeft,
+                child: Text(
+                  "Head Anatomy",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return topic();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.home),
+                title: Text(
+                  "Home",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return contactus();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.phone),
+                title: Text(
+                  "Contact Us",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return favorite();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.favorite),
+                title: Text(
+                  "Favorite",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
       body: Container(
         child: ListView(
           children: <Widget>[
@@ -3383,13 +5556,109 @@ class Saraf_Hipoglosus_CN_XII extends StatelessWidget {
     ),
   );
 
+  var controller = Get.put(FavoriteController());
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Saraf Hipoglosus (CN XII)"),
+        title: Text("Saraf Hipoglosus"),
         backgroundColor: fromCssColor("#00bcd4"),
+        //make a favorite icon
+        actions: <Widget>[
+          // Obx(
+          //   () {
+              // return controller.favorites.contains(Favorite(title: "lidah")) ?
+               IconButton(
+              icon: Icon(Icons.favorite_border_outlined),
+              onPressed: () {
+                var favorite = Favorite(title: "Saraf Hipoglosus", route: '/cn12');
+
+                controller.addFavorite(favorite);
+              },),
+            // ) : IconButton(
+            //   icon: Icon(Icons.favorite),
+            //   onPressed: () {
+            //     var favorite = Favorite(title: "lidah");
+
+            //     controller.removeFavorite(favorite);
+            //   },
+            // );
+            // } 
+          // ),
+        ],
       ),
+      drawer: Drawer(
+          child: Column(
+            children: [
+              Container(
+                padding: EdgeInsets.all(20),
+                width: double.infinity,
+                height: 120,
+                color: Color.fromARGB(255, 17, 146, 165),
+                alignment: Alignment.bottomLeft,
+                child: Text(
+                  "Head Anatomy",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return topic();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.home),
+                title: Text(
+                  "Home",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return contactus();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.phone),
+                title: Text(
+                  "Contact Us",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return favorite();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.favorite),
+                title: Text(
+                  "Favorite",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
       body: Container(
         child: ListView(
           children: <Widget>[

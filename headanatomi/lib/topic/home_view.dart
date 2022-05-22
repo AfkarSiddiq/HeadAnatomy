@@ -72,7 +72,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Material Apps',
       home: Scaffold(
-          body: Container(
+        body: Container(
         color: fromCssColor('#4A8592'),
         child: ListView(
           children: <Widget>[

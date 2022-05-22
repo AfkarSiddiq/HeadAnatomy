@@ -3,6 +3,7 @@ import 'package:headanatomi/topic/subject.dart';
 import 'package:headanatomi/topic/topic.dart';
 import 'package:from_css_color/from_css_color.dart';
 
+import '../../Favorite/favorite_page.dart';
 import '../../contactUs/contactUs.dart';
 
 class SendiKepala extends StatefulWidget {
@@ -28,7 +29,7 @@ class _SendiKepalaState extends State<SendiKepala> {
                 padding: EdgeInsets.all(20),
                 width: double.infinity,
                 height: 120,
-                color: Color.fromARGB(255, 74, 148, 137),
+                color: Color.fromARGB(255, 17, 146, 165),
                 alignment: Alignment.bottomLeft,
                 child: Text(
                   "Head Anatomy",
@@ -73,6 +74,22 @@ class _SendiKepalaState extends State<SendiKepala> {
                   ),
                 ),
               ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return favorite();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.favorite),
+                title: Text(
+                  "Favorite",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
             ],
           ),
         ),
@@ -104,7 +121,7 @@ class _SendiKepalaState extends State<SendiKepala> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => Sendi_Temporomandibular()),
+                          builder: (context) => Sendi_Tempromandibular()),
                     );
                   },
                   child: Column(
@@ -112,13 +129,13 @@ class _SendiKepalaState extends State<SendiKepala> {
                       Image.asset(
                         'images/icon_topic/boney-surfaces-of-the-temporomandibular-joint.jpg',
                         width: 120,
-                        height: 100,
+                        height: 90,
                       ),
                       Text(
-                        "Sendi_Temporomandibular",
+                        "Sendi Tempromandibular",
                         textAlign: TextAlign.center,
                         style: TextStyle(
-                          fontSize: 24.0,
+                          fontSize: 22.0,
                           color: fromCssColor('#000000'),
                         ),
                       ),

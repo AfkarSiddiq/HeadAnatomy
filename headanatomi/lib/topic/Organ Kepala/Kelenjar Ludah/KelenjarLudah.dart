@@ -4,6 +4,7 @@ import 'package:headanatomi/topic/Organ Kepala/OrganKepala.dart';
 import 'package:headanatomi/topic/home_view.dart';
 import 'package:headanatomi/topic/subject2.dart';
 
+import '../../../Favorite/favorite_page.dart';
 import '../../../contactUs/contactUs.dart';
 import '../../topic.dart';
 
@@ -30,7 +31,7 @@ class _KelenjarLudahState extends State<KelenjarLudah> {
                 padding: EdgeInsets.all(20),
                 width: double.infinity,
                 height: 120,
-                color: Color.fromARGB(255, 12, 202, 142),
+                color: Color.fromARGB(255, 17, 146, 165),
                 alignment: Alignment.bottomLeft,
                 child: Text(
                   "Head Anatomy",
@@ -70,6 +71,22 @@ class _KelenjarLudahState extends State<KelenjarLudah> {
                 leading: Icon(Icons.phone),
                 title: Text(
                   "Contact Us",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return favorite();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.favorite),
+                title: Text(
+                  "Favorite",
                   style: TextStyle(
                     fontSize: 24,
                   ),
@@ -195,7 +212,7 @@ class _KelenjarLudahState extends State<KelenjarLudah> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => kelenjar_submandilar()),
+                          builder: (context) => kelenjar_submandibular()),
                     );
                   },
                   child: Column(
@@ -206,7 +223,7 @@ class _KelenjarLudahState extends State<KelenjarLudah> {
                         height: 100,
                       ),
                       Text(
-                        "Kelanjar Submandilar",
+                        "Kelanjar Submandibular",
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 24.0,

@@ -4,6 +4,7 @@ import 'package:headanatomi/topic/subject.dart';
 import 'package:headanatomi/topic/topic.dart';
 import 'package:from_css_color/from_css_color.dart';
 
+import '../../Favorite/favorite_page.dart';
 import '../../contactUs/contactUs.dart';
 
 class SarafKranial extends StatefulWidget {
@@ -29,7 +30,7 @@ class _SarafKranialState extends State<SarafKranial> {
                 padding: EdgeInsets.all(20),
                 width: double.infinity,
                 height: 120,
-                color: Color.fromARGB(255, 74, 148, 137),
+                color: Color.fromARGB(255, 17, 146, 165),
                 alignment: Alignment.bottomLeft,
                 child: Text(
                   "Head Anatomy",
@@ -69,6 +70,22 @@ class _SarafKranialState extends State<SarafKranial> {
                 leading: Icon(Icons.phone),
                 title: Text(
                   "Contact Us",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return favorite();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.favorite),
+                title: Text(
+                  "Favorite",
                   style: TextStyle(
                     fontSize: 24,
                   ),
