@@ -94,11 +94,12 @@ class _favoriteState extends State<favorite> {
                               ),
                             ),
                             onTap: () {
-                              Navigator.of(context).pushReplacement(
-                                MaterialPageRoute(builder: (context) {
-                                  return Lidah();
-                                }),
-                              );
+                              // Navigator.of(context).pushReplacement(
+                              //   MaterialPageRoute(builder: (context) {
+                              //     return ();
+                              //   }),
+                              // );
+                              Get.toNamed(controller.favorites[i].route);
                             },
                           ),
                       ],

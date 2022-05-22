@@ -353,7 +353,7 @@ class Otot_otot_Ekspresi_Wajah extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Otot-otot ekspresi wajah");
+                var favorite = Favorite(title: "Otot-otot ekspresi wajah", route: '/ototWajah');
 
                 controller.addFavorite(favorite);
               },),
@@ -681,7 +681,7 @@ class Otot_Pengunyahan extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Otot pengunyahan");
+                var favorite = Favorite(title: "Otot pengunyahan", route: '/ototPengunyahan');
 
                 controller.addFavorite(favorite);
               },),
@@ -1075,7 +1075,7 @@ class Lidah extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Lidah");
+                var favorite = Favorite(title: "Lidah", route: '/lidah');
 
                 controller.addFavorite(favorite);
               },),
@@ -1432,7 +1432,7 @@ class Persarafan_Parasimpatis_ke_Kepala_dan_Leher extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Persarafan Parasimpatis ke Kepala dan Leher");
+                var favorite = Favorite(title: "Persarafan Parasimpatis ke Kepala dan Leher", route: '/persarafanParasimpatis');
 
                 controller.addFavorite(favorite);
               },),
@@ -1729,7 +1729,7 @@ class Persarafan_Simpatik_ke_Kepala_dan_Leher extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Persarafan Parasimpatik ke Kepala dan Leher");
+                var favorite = Favorite(title: "Persarafan Parasimpatik ke Kepala dan Leher", route: '/persarafanSimpatik');
 
                 controller.addFavorite(favorite);
               },),
@@ -2028,7 +2028,7 @@ class Divisi_Oftalmik_Saraf_Trigeminal extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Divisi Oftalmik Saraf Trigeminal");
+                var favorite = Favorite(title: "Divisi Oftalmik Saraf Trigeminal", route: '/divisiOftalmik');
 
                 controller.addFavorite(favorite);
               },),
@@ -2284,7 +2284,7 @@ class Divisi_Maksila_dari_Nervus_Trigeminal extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Divisi Maksila dari Nervus Trigeminal");
+                var favorite = Favorite(title: "Divisi Maksila dari Nervus Trigeminal", route: '/divisiMaksila');
 
                 controller.addFavorite(favorite);
               },),
@@ -2582,7 +2582,7 @@ class Divisi_Mandibula_Nervus_Trigeminal extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Divisi Mandibula Nervus Trigeminal");         
+                var favorite = Favorite(title: "Divisi Mandibula Nervus Trigeminal", route: '/divisiMandibula');         
 
                 controller.addFavorite(favorite);
               },),
@@ -2878,7 +2878,7 @@ class Telinga_luar extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Telinga Luar");
+                var favorite = Favorite(title: "Telinga Luar", route: '/telingaLuar');
 
                 controller.addFavorite(favorite);
               },),
@@ -3182,7 +3182,7 @@ class Telinga_tengah extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Telinga Tengah");
+                var favorite = Favorite(title: "Telinga Tengah", route : '/telingaTengah');
 
                 controller.addFavorite(favorite);
               },),
@@ -3519,7 +3519,7 @@ class Telinga_bagian_dalam extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Telinga Bagian Dalam");
+                var favorite = Favorite(title: "Telinga Bagian Dalam", route: '/telingaDalam');
 
                 controller.addFavorite(favorite);
               },),
@@ -3776,7 +3776,7 @@ class Orbit_Tulang extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Orbit tulang");
+                var favorite = Favorite(title: "Orbit tulang", route: '/orbitTulang');
 
                 controller.addFavorite(favorite);
               },),
@@ -4010,7 +4010,7 @@ class Otot_otot_Ekstraokular extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Otot-otot eksraokular");
+                var favorite = Favorite(title: "Otot-otot eksraokular", route: '/ototEkstraokular');
 
                 controller.addFavorite(favorite);
               },),
@@ -4268,7 +4268,7 @@ class Bola_Mata extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Bola Mata");
+                var favorite = Favorite(title: "Bola Mata", route: '/bolaMata');
 
                 controller.addFavorite(favorite);
               },),
@@ -4474,7 +4474,7 @@ class Kelopak_mata extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Kelopak Mata");
+                var favorite = Favorite(title: "Kelopak Mata", route: '/kelopakMata');
 
                 controller.addFavorite(favorite);
               },),
@@ -4661,7 +4661,7 @@ class Kelenjar_Lakrimal extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Kelenjar lakrimal");
+                var favorite = Favorite(title: "Kelenjar lakrimal", route: '/kelenjarLakrimal');
 
                 controller.addFavorite(favorite);
               },),
@@ -4874,7 +4874,7 @@ class hidung_luar extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Hidung Luar");
+                var favorite = Favorite(title: "Hidung Luar", route: '/hidungLuar');
 
                 controller.addFavorite(favorite);
               },),
@@ -5092,7 +5092,7 @@ class Sinus_Paranasal extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Sinus Paranasal");
+                var favorite = Favorite(title: "Sinus Paranasal", route: '/sinusParanasal');
 
                 controller.addFavorite(favorite);
               },),
@@ -5318,7 +5318,7 @@ class Rongga_hidung extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Rongga Hidung");
+                var favorite = Favorite(title: "Rongga Hidung", route: '/ronggaHidung');
 
                 controller.addFavorite(favorite);
               },),
@@ -5526,7 +5526,7 @@ class Kelenjar_Parotis extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Kelenjar Parotis");
+                var favorite = Favorite(title: "Kelenjar Parotis", route: '/kelenjarParotis');
 
                 controller.addFavorite(favorite);
               },),
@@ -5751,7 +5751,7 @@ class Kelenjar_Sublingual extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Kelenjar Sublingual");
+                var favorite = Favorite(title: "Kelenjar Sublingual", route: '/kelenjarSublingual');
 
                 controller.addFavorite(favorite);
               },),
@@ -5987,7 +5987,7 @@ class kelenjar_submandibular extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Kelenjar Submandibular");
+                var favorite = Favorite(title: "Kelenjar Submandibular", route: 'kelenjarSubmandibular');
 
                 controller.addFavorite(favorite);
               },),
@@ -6196,7 +6196,7 @@ class rongga_mulut extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Rongga Mulut");
+                var favorite = Favorite(title: "Rongga Mulut", route: '/ronggaMulut');
 
                 controller.addFavorite(favorite);
               },),
@@ -6441,7 +6441,7 @@ class Gigi_Anak_dan_Dewasa extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Gigi Anak dan Dewasa");
+                var favorite = Favorite(title: "Gigi Anak dan Dewasa", route: '/gigi');
 
                 controller.addFavorite(favorite);
               },),
@@ -6671,7 +6671,7 @@ class langit_langit extends StatelessWidget {
                IconButton(
               icon: Icon(Icons.favorite_border_outlined),
               onPressed: () {
-                var favorite = Favorite(title: "Langit-langit");
+                var favorite = Favorite(title: "Langit-langit", route: '/langitLangit');
 
                 controller.addFavorite(favorite);
               },),

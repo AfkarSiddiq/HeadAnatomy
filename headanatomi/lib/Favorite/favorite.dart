@@ -4,8 +4,9 @@ class Favorite{
   final String? title;
   final String? description;
   final String? imageUrl;
+  final String route;
   final int? id;
-  Favorite({ this.title, this.description,  this.imageUrl,  this.id});
+  Favorite({ this.title, this.description,  this.imageUrl,  this.id, required this.route});
 }
 
 class FavoriteController extends GetxController {

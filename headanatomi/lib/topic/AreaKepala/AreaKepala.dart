@@ -7,6 +7,8 @@ import 'package:headanatomi/topic/subject2.dart';
 import 'package:headanatomi/topic/topic.dart';
 import 'package:headanatomi/contactUs/contactUs.dart';
 
+import '../../Favorite/favorite_page.dart';
+
 class AreaKepala extends StatefulWidget {
   const AreaKepala({Key? key}) : super(key: key);
 
@@ -22,60 +24,76 @@ class _AreaKepalaState extends State<AreaKepala> {
           title: Text("Area Kepala"),
           backgroundColor: Color.fromARGB(255, 74, 148, 137)),
       endDrawer: Drawer(
-        child: Column(
-          children: [
-            Container(
-              padding: EdgeInsets.all(20),
-              width: double.infinity,
-              height: 120,
-              color: Color.fromARGB(255, 74, 148, 137),
-              alignment: Alignment.bottomLeft,
-              child: Text(
-                "Head Anatomy",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 24,
+          child: Column(
+            children: [
+              Container(
+                padding: EdgeInsets.all(20),
+                width: double.infinity,
+                height: 120,
+                color: Color.fromARGB(255, 17, 146, 165),
+                alignment: Alignment.bottomLeft,
+                child: Text(
+                  "Head Anatomy",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                  ),
                 ),
               ),
-            ),
-            SizedBox(
-              height: 10,
-            ),
-            ListTile(
-              onTap: () {
-                Navigator.of(context).pushReplacement(
-                  MaterialPageRoute(builder: (context) {
-                    return topic();
-                  }),
-                );
-              },
-              leading: Icon(Icons.home),
-              title: Text(
-                "Home",
-                style: TextStyle(
-                  fontSize: 24,
+              SizedBox(
+                height: 10,
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return topic();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.home),
+                title: Text(
+                  "Home",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
                 ),
               ),
-            ),
-            ListTile(
-              onTap: () {
-                Navigator.of(context).pushReplacement(
-                  MaterialPageRoute(builder: (context) {
-                    return contactus();
-                  }),
-                );
-              },
-              leading: Icon(Icons.phone),
-              title: Text(
-                "Contact Us",
-                style: TextStyle(
-                  fontSize: 24,
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return contactus();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.phone),
+                title: Text(
+                  "Contact Us",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
                 ),
               ),
-            ),
-          ],
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return favorite();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.favorite),
+                title: Text(
+                  "Favorite",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
-      ),
       body: Container(
         color: Color.fromARGB(255, 10, 113, 103),
         padding: const EdgeInsets.all(10.0),
