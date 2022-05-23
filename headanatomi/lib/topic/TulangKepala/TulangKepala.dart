@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:from_css_color/from_css_color.dart';
+import 'package:headanatomi/contactUs/contactUs.dart';
 import 'package:headanatomi/topic/home_view.dart';
 import 'package:headanatomi/topic/subject.dart';
 import 'package:headanatomi/topic/subject2.dart';
 
+
+import '../../Favorite/favorite_page.dart';
 import '../topic.dart';
 
 class TulangKepala extends StatefulWidget {
-  const TulangKepala({ Key? key }) : super(key: key);
+  const TulangKepala({Key? key}) : super(key: key);
 
   @override
   State<TulangKepala> createState() => _TulangKepalaState();
@@ -20,16 +23,16 @@ class _TulangKepalaState extends State<TulangKepala> {
       child: Scaffold(
         appBar: AppBar(
           title: Text("Tulang Kepala"),
-          backgroundColor: fromCssColor("#00bcd4"),        
+          backgroundColor: Color.fromARGB(255, 74, 148, 137),
         ),
-      drawer: Drawer(
+        endDrawer: Drawer(
           child: Column(
             children: [
               Container(
                 padding: EdgeInsets.all(20),
                 width: double.infinity,
                 height: 120,
-                color: Colors.lightBlue,
+                color: Color.fromARGB(255, 17, 146, 165),
                 alignment: Alignment.bottomLeft,
                 child: Text(
                   "Head Anatomy",
@@ -46,7 +49,7 @@ class _TulangKepalaState extends State<TulangKepala> {
                 onTap: () {
                   Navigator.of(context).pushReplacement(
                     MaterialPageRoute(builder: (context) {
-                      return MyApp();
+                      return topic();
                     }),
                   );
                 },
@@ -59,7 +62,13 @@ class _TulangKepalaState extends State<TulangKepala> {
                 ),
               ),
               ListTile(
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return contactus();
+                    }),
+                  );
+                },
                 leading: Icon(Icons.phone),
                 title: Text(
                   "Contact Us",
@@ -68,11 +77,17 @@ class _TulangKepalaState extends State<TulangKepala> {
                   ),
                 ),
               ),
-               ListTile(
-                onTap: () {},
-                leading: Icon(Icons.settings),
+              ListTile(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) {
+                      return favorite();
+                    }),
+                  );
+                },
+                leading: Icon(Icons.favorite),
                 title: Text(
-                  "Setting",
+                  "Favorite",
                   style: TextStyle(
                     fontSize: 24,
                   ),
@@ -81,229 +96,327 @@ class _TulangKepalaState extends State<TulangKepala> {
             ],
           ),
         ),
-      body: Container(
-        color: fromCssColor('#4A8592'),
-        child: ListView(
-          padding: EdgeInsets.all(32),
-          children: <Widget>[
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Container(
-                  width: 353,
-                  height: 100,
-                  decoration: new BoxDecoration(
-                    color: Theme.of(context).primaryColor,
-                    borderRadius: new BorderRadius.circular(20.0),
+        body: Container(
+          color: Color.fromARGB(255, 10, 113, 103),
+          child: GridView(
+            children: [
+              Container(
+                decoration: new BoxDecoration(
+                  color: Theme.of(context).primaryColor,
+                  //Make a background to the container
+                  // decoration: BoxDecoration(
+                  //   image: DecorationImage(
+                  //     image: AssetImage("images/Skull.png"),
+                  //     fit: BoxFit.fill,
+                  //   ),
+                  // ),
+                  borderRadius: new BorderRadius.circular(10.0),
+                ),
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    backgroundColor: fromCssColor('#ffffff'),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
                   ),
-                  child: TextButton(
-                    style: TextButton.styleFrom(
-                      backgroundColor: fromCssColor('#ffffff'),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20),
-                      )
-                    ), 
-                    onPressed: () {
-                                Navigator.push(context,
-                                MaterialPageRoute(builder: ((context) => Tulang_Etmoid()))
-                                );
-                              },
-                    child: Text(
-                      "Tulang Etmoid",
-                      textAlign: TextAlign.center,
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Tulang_Etmoid()),
+                    );
+                  },
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        'images/icon_topic/Ethmoid-Bone-Cover-Image.jpg',
+                        width: 120,
+                        height: 120,
+                      ),
+                      Text(
+                        "Tulang Etmoid",
+                        textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 24.0,
                           color: fromCssColor('#000000'),
                         ),
-                    ),
-                  )
-                ),
-                emptySpace,
-                 Container(
-                  width: 353,
-                  height: 100,
-                  decoration: new BoxDecoration(
-                    color: Theme.of(context).primaryColor,
-                    borderRadius: new BorderRadius.circular(20.0),
+                      ),
+                    ],
                   ),
-                  child: TextButton(
-                    style: TextButton.styleFrom(
-                      backgroundColor: fromCssColor('#ffffff'),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20),
-                      )
-                    ), 
-                    onPressed: () {
-                                Navigator.push(context,
-                                MaterialPageRoute(builder: ((context) => Mandibula()))
-                                );
-                              },
-                    child: Text(
-                      "Mandibula",
-                      textAlign: TextAlign.center,
+                ),
+              ),
+              Container(
+                decoration: new BoxDecoration(
+                  color: Theme.of(context).primaryColor,
+                  //Make a background to the container
+                  // decoration: BoxDecoration(
+                  //   image: DecorationImage(
+                  //     image: AssetImage("images/Skull.png"),
+                  //     fit: BoxFit.fill,
+                  //   ),
+                  // ),
+                  borderRadius: new BorderRadius.circular(10.0),
+                ),
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    backgroundColor: fromCssColor('#ffffff'),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Mandibula()));
+                  },
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        'images/icon_topic/Muscular-Attachments-to-the-Mandible-Body-Ramus.jpg',
+                        width: 120,
+                        height: 120,
+                      ),
+                      Text(
+                        "Mandibula",
+                        textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 24.0,
                           color: fromCssColor('#000000'),
                         ),
-                    ),
-                  )
-                ),
-                emptySpace,
-                 Container(
-                  width: 353,
-                  height: 100,
-                  decoration: new BoxDecoration(
-                    color: Theme.of(context).primaryColor,
-                    borderRadius: new BorderRadius.circular(20.0),
+                      ),
+                    ],
                   ),
-                  child: TextButton(
-                    style: TextButton.styleFrom(
-                      backgroundColor: fromCssColor('#ffffff'),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20),
-                      )
-                    ), 
-                    onPressed: () {
-                                Navigator.push(context,
-                                MaterialPageRoute(builder: ((context) => Tulang_Sphenoid()))
-                                );
-                              },
-                    child: Text(
-                      "Tulang Sphenoid",
-                      textAlign: TextAlign.center,
+                ),
+              ),
+              Container(
+                decoration: new BoxDecoration(
+                  color: Theme.of(context).primaryColor,
+                  //Make a background to the container
+                  // decoration: BoxDecoration(
+                  //   image: DecorationImage(
+                  //     image: AssetImage("images/Skull.png"),
+                  //     fit: BoxFit.fill,
+                  //   ),
+                  // ),
+                  borderRadius: new BorderRadius.circular(10.0),
+                ),
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    backgroundColor: fromCssColor('#ffffff'),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => Tulang_Sphenoid()),
+                    );
+                  },
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        'images/icon_topic/Parts-of-the-Sphenoid-Bone.jpg',
+                        width: 120,
+                        height: 100,
+                      ),
+                      Text(
+                        "Tulang Sphenoid",
+                        textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 24.0,
                           color: fromCssColor('#000000'),
                         ),
-                    ),
-                  )
-                ),
-                emptySpace,
-                Container(
-                  width: 353,
-                  height: 100,
-                  decoration: new BoxDecoration(
-                    color: Theme.of(context).primaryColor,
-                    borderRadius: new BorderRadius.circular(20.0),
+                      ),
+                    ],
                   ),
-                  child: TextButton(
-                    style: TextButton.styleFrom(
-                      backgroundColor: fromCssColor('#ffffff'),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20),
-                      )
-                    ), 
-                    onPressed: () {
-                                Navigator.push(context,
-                                MaterialPageRoute(builder: ((context) => Tulang_Tengkorak()))
-                                );
-                              },
-                    child: Text(
-                      "Tulang Tengkorak",
-                      textAlign: TextAlign.center,
+                ),
+              ),
+              Container(
+                decoration: new BoxDecoration(
+                  color: Theme.of(context).primaryColor,
+                  //Make a background to the container
+                  // decoration: BoxDecoration(
+                  //   image: DecorationImage(
+                  //     image: AssetImage("images/Skull.png"),
+                  //     fit: BoxFit.fill,
+                  //   ),
+                  // ),
+                  borderRadius: new BorderRadius.circular(10.0),
+                ),
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    backgroundColor: fromCssColor('#ffffff'),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => Tulang_Tengkorak()),
+                    );
+                  },
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        'images/icon_topic/Extradural-Haematoma-Pterion-and-Anterior-Middle-Meningeal-Artery.jpg',
+                        width: 120,
+                        height: 100,
+                      ),
+                      Text(
+                        "Tulang Tengkorak",
+                        textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 24.0,
                           color: fromCssColor('#000000'),
                         ),
-                    ),
-                  )
-                ),
-                emptySpace,
-                Container(
-                  width: 353,
-                  height: 100,
-                  decoration: new BoxDecoration(
-                    color: Theme.of(context).primaryColor,
-                    borderRadius: new BorderRadius.circular(20.0),
+                      ),
+                    ],
                   ),
-                  child: TextButton(
-                    style: TextButton.styleFrom(
-                      backgroundColor: fromCssColor('#ffffff'),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20),
-                      )
-                    ), 
-                    onPressed: () {
-                      Navigator.push(context,
-                      MaterialPageRoute(builder: ((context) => Tulang_Temporal()))
-                      );
-                    },
-                    child: Text(
-                      "Tulang Temporal",
-                      textAlign: TextAlign.center,
+                ),
+              ),
+              Container(
+                decoration: new BoxDecoration(
+                  color: Theme.of(context).primaryColor,
+                  //Make a background to the container
+                  // decoration: BoxDecoration(
+                  //   image: DecorationImage(
+                  //     image: AssetImage("images/Skull.png"),
+                  //     fit: BoxFit.fill,
+                  //   ),
+                  // ),
+                  borderRadius: new BorderRadius.circular(10.0),
+                ),
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    backgroundColor: fromCssColor('#ffffff'),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => Tulang_Temporal()),
+                    );
+                  },
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        'images/icon_topic/Lateral-view-of-the-Skull-Showing-the-Anatomical-Position-of-the-Temporal-Bone.jpg',
+                        width: 120,
+                        height: 100,
+                      ),
+                      Text(
+                        "Tulang Temporal",
+                        textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 24.0,
                           color: fromCssColor('#000000'),
                         ),
-                    ),
-                  )
-                ),
-                emptySpace,
-                Container(
-                  width: 353,
-                  height: 100,
-                  decoration: new BoxDecoration(
-                    color: Theme.of(context).primaryColor,
-                    borderRadius: new BorderRadius.circular(20.0),
+                      ),
+                    ],
                   ),
-                  child: TextButton(
-                    style: TextButton.styleFrom(
-                      backgroundColor: fromCssColor('#ffffff'),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20),
-                      )
-                    ), 
-                    onPressed: () {
-                      Navigator.push(context,
-                      MaterialPageRoute(builder: ((context) => Kerangka_Hidung()))
-                      );
-                    },
-                    child: Text(
-                      "Kerangka Hidung",
-                      textAlign: TextAlign.center,
+                ),
+              ),
+              Container(
+                decoration: new BoxDecoration(
+                  color: Theme.of(context).primaryColor,
+                  //Make a background to the container
+                  // decoration: BoxDecoration(
+                  //   image: DecorationImage(
+                  //     image: AssetImage("images/Skull.png"),
+                  //     fit: BoxFit.fill,
+                  //   ),
+                  // ),
+                  borderRadius: new BorderRadius.circular(10.0),
+                ),
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    backgroundColor: fromCssColor('#ffffff'),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => Kerangka_Hidung()),
+                    );
+                  },
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        'images/icon_topic/Anatomy-of-the-Nasal-Septum-Bones-and-Cartilage.jpg',
+                        width: 120,
+                        height: 100,
+                      ),
+                      Text(
+                        "Kerangka Hidung",
+                        textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 24.0,
                           color: fromCssColor('#000000'),
                         ),
-                    ),
-                  )
-                ),
-                emptySpace,
-                Container(
-                  width: 353,
-                  height: 100,
-                  decoration: new BoxDecoration(
-                    color: Theme.of(context).primaryColor,
-                    borderRadius: new BorderRadius.circular(20.0),
+                      ),
+                    ],
                   ),
-                  child: TextButton(
-                    style: TextButton.styleFrom(
-                      backgroundColor: fromCssColor('#ffffff'),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20),
-                      )
-                    ), 
-                    onPressed: () {
-                      Navigator.push(context,
-                      MaterialPageRoute(builder: ((context) => Foramen_Kranial()))
-                      );
-                    },
-                    child: Text(
-                      "Foramen Cranial",
-                      textAlign: TextAlign.center,
+                ),
+              ),
+              Container(
+                decoration: new BoxDecoration(
+                  color: Theme.of(context).primaryColor,
+                  //Make a background to the container
+                  // decoration: BoxDecoration(
+                  //   image: DecorationImage(
+                  //     image: AssetImage("images/Skull.png"),
+                  //     fit: BoxFit.fill,
+                  //   ),
+                  // ),
+                  borderRadius: new BorderRadius.circular(10.0),
+                ),
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    backgroundColor: fromCssColor('#ffffff'),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Foramen_Kranial(),
+                        ));
+                  },
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        'images/icon_topic/CN-base-of-skull.jpg',
+                        width: 120,
+                        height: 100,
+                      ),
+                      Text(
+                        "Foramen Kranial",
+                        textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 24.0,
                           color: fromCssColor('#000000'),
                         ),
-                    ),
-                  )
+                      ),
+                    ],
+                  ),
                 ),
-                emptySpace,
-              ],
-            )
-          ],
-      )
-    ))
+              ),
+            ],
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2, mainAxisSpacing: 10, crossAxisSpacing: 10),
+          ),
+        ),
+      ),
     );
   }
 }
